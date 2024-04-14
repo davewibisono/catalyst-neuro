@@ -1,4 +1,4 @@
-baseURL = 'https://davewibisono.github.io/catalyst-neuro/'
+baseURL = 'https://voluble-souffle-995141.netlify.app/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 paginate = '1'
