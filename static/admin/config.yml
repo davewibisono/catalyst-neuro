@@ -4,7 +4,7 @@ backend:
 media_folder: static/assets/img
 public_folder: assets/img
 collections:
-  - name: 'blog'
+  - name: 'blog_single'
     label: 'Blog'
     folder: 'content/blog'
     create: true
