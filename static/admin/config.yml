@@ -12,7 +12,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: 'Layout', name: 'layout', widget: 'string' }
+      - { label: 'Layout', name: 'layout', widget: 'string', default: 'blog_single' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
@@ -35,5 +35,5 @@ collections:
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'ID', name: 'id', widget: 'string' }
-      - { label: 'Layout', name: 'layout', widget: 'string' }
+      - { label: 'Layout', name: 'layout', widget: 'string', default: 'portfolio' }
       - { label: 'Weight', name: 'weight', widget: 'number' }
