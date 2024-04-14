@@ -12,7 +12,28 @@ collections:
     editor:
       preview: false
     fields:
+      - { label: 'Layout', name: 'layout', widget: 'string' }
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Categories', name: 'categories', widget: 'list' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Content', name: 'body', widget: 'markdown' }
+
+  - name: 'portfolio'
+    label: 'Portfolio'
+    folder: 'content/portfolio'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Tag Bar', name: 'tag_bar', widget: 'string' }
+      - { label: 'Subtitle', name: 'sub_title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'ID', name: 'id', widget: 'string' }
+      - { label: 'Layout', name: 'layout', widget: 'string' }
+      - { label: 'Weight', name: 'weight', widget: 'number' }

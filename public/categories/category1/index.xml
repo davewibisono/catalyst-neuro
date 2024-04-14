@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Category1 on My New Hugo Site</title>
-    <link>http://localhost:1313/catalyst-neuro/categories/category1/</link>
+    <link>http://localhost:1313/categories/category1/</link>
     <description>Recent content in Category1 on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 07 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/catalyst-neuro/categories/category1/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/category1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sed a facilisis ante. Nulla vehicula vehicula</title>
-      <link>http://localhost:1313/catalyst-neuro/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula---copy-2/</link>
+      <link>http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula---copy-2/</link>
       <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/catalyst-neuro/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula---copy-2/</guid>
+      <guid>http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula---copy-2/</guid>
       <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
     </item>
     <item>
       <title>Sed a facilisis ante. Nulla vehicula vehicula</title>
-      <link>http://localhost:1313/catalyst-neuro/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula---copy---copy/</link>
+      <link>http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula---copy---copy/</link>
       <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/catalyst-neuro/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula---copy---copy/</guid>
+      <guid>http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula---copy---copy/</guid>
       <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
     </item>
     <item>
       <title>Sed a facilisis ante. Nulla vehicula vehicula</title>
-      <link>http://localhost:1313/catalyst-neuro/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula---copy/</link>
+      <link>http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula---copy/</link>
       <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/catalyst-neuro/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula---copy/</guid>
+      <guid>http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula---copy/</guid>
       <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
     </item>
     <item>
       <title>Sed a facilisis ante. Nulla vehicula vehicula</title>
-      <link>http://localhost:1313/catalyst-neuro/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula/</link>
+      <link>http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula/</link>
       <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/catalyst-neuro/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula/</guid>
+      <guid>http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula/</guid>
       <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
     </item>
   </channel>
