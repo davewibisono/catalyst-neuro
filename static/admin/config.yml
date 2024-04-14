@@ -3,11 +3,9 @@ backend:
   branch: "main" # Branch to update (optional; defaults to master)
   repo: "davewibisono/catalyst-neuro"
 
-media_folder:
-  path: "static/assets/img"
+media_folder: "static/assets/img"
 
-public_folder:
-  path: "/img"
+public_folder: "/img"
 
 collections:
   - name: 'blog'
