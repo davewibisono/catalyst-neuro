@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  {{ partial "head.html" .}}
+
+  <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
+    <!-- ======= Header ======= -->
+    {{ partial "header.html" .}}
+    <!-- End Header -->
+
+    <main id="main">
+      {{ block "main" . }}
+      <!-- The part of the page that begins to differ between templates -->
+      {{ end }}
+    </main>
+
+    <!-- ======= Footer ======= -->
+    {{ partial "footer.html" .}}
+    <!-- End Footer -->
+
+    <!-- Vendor JS Files -->
+    {{ partial "script.html" .}}
+  </body>
+</html>

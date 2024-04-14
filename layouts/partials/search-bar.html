@@ -1,0 +1,9 @@
+<form
+  action="{{ .Site.BaseURL }}/search"
+  method="GET"
+  class="search-form"
+  autocomplete="off"
+>
+  <input type="search" name="q" class="w-75" id="search-query" placeholder="Search...." />
+  <button type="submit" class="w-25"><img src="{{ .Site.BaseURL }}/assets/img/search.svg" alt="search" style="width: 20px;"></button>
+</form>

@@ -1,0 +1,40 @@
+{{define "main"}}
+
+<section class="inner-page-hero">
+  <div class="container">
+    <div class="row my-padi">
+      <div class="col-md-4 blog-title">
+        <h2>Blog</h2>
+      </div>
+      <div class="col-md-8 post-title">
+        <h5>{{ .Date.Format "January 2, 2006" }} / By {{ .Params.author }}</h5>
+        <h2>{{.Title}}</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<secction class="single-blog-inner">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-9">
+        <img
+          src="{{ $.Site.BaseURL }}{{ .Params.image }}"
+          alt="{{.Title}} Image"
+          class="img-fluid"
+        />
+      </div>
+    </div>
+  </div>
+</secction>
+
+<section class="article">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-9">
+        <article class="my-padi">{{.Content}}</article>
+      </div>
+    </div>
+  </div>
+</section>
+{{end}}

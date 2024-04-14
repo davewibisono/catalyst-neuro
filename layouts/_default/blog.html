@@ -1,0 +1,97 @@
+{{define "main"}}
+
+<section class="inner-page-hero ww-inner">
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-12 text-center">
+        <h2>Blog</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="featured-blog">
+  <div class="container bg p-5">
+    <div class="row d-flex">
+      <div class="col-lg-6 align-items-stretch mar">
+        {{ range first 1 .RegularPages }}
+        <div class="card">
+          <img src="{{ $.Site.BaseURL }}{{ .Params.image }}" alt="{{ .Title }} Blog" class="img-fluid" />
+          <div class="content p-5">
+            <p><span>{{ .Date.Format "January 2, 2006" }}</span></p>
+            <h3>{{ .Title }}</h3>
+            <p>{{ .Description }}</p>
+            <a href="{{ .Permalink }}">Learn More <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+
+      <div class="col-lg-6 align-items-stretch lists my-padi py-3">
+        {{ $featuredPages := where .Site.RegularPages "Type" "featured" }}
+        <!---->
+        {{ $featuredPagesLimited := first 4 $featuredPages }}
+        <!---->
+
+        {{ range $featuredPagesLimited }}
+        <div class="list d-flex align-items-center">
+          <img src="{{ $.Site.BaseURL }}{{.Params.image}}" alt="blog" />
+          <div class="text">
+            <p><span>{{ .Date.Format "January 2, 2006" }} </span></p>
+            <a href="{{.Permalink}}" class="">{{.Title}}</a>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="post">
+  <div class="container my-padi">
+    <h2><strong>More Posts</strong></h2>
+    <br />
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-9 col-md-12 categories">
+        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        <a href='{{ $.Site.BaseURL }}{{ "/categories/" | relLangURL }}{{ $name | urlize }}' class="px-3 py-1">{{ $name
+          }}</a>
+        {{ end }}
+      </div>
+
+      <div class="col-lg-3 col-md-12 search-form pt-5 pt-lg-0">
+        {{partial "search-bar.html" .}}
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      {{ $counter := 1 }}
+      <!---->
+
+      {{ range sort (where .Site.RegularPages "Section" "blog") ".Date" "desc"
+      }}
+      <div class="col-lg-4 mb-5" id="page-{{ $counter }}">
+        <div class="card">
+          <img src="{{ .Site.BaseURL }}{{.Params.image}}" alt="{{.Title}} Image" />
+          <p>{{ range .Params.categories }}<span>{{ . }} </span>{{ end }}</p>
+          <h4>{{.Title}}</h4>
+          <div class="info">
+            <p>{{ .Date.Format "January 2, 2006" }}</p>
+            <div class="dot"></div>
+            <p>{{ .ReadingTime }} minute</p>
+          </div>
+          <a href="{{.Permalink}}">READ MORE ></a>
+        </div>
+      </div>
+      {{ $counter = add $counter 1 }}
+
+      <!---->
+      {{end}}
+    </div>
+  </div>
+  <div class="d-flex align-items-center justify-content-center text-center mt-5 pt-5">
+    <button id="showMoreButton" class="load">Show More</button>
+  </div>
+</section>
+
+{{end}}

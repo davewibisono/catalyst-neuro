@@ -1,0 +1,80 @@
+{{define "main"}}
+
+<section class="inner-page-hero">
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-12 text-center">
+        <h2>{{.Title}}</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="post">
+  <div class="container my-padi">
+    <br />
+    <div class="row">
+      <div class="col-lg-9 categories">
+        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        <a href='{{ $.Site.BaseURL }}{{ "/categories/" | relLangURL }}{{ $name | urlize }}'
+          >{{ $name }}</a
+        >
+        {{ end }}
+      </div>
+
+      <div class="col-lg-3 search-form">
+        <form>
+          <div class="mb-3 d-flex">
+            <input
+              type="text"
+              class="form-control"
+              id="search-input"
+              aria-describedby="search-form"
+              placeholder="Search post"
+            />
+            
+
+            <button type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
+        </form>
+        <ul id="search-results"></ul>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      {{ $counter := 1 }}
+      <!---->
+
+      {{ range .RegularPages }}
+      <div class="col-lg-4 mb-5" id="page-{{ $counter }}">
+        <div class="card">
+          <img src="{{ .Site.BaseURL }}{{.Params.image}}" alt="{{.Title}} Image" />
+          <p>{{ range .Params.categories }}<span>{{ . }} </span>{{ end }}</p>
+          <h4>
+            {{.Title}}
+          </h4>
+          <div class="info">
+            <p>{{ .Date.Format "January 2, 2006" }}</p>
+            <div class="dot"></div>
+            <p> {{ .ReadingTime }} minute</p>
+          </div>
+          <a href="{{.Permalink}}">READ MORE ></a>
+        </div>
+      </div>
+      {{ $counter = add $counter 1 }}
+
+      <!---->
+      {{end}}
+    </div>
+  </div>
+  <div
+    class="d-flex align-items-center justify-content-center text-center mt-5 pt-5"
+  >
+  <button id="showMoreButton" class="load">Show More</button>
+  </div>
+</section>
+
+{{end}}

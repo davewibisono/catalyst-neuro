@@ -1,0 +1,12 @@
+baseURL = 'https://davewibisono.github.io/catalyst-neuro/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+paginate = '1'
+
+
+[taxonomies]
+  category = "categories"
+
+[outputs]
+    home = [ "HTML", "JSON", "RSS"]
+

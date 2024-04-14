@@ -1,0 +1,57 @@
+{{define "main"}}
+
+<section class="inner-page-hero ww-inner">
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-12 text-center">
+        <h2>Our Mission</h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Clients Section - Home Page -->
+<section class="mission inner">
+  <div class="container mission-bg p-5">
+    <div class="row align-items-center">
+      <div
+        class="col-md-5 d-block d-lg-none mb-5"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <img
+          src="{{ .Site.BaseURL }}/assets/img/mission-page.png"
+          alt="Mission Image"
+          class="img-fluid"
+        />
+      </div>
+
+      <div class="col-md-7 px-xxl-5 p-0">
+        <p data-aos="fade-up" data-aos-delay="300">
+          We believe that the future of neuroscience will be driven by
+          collaboration between labs. Our mission is to develop channels of
+          communication and distribution of resources between labs to enable
+          exponential growth and innovation. <br /><br />We are at the forefront
+          of this effort, shaping the way data, analysis and visualization tools
+          are standardized and shared across the international community of
+          systems neuroscientists.
+        </p>
+      </div>
+
+      <div
+        class="col-md-5 d-none d-lg-block"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <img
+          src="{{ .Site.BaseURL }}/assets/img/mission-page.png"
+          alt="Mission Image"
+          class="img-fluid"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Hero Section -->
+
+{{end}}
