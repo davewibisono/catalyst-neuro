@@ -165,7 +165,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   background-color: #fff;
-  padding: 25px 0;
+  padding: 0;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -876,7 +876,7 @@ section,
 /* Client Section - Home Page
 ------------------------------*/
 .client {
-  padding: 0px 100px;
+  padding: 20px 100px;
 }
 
 /* CTA Section - Home Page
