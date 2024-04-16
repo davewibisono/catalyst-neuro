@@ -72,3 +72,34 @@ collections:
         - { label: 'Card Paragraph 1', name: 'card_paragraph_1', widget: 'text' }
         - { label: 'Card Paragraph 2', name: 'card_paragraph_2', widget: 'text' }
 
+      - file: "data/software.yml"
+        label: "Software"
+        name: "software"
+        fields:
+        - { label: 'Main Heading', name: 'main_heading', widget: 'string' }
+        - { label: 'Card Image', name: 'card_image', widget: 'image' }
+        - { label: 'Card Paragraph', name: 'card_paragraph', widget: 'text' }
+        - { label: 'Dropdown 1', name: 'dropdown_1', widget: 'string' }
+        - { label: 'FAQ 1 Heading', name: 'faq_1_heading', widget: 'string' }
+        - { label: 'FAQ 1 Paragraph 1', name: 'faq_1_paragraph_1', widget: 'text' }
+        - { label: 'FAQ 1 Paragraph 2', name: 'faq_1_paragraph_2', widget: 'text' }
+        - { label: 'FAQ 1 Paragraph 3', name: 'faq_1_paragraph_3', widget: 'text' }
+        - { label: 'FAQ 1 Image', name: 'faq_1_image', widget: 'image' }
+        - { label: 'Dropdown 2', name: 'dropdown_2', widget: 'string' }
+        - { label: 'FAQ 2 Heading', name: 'faq_2_heading', widget: 'string' }
+        - { label: 'FAQ 2 Paragraph 1', name: 'faq_2_paragraph_1', widget: 'text' }
+        - { label: 'FAQ 2 Paragraph 2', name: 'faq_2_paragraph_2', widget: 'text' }
+        - { label: 'FAQ 2 Paragraph 3', name: 'faq_2_paragraph_3', widget: 'text' }
+        - { label: 'FAQ 2 Image', name: 'faq_2_image', widget: 'image' }
+        - { label: 'Dropdown 3', name: 'dropdown_3', widget: 'string' }
+        - { label: 'FAQ 3 Heading', name: 'faq_3_heading', widget: 'string' }
+        - { label: 'FAQ 3 Paragraph 1', name: 'faq_3_paragraph_1', widget: 'text' }
+        - { label: 'FAQ 3 Paragraph 2', name: 'faq_3_paragraph_2', widget: 'text' }
+        - { label: 'FAQ 3 Paragraph 3', name: 'faq_3_paragraph_3', widget: 'text' }
+        - { label: 'FAQ 3 Image', name: 'faq_3_image', widget: 'image' }
+        - { label: 'Dropdown 4', name: 'dropdown_4', widget: 'string' }
+        - { label: 'FAQ 4 Heading', name: 'faq_4_heading', widget: 'string' }
+        - { label: 'FAQ 4 Paragraph 1', name: 'faq_4_paragraph_1', widget: 'text' }
+        - { label: 'FAQ 4 Paragraph 2', name: 'faq_4_paragraph_2', widget: 'text' }
+        - { label: 'FAQ 4 Paragraph 3', name: 'faq_4_paragraph_3', widget: 'text' }
+        - { label: 'FAQ 4 Image', name: 'faq_4_image', widget: 'image' }
