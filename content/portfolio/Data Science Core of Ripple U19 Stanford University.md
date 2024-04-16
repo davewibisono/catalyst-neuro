@@ -5,6 +5,7 @@ sub_title: Collaboration with - Stanford University
 image: /assets/img/portfolio/7.jpeg
 id: dataScience
 layout: portfolio
+type: featured
 weight: 4
 ---
 

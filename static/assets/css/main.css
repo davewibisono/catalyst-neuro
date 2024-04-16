@@ -165,7 +165,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   background-color: #fff;
-  padding: 0;
+  padding: 25px 0 !important;
   transition: all 0.5s;
   z-index: 997;
 }

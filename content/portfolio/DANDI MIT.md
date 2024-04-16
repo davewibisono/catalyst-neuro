@@ -6,6 +6,7 @@ description:
 image: /assets/img/portfolio/5.png
 id: dandi
 layout: portfolio
+type: featured
 weight: 2
 ---
 

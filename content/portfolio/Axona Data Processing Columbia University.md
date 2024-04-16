@@ -4,6 +4,7 @@ tag_bar: Role - NWB specialist and developer
 sub_title: Collaboration with - Columbia University
 description: Collaboration with - Columbia University
 image: /assets/img/portfolio/6.jpeg
+type: featured
 id: axona
 layout: portfolio
 weight: 1
