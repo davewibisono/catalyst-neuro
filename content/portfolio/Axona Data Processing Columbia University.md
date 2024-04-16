@@ -1,5 +1,5 @@
 ---
-title: Axona Data Processing Columbia University
+title: "Axona Data Processing "
 tag_bar: Role - NWB specialist and developer
 sub_title: Collaboration with - Columbia University
 description: Collaboration with - Columbia University
