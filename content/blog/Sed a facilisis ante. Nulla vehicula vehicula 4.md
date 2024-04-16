@@ -2,9 +2,8 @@
 layout: blog_single
 title: Sed a facilisis ante. Nulla vehicula vehicula
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus dui, vestibulum quis velit vel, fringilla eleifend quam.
-date: "2024-04-07"
-categories: CATEGORY 1
-image: /assets/img/blog/1.png
+date: 2024-04-07
+image: /assets/img/blog-1.png
 author: "Federico Ober"
 type: feature
 categories:

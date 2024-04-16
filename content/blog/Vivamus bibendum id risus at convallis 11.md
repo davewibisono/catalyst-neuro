@@ -2,9 +2,8 @@
 layout: blog_single
 title: Vivamus bibendum id risus at convallis.
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tellus dui, vestibulum quis velit vel, fringilla eleifend quam.
-date: "2024-03-201"
-categories: CATEGORY 1
-image: /assets/img/blog/8.png
+date: 2024-03-21
+image: /assets/img/blog-8.png
 author: "Federico Ober"
 type: "featured"
 categories:
