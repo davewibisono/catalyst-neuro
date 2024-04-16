@@ -4,7 +4,7 @@
   <div class="container d-flex justify-content-center align-items-center">
     <div class="row d-flex justify-content-center align-items-center">
       <div class="col-12 text-center">
-        <h2>Our Mission</h2>
+        <h2>{{ .Site.Data.mission.main_heading }}</h2>
       </div>
     </div>
   </div>
@@ -20,7 +20,7 @@
         data-aos-delay="100"
       >
         <img
-          src="{{ .Site.BaseURL }}/assets/img/mission-page.png"
+          src="{{ .Site.BaseURL }}{{ .Site.Data.mission.card_image }}"
           alt="Mission Image"
           class="img-fluid"
         />
@@ -28,13 +28,8 @@
 
       <div class="col-md-7 px-xxl-5 p-0">
         <p data-aos="fade-up" data-aos-delay="300">
-          We believe that the future of neuroscience will be driven by
-          collaboration between labs. Our mission is to develop channels of
-          communication and distribution of resources between labs to enable
-          exponential growth and innovation. <br /><br />We are at the forefront
-          of this effort, shaping the way data, analysis and visualization tools
-          are standardized and shared across the international community of
-          systems neuroscientists.
+          {{ .Site.Data.mission.card_paragraph_1 }} <br /><br />
+          {{ .Site.Data.mission.card_paragraph_2 }}
         </p>
       </div>
 
@@ -44,7 +39,7 @@
         data-aos-delay="100"
       >
         <img
-          src="{{ .Site.BaseURL }}/assets/img/mission-page.png"
+          src="{{ .Site.BaseURL }}{{ .Site.Data.mission.card_image }}"
           alt="Mission Image"
           class="img-fluid"
         />
