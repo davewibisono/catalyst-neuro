@@ -22,8 +22,8 @@ collections:
       - { label: 'Content', name: 'body', widget: 'markdown' }
       - { label: 'Type', name: 'type', widget: 'select', options: ['featured', 'other'], default: 'other' }
 
-  - name: 'portfolio'
-    label: 'Portfolio'
+  - name: 'clients'
+    label: 'Clients'
     folder: 'content/portfolio'
     create: true
     slug: '{{slug}}'
@@ -63,6 +63,7 @@ collections:
           - { label: 'CTA Heading', name: 'cta_heading', widget: 'string' }
           - { label: 'CTA Paragraph', name: 'cta_paragraph', widget: 'text' }
           - { label: 'CTA Image', name: 'cta_image', widget: 'image' }
+          
       - file: "data/mission.yml"
         label: "Mission"
         name: "mission"
