@@ -8,11 +8,10 @@
         data-aos="fade-up"
         data-aos-delay="200"
       >
-        <h2>Write a Good Heading for this header</h2>
+        <h2>{{ .Site.Data.home.hero_heading }}</h2>
         <br />
         <p>
-          The future of neuroscience will be driven by collaboration between
-          labs.
+          {{ .Site.Data.home.hero_paragraph }}
         </p>
         <div class="btn m-0 p-0 mt-5">
           <a class="btn-getstarted" href="mailto:contact@website.com"
@@ -24,7 +23,7 @@
         <img
           data-aos="fade-up"
           data-aos-delay="100"
-          src="{{ .Site.BaseURL }}/assets/img/hero-img.png"
+          src="{{ .Site.BaseURL }}{{ .Site.Data.home.hero_image }}"
           alt="Hero Image"
           class="img-fluid"
         />
@@ -48,27 +47,22 @@
           data-aos-delay="200"
           class="d-block d-lg-none pt-5 px-1 my-padi"
         >
-          Our Mission
+        {{ .Site.Data.home.mission_heading }}
         </h2>
         <img
-          src="{{ .Site.BaseURL }}/assets/img/mission.png"
+          src="{{ .Site.BaseURL }}{{ .Site.Data.home.mission_image }}"
           alt="Mission Image"
           class="img-fluid p-md-5"
         />
       </div>
       <div class="col-lg-6 col-md-12 content my-padi">
         <h2 data-aos="fade-up" data-aos-delay="200" class="d-none d-lg-block">
-          Our Mission
+          {{ .Site.Data.home.mission_heading }}
         </h2>
         <p data-aos="fade-up" data-aos-delay="300">
-          We believe that the future of neuroscience will be driven by
-          collaboration between labs. Our mission is to develop channels of
-          communication and distribution of resources between labs to enable
-          exponential growth and innovation.
+          {{ .Site.Data.home.mission_paragraph_1 }}
           <br /><br />
-          We are at the forefront of this effort, shaping the way data, analysis
-          and visualization tools are standardized and shared across the
-          international community of systems neuroscientists.
+          {{ .Site.Data.home.mission_paragraph_2 }}
         </p>
       </div>
     </div>
@@ -81,25 +75,16 @@
   <div class="container" data-aos="fade-up">
     <div class="row pt-5 pb-5">
       <div class="col-lg-5 my-padi">
-        <h2>Software</h2>
+        <h2>{{ .Site.Data.home.software_heading }}</h2>
         <img
-          src="{{ .Site.BaseURL }}/assets/img/software.png"
+          src="{{ .Site.BaseURL }}{{ .Site.Data.home.software_image }}"
           alt="Software Image"
           class="img-fluid p-5 d-block d-lg-none"
         />
         <p>
-          CatalystNeuro develops software solutions across the data pipeline
-          aimed to help neuroscientists focus on the science and accelerate
-          their discovery process immediately. We release and support packages
-          for data homogenization, visualization, analysis, and lab-wide
-          records. <br /><br />
-          These libraries are developed by a team that focuses specifically on
-          neural data and good software practices. Our projects are packaged,
-          documented, and tested for robustness and ease of use. Everything we
-          build is released as it is developed under a permissive license.<br /><br />
-          We commonly work with labs to customize these software solutions to
-          the specific needs of the lab, interfacing our platforms with their
-          data formats and analysis packages.
+          {{ .Site.Data.home.software_paragraph_1 }} <br /><br />
+          {{ .Site.Data.home.software_paragraph_2 }}<br /><br />
+          {{ .Site.Data.home.software_paragraph_3 }}
         </p>
         <div class="btn m-0 p-0 mt-5">
           <a class="btn-getstarted" href="/contact-us"
@@ -109,7 +94,7 @@
       </div>
       <div class="col-lg-7 d-none d-lg-block my-padi">
         <img
-          src="{{ .Site.BaseURL }}/assets/img/software.png"
+          src="{{ .Site.BaseURL }}{{ .Site.Data.home.software_image }}"
           alt="Software Image"
           class="img-fluid"
         />
@@ -410,11 +395,10 @@
         ta-aos="fade-up"
         data-aos-delay="100"
       >
-        <h2 class="my-padi">If you’d like to learn more contact us today.</h2>
+        <h2 class="my-padi">{{ .Site.Data.home.cta_heading }}</h2>
         <br />
         <p class="my-padi">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante sem,
-          dignissim in diam ac.
+          {{ .Site.Data.home.cta_paragraph }}
         </p>
 
         <div class="btn m-0 mt-5 my-padi">
@@ -430,7 +414,7 @@
         data-aos-delay="200"
       >
         <img
-          src="{{ .Site.BaseURL }}/assets/img/cta.png"
+          src="{{ .Site.BaseURL }}{{ .Site.Data.home.cta_image }}"
           alt="CTA Image"
           class="img-fluid"
         />
