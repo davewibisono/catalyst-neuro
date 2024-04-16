@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row d-flex justify-content-center align-items-center">
       <div class="col-12 text-center">
-        <h2>Our Team</h2>
+        <h2>{{ .Site.Data.team.main_heading }}</h2>
       </div>
     </div>
   </div>
@@ -15,149 +15,62 @@
       <h2>Current Members</h2>
     </header>
     <div class="row">
+
+      {{ range .Site.Data.team.current_team_card }}
       <div class="col-lg-4 my-padi">
         <div class="card">
           <div class="img">
             <div class="w-100 d-flex justify-content-center">
-              <img src="{{ .Site.BaseURL }}/assets/img/team/1.png" alt="Team" class="img-fluid " />
+              <img src="{{ .Site.BaseURL }}/{{ .image }}" alt="Team" class="img-fluid " />
             </div>
             <div class="border-box">
-              <h4>Lead Neurodata Scientist</h4>
+              <h4>{{ .post }}</h4>
               <div class="text">
-                <h3>Luiz Tauffer</h3>
+                <h3>{{ .name }}</h3>
                 <p>
-                  Luiz has a BSc in Electrical Engineering, MSc in Biomedical
-                  Engineering and am currently at the late stages of his PhD in
-                  Computational Neuroscience.
+                  {{ .bio }}
                 </p>
 
                 <p class="d-none" id="content-1">
-                  Luiz has a BSc in Electrical Engineering, MSc in Biomedical
-                  Engineering and am currently at the late stages of his PhD in
-                  Computational Neuroscience.
+                  {{ .more_bio }}
                 </p>
                 <a href="#" class="read-more" data-target="content-1">Read More</a>
               </div>
 
               <div class="social">
                 <ul>
+                  {{ with .github }}
                   <li>
-                    <a href="/"><i class="bi bi-github"></i></a>
+                    <a href="{{ . }}"><i class="bi bi-github"></i></a>
                   </li>
+                  {{ end }}
+                  {{ with .website }}
                   <li>
-                    <a href="/"><i class="bi bi-globe"></i></a>
+                    <a href="{{ . }}"><i class="bi bi-globe"></i></a>
                   </li>
+                  {{ end }}
+                  {{ with .facebook }}
                   <li>
-                    <a href="/"><i class="bi bi-facebook"></i></a>
+                    <a href="{{ . }}"><i class="bi bi-facebook"></i></a>
                   </li>
+                  {{ end }}
+                  {{ with .twitter }}
                   <li>
-                    <a href="/"><i class="bi bi-twitter-x"></i></a>
+                    <a href="{{ . }}"><i class="bi bi-twitter-x"></i></a>
                   </li>
+                  {{ end }}
+                  {{ with .linkedin }}
                   <li>
-                    <a href="/"><i class="bi bi-linkedin"></i></a>
+                    <a href="{{ . }}"><i class="bi bi-linkedin"></i></a>
                   </li>
+                  {{ end }}
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="col-lg-4 my-padi">
-        <div class="card">
-          <div class="img">
-            <div class="w-100 d-flex justify-content-center">
-              <img src="{{ .Site.BaseURL }}/assets/img/team/2.png" alt="Team" class="img-fluid" />
-            </div>
-            <div class="border-box">
-              <h4>Lead Neurodata Scientist</h4>
-              <div class="text">
-                <h3>Luiz Tauffer</h3>
-                <p>
-                  Luiz has a BSc in Electrical Engineering, MSc in Biomedical
-                  Engineering and am currently at the late stages of his PhD in
-                  Computational Neuroscience.
-                </p>
-  
-                <p class="d-none" id="content-2">
-                  Luiz has a BSc in Electrical Engineering, MSc in Biomedical
-                  Engineering and am currently at the late stages of his PhD in
-                  Computational Neuroscience.
-                </p>
-                <a href="#" class="read-more" data-target="content-2">Read More</a>
-              </div>
-  
-              <div class="social">
-                <ul>
-                  <li>
-                    <a href="/"><i class="bi bi-github"></i></a>
-                  </li>
-                  <li>
-                    <a href="/"><i class="bi bi-globe"></i></a>
-                  </li>
-                  <li>
-                    <a href="/"><i class="bi bi-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="/"><i class="bi bi-twitter-x"></i></a>
-                  </li>
-                  <li>
-                    <a href="/"><i class="bi bi-linkedin"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 my-padi">
-        <div class="card">
-          <div class="img">
-            <div class="w-100 d-flex justify-content-center">
-              <img src="{{ .Site.BaseURL }}/assets/img/team/1.png" alt="Team" class="img-fluid" />
-            </div>
-            <div class="border-box">
-              <h4>Lead Neurodata Scientist</h4>
-              <div class="text">
-                <h3>Luiz Tauffer</h3>
-                <p>
-                  Luiz has a BSc in Electrical Engineering, MSc in Biomedical
-                  Engineering and am currently at the late stages of his PhD in
-                  Computational Neuroscience.
-                </p>
-  
-                <p class="d-none" id="content-3">
-                  Luiz has a BSc in Electrical Engineering, MSc in Biomedical
-                  Engineering and am currently at the late stages of his PhD in
-                  Computational Neuroscience.
-                </p>
-                <a href="#" class="read-more" data-target="content-3">Read More</a>
-              </div>
-  
-              <div class="social">
-                <ul>
-                  <li>
-                    <a href="/"><i class="bi bi-github"></i></a>
-                  </li>
-                  <li>
-                    <a href="/"><i class="bi bi-globe"></i></a>
-                  </li>
-                  <li>
-                    <a href="/"><i class="bi bi-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="/"><i class="bi bi-twitter-x"></i></a>
-                  </li>
-                  <li>
-                    <a href="/"><i class="bi bi-linkedin"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      {{ end }}
     </div>
   </div>
 </section>
@@ -169,62 +82,11 @@
     </header>
 
     <div class="row">
+      {{ range .Site.Data.team.collaborators }}
       <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
+        <div class="card d-flex">{{ . }}</div>
       </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Garrett Flynn</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Luiz Tauffer</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
+      {{ end }}
     </div>
   </div>
 </section>
@@ -236,62 +98,11 @@
     </header>
 
     <div class="row">
+      {{ range .Site.Data.team.alumni }}
       <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
+        <div class="card d-flex">{{ . }}</div>
       </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Garrett Flynn</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Luiz Tauffer</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
-
-      <!---->
-      <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">Alessio Buccino</div>
-      </div>
+      {{ end }}
     </div>
   </div>
 </section>
@@ -301,12 +112,10 @@
   <div class="container bg">
     <div class="row justify-content-between">
       <div class="col-lg-6 col-md-7 p-5" ta-aos="fade-up" data-aos-delay="100">
-        <h2 class="my-padi">Job Openings</h2>
+        <h2 class="my-padi">{{ .Site.Data.team.job_openining_heading }}</h2>
         <br />
         <p class="my-padi">
-          We believe that the future of neuroscience will be driven by
-          collaboration between labs. Our mission is to develop channels of
-          communication and distribution of resources between labs to...
+          {{ .Site.Data.team.job_openining_paragraph }}
         </p>
 
         <div class="btn m-0 p-0 mt-5 my-padi">

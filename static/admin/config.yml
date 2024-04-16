@@ -104,3 +104,26 @@ collections:
         - { label: 'FAQ 4 Paragraph 2', name: 'faq_4_paragraph_2', widget: 'text' }
         - { label: 'FAQ 4 Paragraph 3', name: 'faq_4_paragraph_3', widget: 'text' }
         - { label: 'FAQ 4 Image', name: 'faq_4_image', widget: 'image' }
+
+      - file: "data/team.yml"
+        label: "Team"
+        name: "team"
+        fields:
+        - { label: 'Main Heading', name: 'main_heading', widget: 'string', default: 'Our Team' }
+        - { label: 'Current Team Card', name: 'current_team_card', widget: 'list', fields: [
+            { label: 'Image', name: 'image', widget: 'image' },
+            { label: 'Name', name: 'name', widget: 'string' },
+            { label: 'Post', name: 'post', widget: 'string' },
+            { label: 'Bio', name: 'bio', widget: 'text' },
+            { label: 'More Bio', name: 'more_bio', widget: 'text' },
+            { label: 'Github', name: 'github', widget: 'string' },
+            { label: 'Website', name: 'website', widget: 'string' },
+            { label: 'Facebook', name: 'facebook', widget: 'string' },
+            { label: 'Twitter', name: 'twitter', widget: 'string' },
+            { label: 'Linkedin', name: 'linkedin', widget: 'string' }
+            ]
+          }
+        - { label: 'Collaborators', name: 'collaborators', widget: 'list', default: [], required: false }
+        - { label: 'Alumni', name: 'alumni', widget: 'list', default: [], required: false }
+        - { label: 'Job Opening Heading', name: 'job_openining_heading', widget: 'string', default: 'Job Openings' }
+        - { label: 'Job Opening Paragraph', name: 'job_openining_paragraph', widget: 'text' }
