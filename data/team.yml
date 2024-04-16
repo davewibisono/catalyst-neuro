@@ -1,37 +1,45 @@
-main_heading: "Our Team"
+main_heading: Our Team
 current_team_card:
-  - image: assets/img/team-1.png
-    name: Luiz Tauffer
-    post: Lead Neurodata Scientist
-    bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and am currently at the late stages of his PhD in Computational Neuroscience.
-    more_bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and am currently at the late stages of his PhD in Computational Neuroscience.
+  - post: Lead Neurodata Scientist
     github: /
-    website: /
     facebook: /
+    bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
+      am currently at the late stages of his PhD in Computational Neuroscience.
+    name: Luiz Tauffer
     twitter: /
+    website: /
+    image: assets/img/team-1.png
     linkedin: /
-  - image: assets/img/team-2.png
-    name: Luiz Tauffer
-    post: Lead Neurodata Scientist
-    bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and am currently at the late stages of his PhD in Computational Neuroscience.
-    more_bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and am currently at the late stages of his PhD in Computational Neuroscience.
+    more_bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical
+      Engineering and am currently at the late stages of his PhD in
+      Computational Neuroscience.
+  - post: Lead Neurodata Scientist
     github: /
-    website: /
     facebook: /
+    bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
+      am currently at the late stages of his PhD in Computational Neuroscience.
+    name: Luiz Tauffer
     twitter: /
+    website: /
+    image: assets/img/team-2.png
     linkedin: /
-  - image: assets/img/team-1.png
-    name: Luiz Tauffer
-    post: Lead Neurodata Scientist
-    bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and am currently at the late stages of his PhD in Computational Neuroscience.
-    more_bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and am currently at the late stages of his PhD in Computational Neuroscience.
+    more_bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical
+      Engineering and am currently at the late stages of his PhD in
+      Computational Neuroscience.
+  - post: Lead Neurodata Scientist
     github: /
-    website: /
     facebook: /
+    bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
+      am currently at the late stages of his PhD in Computational Neuroscience.
+    name: Luiz Tauffer
     twitter: /
-    linkedin: / 
-
-collaborators: 
+    website: /
+    image: assets/img/team-1.png
+    linkedin: /
+    more_bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical
+      Engineering and am currently at the late stages of his PhD in
+      Computational Neuroscience.
+collaborators:
   - Alessio Buccino
   - Alessio Buccino
   - Alessio Buccino
@@ -44,8 +52,7 @@ collaborators:
   - Alessio Buccino
   - Alessio Buccino
   - Alessio Buccino
-
-alumni: 
+alumni:
   - Alessio Buccino
   - Alessio Buccino
   - Alessio Buccino
@@ -58,6 +65,7 @@ alumni:
   - Alessio Buccino
   - Alessio Buccino
   - Alessio Buccino
-
 job_openining_heading: Job Openings
-job_openining_paragraph: We believe that the future of neuroscience will be driven by collaboration between labs. Our mission is to develop channels of communication and distribution of resources between labs to... 
+job_openining_paragraph: We believe that the future of neuroscience will be
+  driven by collaboration between labs. Our mission is to develop channels of
+  communication and distribution of resources between labs to...
