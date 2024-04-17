@@ -59,19 +59,21 @@
           data-aos="fade-up"
           data-aos-delay="100"
         >
+
+        {{ range .Site.Data.software.faqs }}
           <div class="accordion-item">
             <h3 class="accordion-header">
               <button
                 class="accordion-button collapsed"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#faq-content-1"
+                data-bs-target="#faq-content-{{ .faq_number }}"
               >
-              {{ .Site.Data.software.dropdown_1 }}
+              {{ .name }}
               </button>
             </h3>
             <div
-              id="faq-content-1"
+              id="faq-content-{{ .faq_number }}"
               class="accordion-collapse collapse"
               data-bs-parent="#faqlist"
             >
@@ -79,25 +81,23 @@
                 <div class="row mt-5">
                   <div class="col-lg-6 d-block d-lg-none mb-5">
                     <img
-                      src="{{ .Site.BaseURL }}{{ .Site.Data.software.faq_1_image }}"
+                      src="{{ .Site.BaseURL }}/{{ .image }}"
                       alt=""
                       class="img-fluid"
                     />
                   </div>
                   <div class="col-lg-6">
-                    <h3>{{ .Site.Data.software.faq_1_heading }}</h3>
-                    <p>
-                      {{ .Site.Data.software.faq_1_paragraph_1 }}
-                      <br /><br />
-                      {{ .Site.Data.software.faq_1_paragraph_2 }}
-                      <br /><br />
-                      {{ .Site.Data.software.faq_1_paragraph_3 }}
+                    <h3>{{ .heading }}</h3>
+                    {{ range .paragraph}}
+                    <p class="pb-2">
+                      {{ . }}
                     </p>
+                    {{ end }}
                   </div>
 
                   <div class="col-lg-6 d-none d-lg-block">
                     <img
-                      src="{{ .Site.BaseURL }}{{ .Site.Data.software.faq_1_image }}"
+                      src="{{ .Site.BaseURL }}/{{ .image }}"
                       alt=""
                       class="img-fluid"
                     />
@@ -106,153 +106,7 @@
               </div>
             </div>
           </div>
-          <!-- # Faq item-->
-
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq-content-2"
-              >
-              {{ .Site.Data.software.dropdown_2 }}
-              </button>
-            </h3>
-            <div
-              id="faq-content-2"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqlist"
-            >
-              <div class="accordion-body">
-                <div class="row mt-5">
-                  <div class="col-lg-6 d-block d-lg-none mb-5">
-                    <img
-                      src="{{ .Site.BaseURL }}{{ .Site.Data.software.faq_2_image }}"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="col-lg-6">
-                    <h3>{{ .Site.Data.software.faq_2_heading }}</h3>
-                    <p>
-                      {{ .Site.Data.software.faq_2_paragraph_1 }}
-                      <br /><br />
-                      {{ .Site.Data.software.faq_2_paragraph_2 }}
-                      <br /><br />
-                      {{ .Site.Data.software.faq_2_paragraph_3 }}
-                    </p>
-                  </div>
-
-                  <div class="col-lg-6 d-none d-lg-block">
-                    <img
-                      src="{{ .Site.BaseURL }}{{ .Site.Data.software.faq_2_image }}"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- # Faq item-->
-
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq-content-3"
-              >
-              {{ .Site.Data.software.dropdown_3 }}
-              </button>
-            </h3>
-            <div
-              id="faq-content-3"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqlist"
-            >
-              <div class="accordion-body">
-                <div class="row mt-5">
-                  <div class="col-lg-6 d-block d-lg-none mb-5">
-                    <img
-                      src="{{ .Site.BaseURL }}{{ .Site.Data.software.faq_3_image }}"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="col-lg-6">
-                    <h3>{{ .Site.Data.software.faq_3_heading }}</h3>
-                    <p>
-                      {{ .Site.Data.software.faq_3_paragraph_1 }}
-                      <br /><br />
-                      {{ .Site.Data.software.faq_3_paragraph_2 }}
-                      <br /><br />
-                      {{ .Site.Data.software.faq_3_paragraph_3 }}
-                    </p>
-                  </div>
-
-                  <div class="col-lg-6 d-none d-lg-block">
-                    <img
-                      src="{{ .Site.BaseURL }}{{ .Site.Data.software.faq_3_image }}"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- # Faq item-->
-
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq-content-4"
-              >
-              {{ .Site.Data.software.dropdown_4 }}
-              </button>
-            </h3>
-            <div
-              id="faq-content-4"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqlist"
-            >
-              <div class="accordion-body">
-                <div class="row mt-5">
-                  <div class="col-lg-6 d-block d-lg-none mb-5">
-                    <img
-                      src="{{ .Site.BaseURL }}{{ .Site.Data.software.faq_4_image }}"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="col-lg-6">
-                    <h3>{{ .Site.Data.software.faq_4_heading }}</h3>
-                    <p>
-                      {{ .Site.Data.software.faq_4_paragraph_1 }}
-                      <br /><br />
-                      {{ .Site.Data.software.faq_4_paragraph_2 }}
-                      <br /><br />
-                      {{ .Site.Data.software.faq_4_paragraph_3 }}
-                    </p>
-                  </div>
-
-                  <div class="col-lg-6 d-none d-lg-block">
-                    <img
-                      src="{{ .Site.BaseURL }}{{ .Site.Data.software.faq_4_image }}"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {{ end }}
           <!-- # Faq item-->
         </div>
       </div>
@@ -268,40 +122,14 @@
       <p>We are major contribution to the following repositories:</p>
     </header>
     <div class="row justify-content-center mt-5">
+      {{ range .Site.Data.software.repositories }}
       <div class="col-lg-2 d-flex align-items-stretch">
         <div class="card">
           <i class="bi bi-github"></i>
-          <a href="/" class="stretched-link">SpikeExtractors</a>
+          <a href="{{ .url }}" class="stretched-link">{{ .name }}</a>
         </div>
       </div>
-
-      <div class="col-lg-2 d-flex align-items-stretch">
-        <div class="card">
-          <i class="bi bi-github"></i>
-          <a href="/" class="stretched-link">NWB schema</a>
-        </div>
-      </div>
-
-      <div class="col-lg-2 d-flex align-items-stretch">
-        <div class="card">
-          <i class="bi bi-github"></i>
-          <a href="" class="stretched-link">PyNWB</a>
-        </div>
-      </div>
-
-      <div class="col-lg-2 d-flex align-items-stretch">
-        <div class="card">
-          <i class="bi bi-github"></i>
-          <a href="" class="stretched-link">MatNWB</a>
-        </div>
-      </div>
-
-      <div class="col-lg-2 d-flex align-items-stretch">
-        <div class="card">
-          <i class="bi bi-github"></i>
-          <a href="" class="stretched-link">HDMF</a>
-        </div>
-      </div>
+      {{ end }}
     </div>
   </div>
 </section>
