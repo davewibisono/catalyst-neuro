@@ -1,7 +1,6 @@
 main_heading: Software Solutions
 card_image: assets/img/software-solution.png
 card_paragraph: CatalystNeuro develops software solutions across the data pipeline aimed to help neuroscientists focus on the science and accelerate their discovery process immediately. We release and support packages for data homogenization, visualization, analysis, and lab-wide records. These libraries are developed by a team that focuses specifically on neural data and good software practices. Our projects are packaged, documented, and tested for robustness and ease of use. Everything we build is released as it is developed under a permissive license. We commonly work with labs to customize these software solutions to the specific needs of the lab, interfacing our platforms with their data formats and analysis packages. 
-dropdown_1: 1. NWB GUIDE
 faqs:
   - name: 1. NWB GUIDE
     faq_number: 1

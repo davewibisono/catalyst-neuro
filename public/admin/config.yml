@@ -81,7 +81,6 @@ collections:
         - { label: 'Main Heading', name: 'main_heading', widget: 'string', default: 'Software Solutions' }
         - { label: 'Card Image', name: 'card_image', widget: 'image', default: 'assets/img/software-solution.png' }
         - { label: 'Card Paragraph', name: 'card_paragraph', widget: 'text', default: 'Please put the paragraph for this card in the CMS' }
-        - { label: 'Dropdown 1', name: 'dropdown_1', widget: 'string', default: '1. NWB GUIDE' }
         - { label: 'FAQs', name: 'faqs', widget: 'list', field: { label: 'FAQ', name: 'faq', widget: 'object', fields: [
             { label: 'Name', name: 'name', widget: 'string' },
             { label: 'FAQ Number', name: 'faq_number', widget: 'number' },
