@@ -5,7 +5,7 @@ sub_title: Collaboration with - Columbia University
 image: /assets/img/portfolio/5.png
 id: dataEngineering
 layout: portfolio
-type: featured
+type: featured-entery
 weight: 3
 ---
 

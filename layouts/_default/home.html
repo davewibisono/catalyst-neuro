@@ -102,7 +102,7 @@
             </div>
           </div>
           <div class="swiper-wrapper">
-            {{ range where .Site.RegularPages ".Params.type" "featured" }}
+            {{ range where .Site.RegularPages ".Params.type" "featured-entery" }}
             {{ if eq .Params.layout "portfolio" }}
             <div class="swiper-slide">
               <div class="pt-md-0 pt-lg-5 slide">
@@ -133,8 +133,8 @@
     </header>
     <div class="row mt-5 my-padi">
       {{ range where .Site.RegularPages "Type" "feature" }}
-      <div class="col-lg-6 featured-blogs p-5 mb-3">
-        <a href="" class="tag">Featured</a>
+      <div class="col-lg-6 featured-blogs p-5 mb-3" style="background-image: url('{{ .Params.image }}');">
+        <p class="tag">Featured</p>
         <a href="{{.Permalink}}">
           <h2>{{.Title}}</h2>
         </a>

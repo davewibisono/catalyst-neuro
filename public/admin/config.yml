@@ -38,6 +38,7 @@ collections:
       - { label: 'ID', name: 'id', widget: 'string' }
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'portfolio' }
       - { label: 'Weight', name: 'weight', widget: 'number' }
+      - { label: 'Type', name: 'type', widget: 'select', options: ['featured-entery', 'other'], default: 'other' }
 
   - name: "pages"
     label: "Pages"
@@ -127,3 +128,23 @@ collections:
         - { label: 'Alumni', name: 'alumni', widget: 'list', default: [], required: false }
         - { label: 'Job Opening Heading', name: 'job_openining_heading', widget: 'string', default: 'Job Openings' }
         - { label: 'Job Opening Paragraph', name: 'job_openining_paragraph', widget: 'text' }
+
+      - file: "data/work.yml"
+        label: "Work with us"
+        name: "work"
+        fields:
+        - { label: 'Main Heading', name: 'main_heading', widget: 'string', default: 'Job Openings' }
+        - { label: 'Card Heading', name: 'card_heading', widget: 'string', default: 'OUR CULTURE' }
+        - { label: 'Card Paragraph', name: 'card_paragraph', widget: 'text', default: 'Please write paragraph for this card in CMS' }
+        - { label: 'Card Image', name: 'card_image', widget: 'image', default: 'assets/img/culture.png' }
+        - { label: 'New Job', name: 'new_job', widget: 'list', fields: [
+            { label: 'Post', name: 'post', widget: 'string' },
+            { label: 'Date', name: 'date', widget: 'string' },
+            { label: 'Type', name: 'type', widget: 'string' },
+            { label: 'Job Number', name: 'job_number', widget: 'number' },
+            { label: 'Work', name: 'work', widget: 'string' },
+            { label: 'Summary', name: 'summary', widget: 'text' },
+            { label: 'Essential Functions', name: 'essential_functions', widget: 'list', field: { widget: 'string', name: 'function' } },
+            { label: 'Requirements', name: 'requirements', widget: 'list', field: { widget: 'string', name: 'requirement' } }
+          ]
+        }
