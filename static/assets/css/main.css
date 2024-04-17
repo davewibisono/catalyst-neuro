@@ -165,7 +165,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   background-color: #fff;
-  padding: 25px 0 !important;
+  padding: 0 !important;
   transition: all 0.5s;
   z-index: 997;
 }
@@ -2119,9 +2119,6 @@ article blockquote::before {
     padding: 10px;
     display: flex;
     justify-content: center;
-  }
-  .header {
-    padding: 25px 0;
   }
   .ss .search-form input {
     width: 90%;
