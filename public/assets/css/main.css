@@ -175,12 +175,6 @@ h6 {
   margin-right: 6px;
 }
 
-@media (max-width: 992px) {
-  .header {
-    padding: 25px 0 !important;
-  }
-}
-
 @media (max-width: 1200px) {
   .header .logo {
     order: 1;
@@ -194,6 +188,10 @@ h6 {
 
   .header .navmenu {
     order: 3;
+  }
+
+  .header {
+    padding: 25px 0 !important;
   }
 }
 
