@@ -175,6 +175,12 @@ h6 {
   margin-right: 6px;
 }
 
+@media (max-width: 768px) {
+  .header {
+    padding: 25px 0 !important;
+  }
+}
+
 @media (max-width: 1200px) {
   .header .logo {
     order: 1;
