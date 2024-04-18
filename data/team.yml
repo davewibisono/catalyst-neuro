@@ -39,6 +39,20 @@ current_team_card:
     more_bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical
       Engineering and am currently at the late stages of his PhD in
       Computational Neuroscience.
+  - post: Lead Neurodata Scientist
+    github: "#"
+    facebook: "#"
+    bio: Helen has a BSc in Electrical Engineering, MSc in Biomedical Engineering
+      and am currently at the late stages of his PhD in Computational
+      Neuroscience.
+    name: Helen
+    twitter: "#"
+    website: "#"
+    image: assets/img/team-3.png
+    linkedin: "#"
+    more_bio: Helen has a BSc in Electrical Engineering, MSc in Biomedical
+      Engineering and am currently at the late stages of his PhD in
+      Computational Neuroscience.
 collaborators:
   - Alessio Buccino
   - Alessio Buccino
