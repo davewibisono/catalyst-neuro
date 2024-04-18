@@ -1,7 +1,7 @@
 ---
 title: Axona Data Processing Columbia University
 tag_bar: Role - NWB specialist and developer
-sub_title: Collaboration with - Columbia University
+sub_title: Collaboration with - Columbia Uni
 description: The CatalystNeuro team worked with Dr. Hussaini and his lab to
   utilize a state-of-the-art preprocessing workflow on electrophysiological data
   collected as part of their research on Alzheimer’s Disease. Data was being
