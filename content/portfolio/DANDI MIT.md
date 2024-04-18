@@ -2,7 +2,6 @@
 title: DANDI MIT
 tag_bar: Role - NWB specialist and developer
 sub_title: Collaboration with - Massachusetts Institute of Technology
-description: Collaboration with - Massachusetts Institute of Technology
 image: /assets/img/portfolio/5.png
 id: dandi
 layout: portfolio
