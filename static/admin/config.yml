@@ -94,12 +94,12 @@ collections:
             widget: "list"
             fields:
             - { name: "paragraph_item", label: "paragraph_item", widget: "string" }
-          - name: "repositories"
-            label: "Repositories"
-            widget: "list"
-            fields:
-            - { name: "name", label: "Name", widget: "string" }
-            - { name: "url", label: "URL", widget: "string" }
+        - name: "repositories"
+          label: "Repositories"
+          widget: "list"
+          fields:
+          - { name: "name", label: "Name", widget: "string" }
+          - { name: "url", label: "URL", widget: "string" }
 
       - file: "data/team.yml"
         label: "Team"
