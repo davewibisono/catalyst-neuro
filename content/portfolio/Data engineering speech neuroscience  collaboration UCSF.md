@@ -2,11 +2,11 @@
 title: Data engineering speech neuroscience  collaboration UCSF
 tag_bar: Role - NWB specialist and developer
 sub_title: Collaboration with - Columbia University
-image: /assets/img/portfolio/5.png
+image: assets/img/portfolio-5.png
 id: dataEngineering
 layout: portfolio
-type: featured-entery
 weight: 3
+type: featured-entery
 ---
 
 We worked with the labs of Dr. Edward Chang, Dr. Nitin Tandon, and Dr. Mark Richardson to use NWB 2.0 as a foundation for standardizing ECoG data. Through this effort we have restructured internal tools to work with the NWB format, and have publicly released high density ECoG recordings during speech on DANDI here . Through this project, we built:
