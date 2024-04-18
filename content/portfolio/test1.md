@@ -6,6 +6,6 @@ description: Desscription1
 image: assets/img/portfolio-3.png
 id: Test1
 layout: portfolio
-weight: 1
+weight: 5
 type: featured-entery
 ---
