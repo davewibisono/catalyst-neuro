@@ -78,24 +78,30 @@ collections:
         label: "Software"
         name: "software"
         fields:
-        - { label: 'Main Heading', name: 'main_heading', widget: 'string', default: 'Software Solutions' }
-        - { label: 'Card Image', name: 'card_image', widget: 'image', default: 'assets/img/software-solution.png' }
-        - { label: 'Card Paragraph', name: 'card_paragraph', widget: 'text', default: 'Please put the paragraph for this card in the CMS' }
-        - { label: 'FAQs', name: 'faqs', widget: 'list', field: { label: 'FAQ', name: 'faq', widget: 'object', fields: [
-            { label: 'Name', name: 'name', widget: 'string' },
-            { label: 'FAQ Number', name: 'faq_number', widget: 'number' },
-            { label: 'Image', name: 'image', widget: 'image' },
-            { label: 'Heading', name: 'heading', widget: 'string' },
-            { label: 'Paragraph', name: 'paragraph', widget: 'list' }
-            ]
-          }
-        }
-        - { label: 'Repositories', name: 'repositories', widget: 'list', field: { label: 'Repository', name: 'repository', widget: 'object', fields: [
-            { label: 'Name', name: 'name', widget: 'string' },
-            { label: 'URL', name: 'url', widget: 'string' }
-            ]
-          }
-        }
+        - { name: "main_heading", label: "Main Heading", widget: "string" }
+        - { name: "card_image", label: "Card Image", widget: "image" }
+        - { name: "card_paragraph", label: "Card Paragraph", widget: "markdown" }
+        - name: "faqs"
+          label: "FAQs"
+          widget: "list"
+          fields:
+          - { name: "name", label: "Name", widget: "string" }
+          - { name: "faq_number", label: "FAQ Number", widget: "number" }
+          - { name: "image", label: "Image", widget: "image" }
+          - { name: "heading", label: "Heading", widget: "string" }
+          - name: "paragraph"
+            label: "Paragraph"
+            widget: "list"
+            field:
+              name: "paragraph_item"
+              label: "Paragraph Item"
+              widget: "string"
+          - name: "repositories"
+            label: "Repositories"
+            widget: "list"
+            fields:
+            - { name: "name", label: "Name", widget: "string" }
+            - { name: "url", label: "URL", widget: "string" }
 
       - file: "data/team.yml"
         label: "Team"
