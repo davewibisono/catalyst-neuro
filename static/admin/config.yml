@@ -86,16 +86,17 @@ collections:
             { label: 'FAQ Number', name: 'faq_number', widget: 'number' },
             { label: 'Image', name: 'image', widget: 'image' },
             { label: 'Heading', name: 'heading', widget: 'string' },
-            { label: 'Paragraph', name: 'paragraph', widget: 'list', field: { widget: 'text', name: 'name' } }
-            ]
+            { label: 'Paragraph', name: 'paragraph', widget: 'list', field: 'text' }  # corrected field definition
+          ]
           }
         }
         - { label: 'Repositories', name: 'repositories', widget: 'list', field: { label: 'Repository', name: 'repository', widget: 'object', fields: [
-            { label: 'Name', name: 'name', widget: 'string' },
-            { label: 'URL', name: 'url', widget: 'string' }
+              { label: 'Name', name: 'name', widget: 'string' },
+              { label: 'URL', name: 'url', widget: 'string' }
             ]
           }
         }
+
 
       - file: "data/team.yml"
         label: "Team"
