@@ -88,9 +88,9 @@
                   </div>
                   <div class="col-lg-6">
                     <h3>{{ .heading }}</h3>
-                    {{ range .paragraph}}
+                    {{ range .details }}
                     <p class="pb-2">
-                      {{ . }}
+                      {{ .paragraph }}
                     </p>
                     {{ end }}
                   </div>

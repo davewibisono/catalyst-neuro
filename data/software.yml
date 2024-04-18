@@ -6,19 +6,19 @@ faqs:
     faq_number: 1
     image: assets/img/nwb.png
     heading: NWB Graphical User Interface for Data Entry
-    paragraph: 
-      - NWB GUIDE is a desktop app that provides a no-code user interface for converting neurophysiology data to NWB.
-      - Aenean vestibulum molestie purus, eget rutrum ligula euismod quis. Duis ante diam, rutrum non quam vitae, sodales semper metus. Duis tempus velit mi. Sed et est enim. Nulla ex elit, ultricies non est a, dignissim cursus dui. Sed sed gravida sapien. Curabitur sed nulla eleifend, blandit metus nec, ullamcorper erat.
-      - Phasellus sagittis, arcu eget eleifend tempor, magna augue viverra libero, fringilla tempor lacus eros nec justo. Sed nec sollicitudin ante, accumsan hendrerit ipsum. Praesent tincidunt, nisl et convallis luctus, ex enim tristique justo.
+    details: 
+      - paragraph: NWB GUIDE is a desktop app that provides a no-code user interface for converting neurophysiology data to NWB.
+      - paragraph: Aenean vestibulum molestie purus, eget rutrum ligula euismod quis. Duis ante diam, rutrum non quam vitae, sodales semper metus. Duis tempus velit mi. Sed et est enim. Nulla ex elit, ultricies non est a, dignissim cursus dui. Sed sed gravida sapien. Curabitur sed nulla eleifend, blandit metus nec, ullamcorper erat.
+      - paragraph: Phasellus sagittis, arcu eget eleifend tempor, magna augue viverra libero, fringilla tempor lacus eros nec justo. Sed nec sollicitudin ante, accumsan hendrerit ipsum. Praesent tincidunt, nisl et convallis luctus, ex enim tristique justo.
 
   - name: 1. NWB GUIDE
     faq_number: 2
     image: assets/img/nwb.png
     heading: NWB Graphical User Interface for Data Entry
-    paragraph: 
-      - NWB GUIDE is a desktop app that provides a no-code user interface for converting neurophysiology data to NWB.
-      - Aenean vestibulum molestie purus, eget rutrum ligula euismod quis. Duis ante diam, rutrum non quam vitae, sodales semper metus. Duis tempus velit mi. Sed et est enim. Nulla ex elit, ultricies non est a, dignissim cursus dui. Sed sed gravida sapien. Curabitur sed nulla eleifend, blandit metus nec, ullamcorper erat.
-      - Phasellus sagittis, arcu eget eleifend tempor, magna augue viverra libero, fringilla tempor lacus eros nec justo. Sed nec sollicitudin ante, accumsan hendrerit ipsum. Praesent tincidunt, nisl et convallis luctus, ex enim tristique justo.
+    details: 
+      - paragraph: NWB GUIDE is a desktop app that provides a no-code user interface for converting neurophysiology data to NWB.
+      - paragraph: Aenean vestibulum molestie purus, eget rutrum ligula euismod quis. Duis ante diam, rutrum non quam vitae, sodales semper metus. Duis tempus velit mi. Sed et est enim. Nulla ex elit, ultricies non est a, dignissim cursus dui. Sed sed gravida sapien. Curabitur sed nulla eleifend, blandit metus nec, ullamcorper erat.
+      - paragraph: Phasellus sagittis, arcu eget eleifend tempor, magna augue viverra libero, fringilla tempor lacus eros nec justo. Sed nec sollicitudin ante, accumsan hendrerit ipsum. Praesent tincidunt, nisl et convallis luctus, ex enim tristique justo.
 repositories:
   - name: SpikeExtractors
     url: /
