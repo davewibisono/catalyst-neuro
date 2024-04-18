@@ -2,7 +2,7 @@
 title: Axona Data Processing Columbia University
 tag_bar: Role - NWB specialist and developer
 sub_title: Collaboration with - Columbia University
-image: /assets/img/portfolio/6.jpeg
+image: assets/img/portfolio-6.jpeg
 id: axona
 layout: portfolio
 weight: 1
