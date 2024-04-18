@@ -11,7 +11,7 @@ description: The CatalystNeuro team worked with Dr. Hussaini and his lab to
   using spike train metrics, consensus across sorters, and finally manual
   curation. They wanted the output of this processing system to be capable of
   writing the results in TINT format. We built this system in SpikeInterface, a
-  package designed to build modular spike sorting pipelines.
+  package designed to build modular spike sorting pipelines..
 image: /assets/img/portfolio/6.jpeg
 id: axona
 layout: portfolio
