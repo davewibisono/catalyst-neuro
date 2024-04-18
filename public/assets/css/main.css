@@ -1867,7 +1867,29 @@ article blockquote::before {
     margin-bottom: -40px;
   }
   .nav {
-    display: none;
+    position: relative;
+    top: 600px;
+    right: 50px;
+  }
+  .nav .swiper-button-prev i, .nav .swiper-button-next i {
+    padding: 15px 15px;
+  }
+  .nav .swiper-button-prev i {
+    margin-right: 5rem;
+  }
+  .nav .swiper-button-next .line {
+    margin-right: 65px;
+  }
+  .nav .swiper-button-prev .line-2 {
+    width: 180px;
+    height: 130px;
+    margin-right: 310px;
+    margin-top: 0;
+    margin-bottom: 125px;
+    border-radius: 0px 0px 0px 24px;
+    border: none;
+    border-bottom: 1px solid #ffff;
+    border-left: 1px solid #ffff;
   }
   .mySwiper .slide {
     padding: 1rem 1rem 4rem 1rem;
