@@ -92,7 +92,7 @@ collections:
           - name: "paragraph"
             label: "Paragraph"
             widget: "list"
-            field:
+            fields:
             - { name: "paragraph_item", label: "paragraph_item", widget: "string" }
           - name: "repositories"
             label: "Repositories"
