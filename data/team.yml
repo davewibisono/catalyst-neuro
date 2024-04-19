@@ -2,18 +2,18 @@ main_heading: Our Team
 current_team_card:
   - post: Founder
     github: https://github.com/bendichter
-    facebook: /
+    facebook: "#"
     bio: Ben Dichter is the founder of CatalystNeuro. He received his Ph.D. in
       Bioengineering from the UC Berkeley – UCSF Joint Program in
       Bioengineering, in Dr. Edward Chang’s lab. There he used
       electrocorticography (ECoG) to study the neural control of speech in
       humans.
     name: Ben Dichter
-    twitter: /
+    twitter: "#"
     card_number: 1
     website: https://bendichter.com/
     image: assets/img/profile-b.jpg
-    linkedin: /
+    linkedin: "#"
     more_bio: Much of this work focused on how we control the pitch of our voice
       when we speak and sing. He is now a data scientist consultant for
       neuroscience labs, focusing on building systems for sharing of data and
