@@ -1,19 +1,23 @@
 main_heading: Our Team
 current_team_card:
-  - post: Lead Neurodata Scientist
-    github: /
+  - post: Founder
+    github: https://github.com/bendichter
     facebook: /
-    bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
-      am currently at the late stages of his PhD in Computational Neuroscience.
-    name: Luiz Tauffer
+    bio: Ben Dichter is the founder of CatalystNeuro. He received his Ph.D. in
+      Bioengineering from the UC Berkeley – UCSF Joint Program in
+      Bioengineering, in Dr. Edward Chang’s lab. There he used
+      electrocorticography (ECoG) to study the neural control of speech in
+      humans.
+    name: Ben Dichter
     twitter: /
     card_number: 1
-    website: /
-    image: assets/img/team-1.png
+    website: https://bendichter.com/
+    image: assets/img/profile.jpeg
     linkedin: /
-    more_bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical
-      Engineering and am currently at the late stages of his PhD in
-      Computational Neuroscience.
+    more_bio: Much of this work focused on how we control the pitch of our voice
+      when we speak and sing. He is now a data scientist consultant for
+      neuroscience labs, focusing on building systems for sharing of data and
+      analyses.
   - post: Lead Neurodata Scientist
     github: /
     facebook: /
@@ -73,31 +77,10 @@ current_team_card:
       Engineering and am currently at the late stages of his PhD in
       Computational Neuroscience.
 collaborators:
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Benny Buccino
-  - Alen Buccino
-  - George Hogan
+  - Julia Sprenger
+  - Alessio Buccin
 alumni:
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
-  - Alessio Buccino
+  - Julia Sprenger
   - Alessio Buccino
 job_openining_heading: Job Openings
 job_openining_paragraph: We believe that the future of neuroscience will be
