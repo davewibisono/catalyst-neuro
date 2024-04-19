@@ -1,13 +1,13 @@
 main_heading: Our Team
 current_team_card:
   - post: Lead Neurodata Scientist
-    card_number: 1
     github: /
     facebook: /
     bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
       am currently at the late stages of his PhD in Computational Neuroscience.
     name: Luiz Tauffer
     twitter: /
+    card_number: 1
     website: /
     image: assets/img/team-1.png
     linkedin: /
@@ -15,13 +15,13 @@ current_team_card:
       Engineering and am currently at the late stages of his PhD in
       Computational Neuroscience.
   - post: Lead Neurodata Scientist
-    card_number: 2
     github: /
     facebook: /
     bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
       am currently at the late stages of his PhD in Computational Neuroscience.
     name: Luiz Tauffer
     twitter: /
+    card_number: 2
     website: /
     image: assets/img/team-2.png
     linkedin: /
@@ -29,13 +29,13 @@ current_team_card:
       Engineering and am currently at the late stages of his PhD in
       Computational Neuroscience.
   - post: Lead Neurodata Scientist
-    card_number: 3
     github: /
     facebook: /
     bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
       am currently at the late stages of his PhD in Computational Neuroscience.
     name: Luiz Tauffer
     twitter: /
+    card_number: 3
     website: /
     image: assets/img/team-1.png
     linkedin: /
@@ -43,7 +43,6 @@ current_team_card:
       Engineering and am currently at the late stages of his PhD in
       Computational Neuroscience.
   - post: Lead Neurodata Scientist
-    card_number: 4
     github: "#"
     facebook: "#"
     bio: Helen has a BSc in Electrical Engineering, MSc in Biomedical Engineering
@@ -51,10 +50,26 @@ current_team_card:
       Neuroscience.
     name: Helen
     twitter: "#"
+    card_number: 4
     website: "#"
     image: assets/img/team-3.png
     linkedin: "#"
     more_bio: Helen has a BSc in Electrical Engineering, MSc in Biomedical
+      Engineering and am currently at the late stages of his PhD in
+      Computational Neuroscience.
+  - post: Lead Neurodata Scientist
+    github: "#"
+    facebook: "#"
+    bio: Allen has a BSc in Electrical Engineering, MSc in Biomedical Engineering
+      and am currently at the late stages of his PhD in Computational
+      Neuroscience.
+    name: Ken Allen
+    twitter: "#"
+    card_number: 5
+    website: "#"
+    image: assets/img/team-2.png
+    linkedin: "#"
+    more_bio: Allen has a BSc in Electrical Engineering, MSc in Biomedical
       Engineering and am currently at the late stages of his PhD in
       Computational Neuroscience.
 collaborators:
