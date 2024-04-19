@@ -31,10 +31,13 @@
                   {{ .bio }}
                 </p>
 
-                <p class="d-none" id="content-{{ .card_number }}">
-                  {{ .more_bio }}
+                {{ $cardNumber := .card_number }}
+                {{ with .more_bio }}
+                <p class="d-none" id="content-{{ $cardNumber }}">
+                  {{ . }}
                 </p>
-                <a href="#" class="read-more" data-target="content-{{ .card_number }}">Read More</a>
+                <a href="#" class="read-more" data-target="content-{{ $cardNumber }}">Read More</a>
+                {{ end }}
               </div>
 
               {{ if or .github .website .facebook .twitter .linkedin }}

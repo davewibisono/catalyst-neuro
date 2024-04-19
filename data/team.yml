@@ -54,9 +54,9 @@ current_team_card:
     website: "#"
     image: assets/img/team-3.png
     linkedin: "#"
-    more_bio: Helen has a BSc in Electrical Engineering, MSc in Biomedical
-      Engineering and am currently at the late stages of his PhD in
-      Computational Neuroscience.
+#    more_bio: Helen has a BSc in Electrical Engineering, MSc in Biomedical
+#      Engineering and am currently at the late stages of his PhD in
+#      Computational Neuroscience.
   - post: Lead Neurodata Scientist
     github: "#"
     facebook: "#"
