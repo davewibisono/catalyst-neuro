@@ -13,14 +13,12 @@ current_team_card:
     card_number: 1
     website: https://bendichter.com/
     image: assets/img/profile-b.jpg
-    linkedin: "#"
     more_bio: Much of this work focused on how we control the pitch of our voice
       when we speak and sing. He is now a data scientist consultant for
       neuroscience labs, focusing on building systems for sharing of data and
       analyses.
   - post: Lead Neurodata Scientist
     github: /
-    facebook: /
     bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
       am currently at the late stages of his PhD in Computational Neuroscience.
     name: Luiz Tauffer
@@ -34,7 +32,6 @@ current_team_card:
       Computational Neuroscience.
   - post: Lead Neurodata Scientist
     github: /
-    facebook: /
     bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
       am currently at the late stages of his PhD in Computational Neuroscience.
     name: Luiz Tauffer
@@ -48,7 +45,6 @@ current_team_card:
       Computational Neuroscience.
   - post: Lead Neurodata Scientist
     github: "#"
-    facebook: "#"
     bio: Helen has a BSc in Electrical Engineering, MSc in Biomedical Engineering
       and am currently at the late stages of his PhD in Computational
       Neuroscience.

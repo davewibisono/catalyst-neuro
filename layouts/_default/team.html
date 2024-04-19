@@ -37,35 +37,27 @@
                 <a href="#" class="read-more" data-target="content-{{ .card_number }}">Read More</a>
               </div>
 
+              {{ if or .github .website .facebook .twitter .linkedin }}
               <div class="social">
                 <ul>
                   {{ with .github }}
-                  <li>
-                    <a href="{{ . }}"><i class="bi bi-github"></i></a>
-                  </li>
+                  <li><a href="{{ . }}"><i class="bi bi-github"></i></a></li>
                   {{ end }}
                   {{ with .website }}
-                  <li>
-                    <a href="{{ . }}"><i class="bi bi-globe"></i></a>
-                  </li>
+                  <li><a href="{{ . }}"><i class="bi bi-globe"></i></a></li>
                   {{ end }}
                   {{ with .facebook }}
-                  <li>
-                    <a href="{{ . }}"><i class="bi bi-facebook"></i></a>
-                  </li>
+                  <li><a href="{{ . }}"><i class="bi bi-facebook"></i></a></li>
                   {{ end }}
                   {{ with .twitter }}
-                  <li>
-                    <a href="{{ . }}"><i class="bi bi-twitter-x"></i></a>
-                  </li>
+                  <li><a href="{{ . }}"><i class="bi bi-twitter"></i></a></li>
                   {{ end }}
                   {{ with .linkedin }}
-                  <li>
-                    <a href="{{ . }}"><i class="bi bi-linkedin"></i></a>
-                  </li>
+                  <li><a href="{{ . }}"><i class="bi bi-linkedin"></i></a></li>
                   {{ end }}
                 </ul>
               </div>
+              {{ end }}
             </div>
           </div>
         </div>
@@ -74,6 +66,7 @@
     </div>
   </div>
 </section>
+
 
 <section class="collaborators bg">
   <div class="container">
