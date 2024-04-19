@@ -1,6 +1,7 @@
 main_heading: Our Team
 current_team_card:
   - post: Lead Neurodata Scientist
+    card_number: 1
     github: /
     facebook: /
     bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
@@ -14,6 +15,7 @@ current_team_card:
       Engineering and am currently at the late stages of his PhD in
       Computational Neuroscience.
   - post: Lead Neurodata Scientist
+    card_number: 2
     github: /
     facebook: /
     bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
@@ -27,6 +29,7 @@ current_team_card:
       Engineering and am currently at the late stages of his PhD in
       Computational Neuroscience.
   - post: Lead Neurodata Scientist
+    card_number: 3
     github: /
     facebook: /
     bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
@@ -40,6 +43,7 @@ current_team_card:
       Engineering and am currently at the late stages of his PhD in
       Computational Neuroscience.
   - post: Lead Neurodata Scientist
+    card_number: 4
     github: "#"
     facebook: "#"
     bio: Helen has a BSc in Electrical Engineering, MSc in Biomedical Engineering

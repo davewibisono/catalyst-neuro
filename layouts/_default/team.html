@@ -17,7 +17,7 @@
     <div class="row">
 
       {{ range .Site.Data.team.current_team_card }}
-      <div class="col-lg-4 my-padi">
+      <div class="col-lg-4 my-padi my-3">
         <div class="card">
           <div class="img">
             <div class="w-100 d-flex justify-content-center">
@@ -31,10 +31,10 @@
                   {{ .bio }}
                 </p>
 
-                <p class="d-none" id="content-1">
+                <p class="d-none" id="content-{{ .card_number }}">
                   {{ .more_bio }}
                 </p>
-                <a href="#" class="read-more" data-target="content-1">Read More</a>
+                <a href="#" class="read-more" data-target="content-{{ .card_number }}">Read More</a>
               </div>
 
               <div class="social">
