@@ -9,11 +9,11 @@ current_team_card:
       electrocorticography (ECoG) to study the neural control of speech in
       humans.
     name: Ben Dichter
-    twitter: ""
+    twitter: "#"
     card_number: 1
     website: "#"
     image: assets/img/profile-b.jpg
-    linkedin: ""
+    linkedin: "#"
     more_bio: Much of this work focused on how we control the pitch of our voice
       when we speak and sing. He is now a data scientist consultant for
       neuroscience labs, focusing on building systems for sharing of data and
