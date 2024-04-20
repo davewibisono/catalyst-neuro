@@ -84,7 +84,7 @@
     <div class="row">
       {{ range .Site.Data.team.collaborators }}
       <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">{{ . }}</div>
+        <div class="card d-flex">{{ .collaborator }}</div>
       </div>
       {{ end }}
     </div>
@@ -98,9 +98,9 @@
     </header>
 
     <div class="row">
-      {{ range .Site.Data.team.alumni }}
+      {{ range .Site.Data.team.alumnis }}
       <div class="col-md-3 d-flex my-padi">
-        <div class="card d-flex">{{ . }}</div>
+        <div class="card d-flex">{{ .alumni }}</div>
       </div>
       {{ end }}
     </div>

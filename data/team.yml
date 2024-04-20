@@ -77,11 +77,11 @@ current_team_card:
       Engineering and am currently at the late stages of his PhD in
       Computational Neuroscience.
 collaborators:
-  - Julia Sprenger
-  - Alessio Buccin
-alumni:
-  - Julia Sprenger
-  - Alessio Buccino
+  - collaborator: Julia Sprenger
+  - collaborator: Alessio Buccin
+alumnis:
+  - alumni: Julia Sprenger
+  - alumni: Alessio Buccino
 job_openining_heading: Job Openings
 job_openining_paragraph: We believe that the future of neuroscience will be
   driven by collaboration between labs. Our mission is to develop channels of

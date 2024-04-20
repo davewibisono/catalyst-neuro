@@ -120,8 +120,18 @@ collections:
             { label: 'Linkedin', name: 'linkedin', widget: 'string' }
             ]
           }
-        - { label: 'Collaborators', name: 'collaborators', widget: 'list', default: [], required: false }
-        - { label: 'Alumni', name: 'alumni', widget: 'list', default: [], required: false }
+        - label: 'Collaborators'
+          name: 'collaborators'
+          widget: 'list'
+          required: false
+          fields:
+            - { name: "collaborator", label: "Collaborator", widget: "string" }
+        - label: 'Alumnis'
+          name: 'alumnis'
+          widget: 'list'
+          required: false
+          fields:
+            - { name: "alumni", label: "Alumni", widget: "string" }
         - { label: 'Job Opening Heading', name: 'job_openining_heading', widget: 'string', default: 'Job Openings' }
         - { label: 'Job Opening Paragraph', name: 'job_openining_paragraph', widget: 'text' }
 
