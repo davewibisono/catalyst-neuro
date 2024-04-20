@@ -1134,7 +1134,7 @@ article blockquote::before {
   margin: 0px;
   padding: 0px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style: none;
 }
 .team .card .social ul li {
