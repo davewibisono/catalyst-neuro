@@ -19,19 +19,21 @@ current_team_card:
       neuroscience labs, focusing on building systems for sharing of data and
       analyses.
   - post: Lead Neurodata Scientist
-    github: /
+    github: https://github.com/luiztauffer
     facebook: /
     bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
-      am currently at the late stages of his PhD in Computational Neuroscience.
+      is currently at the late stages of his PhD in Computational Neuroscience.
     name: Luiz Tauffer
     twitter: /
     card_number: 2
-    website: /
-    image: assets/img/team-2.png
-    linkedin: ""
-    more_bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical
-      Engineering and am currently at the late stages of his PhD in
-      Computational Neuroscience.
+    website: https://luiztauffer.github.io/guacamole-data-science/
+    image: assets/img/luiz-tauffer.jpeg
+    linkedin: https://www.linkedin.com/in/luiz-tauffer
+    more_bio: His research work has been focused on mathematical modelling of
+      biological systems and behaviour, i.e. machine learning and data science
+      applied to the life sciences. He is currently expanding my work to cover
+      for more general machine learning / data science consultancy and software
+      development.
   - post: Lead Neurodata Scientist
     github: /
     facebook: /
