@@ -8,7 +8,7 @@ description: Explore highlights from CatalystNeuro's company retreat at Villa
 date: 2024-04-07
 categories:
   - Neuro
-image: assets/img/0v8a3671.jpg
+image: assets/img/whatsapp-image-2024-04-22-at-09.50.24.jpeg
 author: Ben Dichter
 type: featured
 ---
@@ -18,13 +18,11 @@ In the heart of the Costa Brava, just a stone's throw from the bustling city of 
 
 ### A Villa That Feels Like a Dream
 
-Villa Mas Sant Jordi, a splendid property with 15 air-conditioned bedrooms accommodating up to 40 guests, offered more than just a place to stay—it provided a luxurious experience amidst 30 hectares of private land. Surrounded by cultivated fields and lush forests, the villa featured a vast lawn with an XXL fenced pool, a soccer field, and multiple playgrounds, ensuring leisure was never far away.
-
-The villa itself, recently renovated and decorated in the traditional Catalan style, boasted large vaulted dining rooms, cozy living spaces, and modern amenities like high-speed Wi-Fi and 24-hour technical assistance. Each space within the villa was designed to offer comfort and inspire productivity, from the airy conservatories overlooking the countryside to the playroom filled with toys and books for moments of leisure.
+Villa Mas Sant Jordi, a splendid property.Surrounded by cultivated fields and lush forests, the villa featured a vast lawn with a pool, a soccer field, and multiple playgrounds, ensuring leisure was never far away. The villa itself, recently renovated and decorated in the traditional Catalan style, boasted large vaulted dining rooms, cozy living spaces, and modern amenities like high-speed Wi-Fi.
 
 ### A Week of Productive Collaboration and Cultural Immersion
 
-Our week at Villa Mas Sant Jordi was meticulously planned to balance hard work with enriching activities. Here’s a glimpse of our schedule:
+Our week at Villa Mas Sant Jordi was planned to balance hard work with enriching activities. Here’s a glimpse of our schedule:
 
 * **Sunday:** We kicked off with a warm welcome and a delicious Paella dinner, setting the tone for a week of collaboration and cultural exploration.
 * **Monday:** The day was filled with talks, group discussions, and a Spanish barbecue in the evening, allowing us to delve into professional growth while enjoying local flavors.

@@ -11,41 +11,32 @@ card_paragraph: CatalystNeuro develops software solutions across the data
   software solutions to the specific needs of the lab, interfacing our platforms
   with their data formats and analysis packages.
 faqs:
-  - name: 1. NWB GUIDE
+  - name: NWB GUIDE
     faq_number: 1
-    image: assets/img/nwb.png
+    image: assets/img/logo-guide-draft-transparent-tight.png
     heading: NWB Graphical User Interface for Data Entry
     details:
       - paragraph: NWB GUIDE is a desktop app that provides a no-code user interface for
           converting neurophysiology data to NWB.
-      - paragraph: Aenean vestibulum molestie purus, eget rutrum ligula euismod quis.
-          Duis ante diam, rutrum non quam vitae, sodales semper metus. Duis
-          tempus velit mi. Sed et est enim. Nulla ex elit, ultricies non est a,
-          dignissim cursus dui. Sed sed gravida sapien. Curabitur sed nulla
-          eleifend, blandit metus nec, ullamcorper erat.
-      - paragraph: Phasellus sagittis, arcu eget eleifend tempor, magna augue viverra
-          libero, fringilla tempor lacus eros nec justo. Sed nec sollicitudin
-          ante, accumsan hendrerit ipsum. Praesent tincidunt, nisl et convallis
-          luctus, ex enim tristique justo.
-    docs: "/"
-    github: "/"
-  - name: 2. NWB GUIDE
+    docs: https://nwb-guide.readthedocs.io/en/latest/
+    github: https://github.com/NeurodataWithoutBorders/nwb-guide
+  - name: NeuroConv
     faq_number: 2
-    image: assets/img/nwb.png
-    heading: "NWB Graphical User Interface for Data "
+    image: assets/img/neuroconv_logo.png
+    heading: NeuroConv
     details:
-      - paragraph: NWB GUIDE is a desktop app that provides a no-code user interface for
-          converting neurophysiology data to NWB.
-      - paragraph: Aenean vestibulum molestie purus, eget rutrum ligula euismod quis.
-          Duis ante diam, rutrum non quam vitae, sodales semper metus. Duis
-          tempus velit mi. Sed et est enim. Nulla ex elit, ultricies non est a,
-          dignissim cursus dui. Sed sed gravida sapien. Curabitur sed nulla
-          eleifend, blandit metus nec, ullamcorper erat.
-      - paragraph: Phasellus sagittis, arcu eget eleifend tempor, magna augue viverra
-          libero, fringilla tempor lacus eros nec justo. Sed nec sollicitudin
-          ante, accumsan hendrerit ipsum. Praesent tincidunt, nisl et convallis
-          luctus, ex enim tristique justo.
-    docs: "/"
+      - paragraph: Automatically convert neurophysiology data to NWB
+      - paragraph: "NeuroConv is a Python package for converting neurophysiology data in
+          a variety of proprietary formats to the Neurodata Without Borders
+          (NWB) standard.  Features:  Reads data from 40 popular neurophysiology
+          data formats and writes to NWB using best practices. Extracts relevant
+          metadata from each format. Handles large data volume by reading
+          datasets piece-wise. Minimizes the size of the NWB files by
+          automatically applying chunking and lossless compression. Supports
+          ensembles of multiple data streams, and supports common methods for
+          temporal alignment of streams."
+    docs: https://neuroconv.readthedocs.io/en/main/
+    github: https://github.com/catalystneuro/neuroconv/
 repositories:
   - name: SpikeExtractors
     url: /
