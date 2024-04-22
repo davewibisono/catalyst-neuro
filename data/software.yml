@@ -13,7 +13,7 @@ card_paragraph: CatalystNeuro develops software solutions across the data
 faqs:
   - name: 1. NWB GUIDE
     faq_number: 1
-    image: assets/img/nwb.png
+    image: assets/img/logo-guide-draft-transparent-tight.png
     heading: NWB Graphical User Interface for Data Entry
     details:
       - paragraph: NWB GUIDE is a desktop app that provides a no-code user interface for
