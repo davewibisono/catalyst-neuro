@@ -6,7 +6,7 @@ description: Learn about our involvement with outreach to African neuroscience
 date: 2024-04-22T17:14:20.012Z
 categories:
   - outreach
-image: assets/img/whatsapp-image-2023-11-30-at-16.08.53.jpeg
+image: assets/img/whatsapp-image-2024-02-13-at-11.00.00-2.jpeg
 author: Ben Dichter
 type: featured
 ---
