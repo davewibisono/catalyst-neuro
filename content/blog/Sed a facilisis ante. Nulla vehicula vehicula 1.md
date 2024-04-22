@@ -18,7 +18,7 @@ In the heart of the Costa Brava, just a stone's throw from the bustling city of 
 
 ### A Villa That Feels Like a Dream
 
-Villa Mas Sant Jordi, a splendid property.Surrounded by cultivated fields and lush forests, the villa featured a vast lawn with a pool, a soccer field, and multiple playgrounds, ensuring leisure was never far away. The villa itself, recently renovated and decorated in the traditional Catalan style, boasted large vaulted dining rooms, cozy living spaces, and modern amenities like high-speed Wi-Fi.
+Villa Mas Sant Jordi, a splendid property. Surrounded by cultivated fields and lush forests, the villa featured a vast lawn with a pool, a soccer field, and multiple playgrounds, ensuring leisure was never far away. The villa itself, recently renovated and decorated in the traditional Catalan style, boasted large vaulted dining rooms, cozy living spaces, and modern amenities like high-speed Wi-Fi.
 
 ### A Week of Productive Collaboration and Cultural Immersion
 
@@ -38,3 +38,7 @@ As we checked out on Friday, it was clear that our retreat at Villa Mas Sant Jor
 We're returning to our roles at CatalystNeuro recharged and more connected than ever, carrying with us not just the memories of a delightful retreat but also the seeds of new ideas and projects sparked in those five transformative days.
 
 Stay tuned for our gallery of retreat highlights—coming soon!
+
+
+
+![](assets/img/0v8a2131.jpg)
