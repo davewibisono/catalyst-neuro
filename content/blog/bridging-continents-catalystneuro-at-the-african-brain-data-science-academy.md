@@ -1,5 +1,5 @@
 ---
-title: "Bridging Continents: CatalystNeuro at the African Brain Data Science Academy"
+title: CatalystNeuro at the African Brain Data Science Academy
 layout: blog_single
 description: Learn about our involvement with outreach to African neuroscience
   students through the African Brain Data Network.
