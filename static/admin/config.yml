@@ -89,13 +89,13 @@ collections:
           - { name: "faq_number", label: "FAQ Number", widget: "number" }
           - { name: "image", label: "Image", widget: "image" }
           - { name: "heading", label: "Heading", widget: "string" }
+          - { name: "docs", label: "Documentation", widget: "string" }
+          - { name: "github", label: "Github", widget: "string" }
           - name: "details"
             label: "details"
             widget: "list"
             fields:
             - { name: "paragraph", label: "paragraph", widget: "string" }
-          - { name: "docs", label: "Documentation", widget: "string" }
-          - { name: "github", label: "Github", widget: "string" }
         - name: "repositories"
           label: "Repositories"
           widget: "list"
