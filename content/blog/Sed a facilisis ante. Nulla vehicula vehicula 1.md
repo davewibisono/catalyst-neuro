@@ -8,7 +8,7 @@ description: Explore highlights from CatalystNeuro's company retreat at Villa
 date: 2024-04-07
 categories:
   - Neuro
-image: assets/img/0v8a3671.jpg
+image: assets/img/whatsapp-image-2024-04-22-at-09.50.24.jpeg
 author: Ben Dichter
 type: featured
 ---
