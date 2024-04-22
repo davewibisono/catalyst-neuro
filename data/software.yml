@@ -35,8 +35,8 @@ faqs:
           automatically applying chunking and lossless compression. Supports
           ensembles of multiple data streams, and supports common methods for
           temporal alignment of streams."
-    docs: /
-    github: /
+    docs: https://neuroconv.readthedocs.io/en/main/
+    github: https://github.com/catalystneuro/neuroconv/
 repositories:
   - name: SpikeExtractors
     url: /
