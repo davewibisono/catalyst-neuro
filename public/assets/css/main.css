@@ -1175,6 +1175,17 @@ article blockquote::before {
   box-shadow: 0px 10px 30px 0px rgba(98, 105, 111, 0.1);
 }
 
+.work-with-us .video {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .work-with-us .video {
+      width: 50%;
+  }
+}
+
 /*--------------------------------------------------------------
 # Frequently Asked Questions Section
 --------------------------------------------------------------*/

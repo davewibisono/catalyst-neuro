@@ -28,4 +28,13 @@
 
   <!-- Template Main CSS File -->
   <link href="{{ .Site.BaseURL }}/assets/css/main.css" rel="stylesheet" />
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var newVideo = document.getElementById('newVideo');
+      newVideo.addEventListener('loadedmetadata', function () {
+        newVideo.currentTime = 1.5; // Set the desired start time in seconds
+      });
+    });
+  </script>
 </head>

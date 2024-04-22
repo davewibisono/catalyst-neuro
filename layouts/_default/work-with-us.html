@@ -31,6 +31,15 @@
   </div>
 </section>
 <!-- End Hero Section -->
+{{ with .Site.Data.work.video }}
+<section class="container work-with-us">
+  <div class="video" data-aos="fade-up">
+    <video controls start="2" id="newVideo" class="rounded-4">
+      <source src="/{{ . }}" type="video/mp4">
+  </video>
+  </div>
+</section>
+{{ end }}
 
 <!-- ======= Frequently Asked Questions Section ======= -->
 <section id="faq" class="faq">
