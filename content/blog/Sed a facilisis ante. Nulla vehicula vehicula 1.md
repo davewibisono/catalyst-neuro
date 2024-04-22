@@ -22,7 +22,7 @@ Villa Mas Sant Jordi, a splendid property.Surrounded by cultivated fields and lu
 
 ### A Week of Productive Collaboration and Cultural Immersion
 
-Our week at Villa Mas Sant Jordi was meticulously planned to balance hard work with enriching activities. Here’s a glimpse of our schedule:
+Our week at Villa Mas Sant Jordi was planned to balance hard work with enriching activities. Here’s a glimpse of our schedule:
 
 * **Sunday:** We kicked off with a warm welcome and a delicious Paella dinner, setting the tone for a week of collaboration and cultural exploration.
 * **Monday:** The day was filled with talks, group discussions, and a Spanish barbecue in the evening, allowing us to delve into professional growth while enjoying local flavors.
