@@ -18,7 +18,7 @@ In the heart of the Costa Brava, just a stone's throw from the bustling city of 
 
 ### A Villa That Feels Like a Dream
 
-Villa Mas Sant Jordi, a splendid property with 15 air-conditioned bedrooms accommodating up to 40 guests, offered more than just a place to stay—it provided a luxurious experience amidst 30 hectares of private land. Surrounded by cultivated fields and lush forests, the villa featured a vast lawn with an XXL fenced pool, a soccer field, and multiple playgrounds, ensuring leisure was never far away.
+Villa Mas Sant Jordi, a splendid property.Surrounded by cultivated fields and lush forests, the villa featured a vast lawn with an XXL fenced pool, a soccer field, and multiple playgrounds, ensuring leisure was never far away. 
 
 The villa itself, recently renovated and decorated in the traditional Catalan style, boasted large vaulted dining rooms, cozy living spaces, and modern amenities like high-speed Wi-Fi and 24-hour technical assistance. Each space within the villa was designed to offer comfort and inspire productivity, from the airy conservatories overlooking the countryside to the playroom filled with toys and books for moments of leisure.
 
