@@ -93,6 +93,20 @@
                       {{ .paragraph }}
                     </p>
                     {{ end }}
+                    <ul class="flex-row gap-3">
+                      {{ with .docs }}
+                      <li class="btn p-0"><a class="btn-getstarted" href="{{ . }}">
+                        Documentation
+                        <i class="bi bi-arrow-up-right text-light"> </i>
+                      </a></li>
+                      {{ end }}
+                      {{ with .github }}
+                      <li class="btn p-0"><a class="btn-getstarted" href="{{ . }}">
+                        Github
+                        <i class="bi bi-arrow-up-right text-light"> </i>
+                      </a></li>
+                      {{ end }}
+                    </ul>
                   </div>
 
                   <div class="col-lg-6 d-none d-lg-block">

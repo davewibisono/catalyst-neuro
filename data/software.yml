@@ -27,6 +27,8 @@ faqs:
           libero, fringilla tempor lacus eros nec justo. Sed nec sollicitudin
           ante, accumsan hendrerit ipsum. Praesent tincidunt, nisl et convallis
           luctus, ex enim tristique justo.
+    docs: "/"
+    github: "/"
   - name: 2. NWB GUIDE
     faq_number: 2
     image: assets/img/nwb.png
@@ -43,6 +45,7 @@ faqs:
           libero, fringilla tempor lacus eros nec justo. Sed nec sollicitudin
           ante, accumsan hendrerit ipsum. Praesent tincidunt, nisl et convallis
           luctus, ex enim tristique justo.
+    docs: "/"
 repositories:
   - name: SpikeExtractors
     url: /

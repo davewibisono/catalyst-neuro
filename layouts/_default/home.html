@@ -104,20 +104,20 @@
           <div class="swiper-wrapper">
             {{ $counter := 0 }}
             {{ range where .Site.RegularPages ".Params.type" "featured-entery" }}
-            {{ if eq .Params.layout "portfolio" }}
-            {{ $counter = add $counter 1 }}
-            <div class="swiper-slide">
-              <div class="pt-md-0 pt-lg-5 slide">
-                  <div class="card ">
-                    <img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="{{ .Title }}" class="img-fluid" />
-                    <p>{{ .Title }}</p>
-                    <a href="/portfolio/{{$counter}}/" class="btn">View Details <i class="bi bi-arrow-up-right"></i></a>
-                  </div>
-                </div>
-              </div>
-              {{ end }}
-              {{ end }}
-          </div>
+                {{ if eq .Params.layout "portfolio" }}
+                    {{ $counter = add $counter 1 }}
+                    <div class="swiper-slide">
+                        <div class="pt-md-0 pt-lg-5 slide">
+                            <div class="card">
+                                <img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="{{ .Title }}" class="img-fluid" style="height: 200px !important;" />
+                                <p>{{ .Title | truncate 25 }}</p>
+                                <a href="/portfolio/{{$counter}}/" class="btn">View Details <i class="bi bi-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                {{ end }}
+            {{ end }}
+        </div>                     
 
           <a href="{{ .Site.BaseURL }}/portfolio/" class="btn d-inline d-md-none">Explore More ></a>
         </div>

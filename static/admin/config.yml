@@ -94,6 +94,8 @@ collections:
             widget: "list"
             fields:
             - { name: "paragraph", label: "paragraph", widget: "string" }
+          - { name: "docs", label: "Documentation", widget: "string" }
+          - { name: "github", label: "Github", widget: "string" }
         - name: "repositories"
           label: "Repositories"
           widget: "list"
