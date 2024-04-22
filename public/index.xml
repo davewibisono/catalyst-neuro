@@ -58,7 +58,7 @@
       <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
     </item>
     <item>
-      <title>Sed a facilisis ante. Nulla vehicula vehicula 2</title>
+      <title>Sed a facilisis ante. Nulla vehicula vehicula 3</title>
       <link>http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula-1/</link>
       <pubDate>Sun, 07 Apr 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/sed-a-facilisis-ante.-nulla-vehicula-vehicula-1/</guid>
@@ -189,6 +189,13 @@
       <pubDate>Tue, 19 Mar 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/blog/vivamus-bibendum-id-risus-at-convallis-4---copy/</guid>
       <description>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</description>
+    </item>
+    <item>
+      <title>Data engineering speech neuroscience  collaboration UCSF</title>
+      <link>http://localhost:1313/portfolio/data-engineering-speech-neuroscience-collaboration-ucsf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/data-engineering-speech-neuroscience-collaboration-ucsf/</guid>
+      <description>We worked with the labs of Dr. Edward Chang, Dr. Nitin Tandon, and Dr. Mark Richardson to use NWB 2.0 as a foundation for standardizing ECoG data. Through this effort we have restructured internal tools to work with the NWB format, and have publicly released high density ECoG recordings during speech on DANDI here. Through this project, we built:&#xA;ecogVIS, a python GUI for visualizing and annotation of raw voltage traces</description>
     </item>
     <item>
       <title>Mission</title>

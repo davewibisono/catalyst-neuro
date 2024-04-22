@@ -2,14 +2,14 @@ main_heading: Our Team
 current_team_card:
   - post: Founder
     github: https://github.com/bendichter
-    facebook: "#"
+    facebook: ""
     bio: Ben Dichter is the founder of CatalystNeuro. He received his Ph.D. in
       Bioengineering from the UC Berkeley – UCSF Joint Program in
       Bioengineering, in Dr. Edward Chang’s lab. There he used
       electrocorticography (ECoG) to study the neural control of speech in
       humans.
     name: Ben Dichter
-    twitter: "#"
+    twitter: ""
     card_number: 1
     website: https://bendichter.com/
     image: assets/img/profile-b.jpg
@@ -18,18 +18,20 @@ current_team_card:
       neuroscience labs, focusing on building systems for sharing of data and
       analyses.
   - post: Lead Neurodata Scientist
-    github: /
+    github: https://github.com/luiztauffer
     bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
-      am currently at the late stages of his PhD in Computational Neuroscience.
+      is currently at the late stages of his PhD in Computational Neuroscience.
     name: Luiz Tauffer
     twitter: /
     card_number: 2
-    website: /
-    image: assets/img/team-2.png
-    linkedin: /
-    more_bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical
-      Engineering and am currently at the late stages of his PhD in
-      Computational Neuroscience.
+    website: https://luiztauffer.github.io/guacamole-data-science/
+    image: assets/img/luiz-tauffer.jpeg
+    linkedin: https://www.linkedin.com/in/luiz-tauffer
+    more_bio: His research work has been focused on mathematical modelling of
+      biological systems and behaviour, i.e. machine learning and data science
+      applied to the life sciences. He is currently expanding my work to cover
+      for more general machine learning / data science consultancy and software
+      development.
   - post: Lead Neurodata Scientist
     github: /
     bio: Luiz has a BSc in Electrical Engineering, MSc in Biomedical Engineering and
@@ -73,11 +75,14 @@ current_team_card:
       Engineering and am currently at the late stages of his PhD in
       Computational Neuroscience.
 collaborators:
-  - Julia Sprenger
-  - Alessio Buccin
-alumni:
-  - Julia Sprenger
-  - Alessio Buccino
+  - collaborator: Oliver Ruebel
+  - collaborator: Ryan Ly
+  - collaborator: Jeremy Magland
+alumnis:
+  - alumni: Julia Sprenger
+  - alumni: Felix Pei
+  - alumni: Vincent Provosto
+  - alumni: Samuel Garcia
 job_openining_heading: Job Openings
 job_openining_paragraph: We believe that the future of neuroscience will be
   driven by collaboration between labs. Our mission is to develop channels of
