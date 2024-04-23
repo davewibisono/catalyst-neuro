@@ -728,6 +728,9 @@ section,
   border: 1px solid #d9dde8;
   margin-top: 5rem;
 }
+.portflio .slide .card .clients-image {
+  height: 200px !important;
+}
 .mySwiper {
   position: relative;
   margin-bottom: -60px;
@@ -796,6 +799,16 @@ section,
   font-weight: 700;
   border: 1px solid var(--light-blue);
   padding: 0.5rem 1rem;
+}
+@media (min-width: 768px) {
+  .portflio .slide .card .clients-image {
+    height: 350px !important;
+  }
+}
+@media (min-width: 800px) {
+  .portflio .slide .card .clients-image {
+    height: 450px !important;
+  }
 }
 
 /* Blog Section - Home Page
