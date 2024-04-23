@@ -812,7 +812,7 @@ section,
 }
 @media (min-width: 992px) {
   .portflio .slide .card .clients-image {
-    height: 450px !important;
+    height: 200px !important;
   }
 }
 /* Blog Section - Home Page
