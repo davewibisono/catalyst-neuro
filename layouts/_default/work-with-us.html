@@ -48,6 +48,11 @@
 <!-- ======= Frequently Asked Questions Section ======= -->
 <section id="faq" class="faq">
   <div class="container" data-aos="fade-up">
+    {{ if .Site.Data.work.new_job }}
+    <h2 data-aos="fade-up" class="py-3">Open Positions</h2>
+    {{ else }}
+    <h2 data-aos="fade-up" class="py-3">We are not currently hiring</h2>
+    {{ end }}
     <div class="row gy-4">
       <div class="col-lg-12">
         <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
