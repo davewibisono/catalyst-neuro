@@ -1180,6 +1180,10 @@ article blockquote::before {
   height: auto;
 }
 
+.work-with-us .youtube-video {
+  height: 700px !important;
+}
+
 @media (min-width: 992px) {
   .work-with-us .video {
       width: 50%;
@@ -1879,7 +1883,7 @@ article blockquote::before {
   }
   .nav {
     position: relative;
-    top: 600px;
+    top: 530px;
     right: 50px;
   }
   .nav .swiper-button-prev i, .nav .swiper-button-next i {
