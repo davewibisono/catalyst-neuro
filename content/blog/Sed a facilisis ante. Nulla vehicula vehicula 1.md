@@ -39,6 +39,4 @@ We're returning to our roles at CatalystNeuro recharged and more connected than 
 
 Stay tuned for our gallery of retreat highlights—coming soon!
 
-
-
-![](assets/img/0v8a2131.jpg)
+![](/assets/img/0v8a2080.jpg)
