@@ -27,3 +27,5 @@ Our team at CatalystNeuro played a pivotal role in curriculum development and te
 Teaching at the academy was an enriching experience, not just for the students but for us as educators. Witnessing the enthusiasm and dedication of the students was truly inspiring. One of the most rewarding aspects was seeing the students collaborate on projects that applied their new skills in real-world scenarios, bridging theory with practical application. The immediate impact of the academy was evident in the students' ability to engage with complex data sets and contribute to ongoing research projects. Looking forward, these experiences have paved the way for further collaborations. Many students expressed interest in contributing to open-source projects and even starting their initiatives.
 
 The African Brain Data Science Academy is just one example of how global collaboration can significantly impact education and research in neuroscience. At CatalystNeuro, we are committed to continuing our support for such initiatives, helping to build a more connected and knowledgeable world.
+
+![asd](assets/img/lecture_by_ben.jpeg "adfadf")
