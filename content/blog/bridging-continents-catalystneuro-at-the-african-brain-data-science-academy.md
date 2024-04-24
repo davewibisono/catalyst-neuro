@@ -20,7 +20,7 @@ In the field of neuroscience, the challenges are as vast as the opportunities. A
 
 Our team at CatalystNeuro played a pivotal role in curriculum development and teaching at the academy. We focused on providing practical, hands-on training in data analysis techniques that are vital for neurophysiological research. Our goal was to empower students with the skills needed to manage, analyze, and share data effectively, adhering to the principles of open science.
 
-![Dr. Dichter lectures at ABDS Academy](assets/img/lecture_by_ben.jpeg "Dr. Dichter lectures at ABDS Academy")
+![Dr. Dichter lectures at ABDS Academy](/assets/img/lecture_by_ben.jpeg "Dr. Dichter lectures at ABDS Academy")
 
 ### **Impacts and Outcomes**
 

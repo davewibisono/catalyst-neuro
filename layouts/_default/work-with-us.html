@@ -31,7 +31,7 @@
   </div>
 </section>
 <!-- End Hero Section -->
-<section class="container work-with-us">
+<section class="container work-with-us p-5">
   {{ if .Site.Data.work.video }}
   <div class="video" data-aos="fade-up">
     <video controls start="2" id="newVideo" class="rounded-4">
@@ -47,12 +47,14 @@
 
 <!-- ======= Frequently Asked Questions Section ======= -->
 <section id="faq" class="faq">
-  <div class="container" data-aos="fade-up">
-    {{ if .Site.Data.work.new_job }}
-    <h2 data-aos="fade-up" class="py-3">Open Positions</h2>
-    {{ else }}
-    <h2 data-aos="fade-up" class="py-3">We are not currently hiring</h2>
-    {{ end }}
+  <div class="container p-5" data-aos="fade-up">
+    <div class="text ps-3">
+      {{ if .Site.Data.work.new_job }}
+      <h2 data-aos="fade-up" class="py-3">Open Positions</h2>
+      {{ else }}
+      <h2 data-aos="fade-up" class="py-3">We are not currently hiring</h2>
+      {{ end }}
+    </div>
     <div class="row gy-4">
       <div class="col-lg-12">
         <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">

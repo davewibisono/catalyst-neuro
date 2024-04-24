@@ -27,7 +27,7 @@
         {{ end }}
       </div>
 
-      <div class="col-lg-6 align-items-stretch lists my-padi py-3">
+      <div class="col-lg-6 align-items-stretch d-flex flex-column gap-5 my-padi">
         {{ $featuredPages := where .Site.RegularPages "Type" "featured" }}
         <!---->
         {{ $featuredPagesLimited := first 4 $featuredPages }}

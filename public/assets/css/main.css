@@ -809,12 +809,12 @@ section,
   .portflio .slide .card .clients-image {
     height: 450px !important;
   }
-  @media (min-width: 992px) {
-    .portflio .slide .card .clients-image {
-      height: 200px !important;
-    }
 }
-
+@media (min-width: 992px) {
+  .portflio .slide .card .clients-image {
+    height: 200px !important;
+  }
+}
 /* Blog Section - Home Page
 ------------------------------*/
 .blog header h2 {
@@ -1661,7 +1661,7 @@ article blockquote::before {
     margin-bottom: 3rem;
   }
   .inner-page-hero {
-    height: 400px;
+    height: 550px;
   }
 
   .cta {
@@ -2007,7 +2007,7 @@ article blockquote::before {
     padding-right: 2rem !important;
   }
   .inner-page-hero {
-    height: 450px;
+    height: 550px;
   }
   .inner-page-hero h2 {
     font-size: 37px;
