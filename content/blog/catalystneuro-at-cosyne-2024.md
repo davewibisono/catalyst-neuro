@@ -19,7 +19,7 @@ One of the highlights of our participation was the workshop led by myself, along
 
 The workshop was well-received, drawing a diverse group of participants eager to learn about NWB and DANDI. Their enthusiasm reaffirmed our commitment to open science and the significant role it plays in fostering collaborative and transparent research.
 
-![](assets/img/img_8628-2.jpeg)
+![](/assets/img/img_8628-2.jpeg)
 
 ### **Networking and Outreach at Our Booth**
 
