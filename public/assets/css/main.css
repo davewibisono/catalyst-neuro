@@ -948,7 +948,7 @@ section,
   color: #fff;
   font-size: 64px;
   font-weight: 700;
-  line-height: 72px; /* 112.5% */
+  line-height: 45px; /* 112.5% */
   letter-spacing: -1.28px;
 }
 .inner-page-hero .blog-title {
@@ -1197,8 +1197,14 @@ article blockquote::before {
   height: auto;
 }
 
-.work-with-us .youtube-video {
+iframe {
   height: 700px !important;
+}
+
+@media (max-width: 768px) {
+  iframe {
+    height: 200px !important;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1661,7 +1667,7 @@ article blockquote::before {
     margin-bottom: 3rem;
   }
   .inner-page-hero {
-    height: 550px;
+    height: 450px;
   }
 
   .cta {
