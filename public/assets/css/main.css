@@ -223,7 +223,7 @@ section {
     padding: 0;
   }
 
-  .navmenu ul {
+  .navmenu .headlist {
     margin: 0;
     padding: 0;
     display: flex;
@@ -402,7 +402,7 @@ section {
     z-index: 9997;
   }
 
-  .navmenu ul {
+  .navmenu .headlist {
     display: none;
     position: absolute;
     inset: 60px 20px 20px 20px;
@@ -418,7 +418,7 @@ section {
     box-shadow: 0px 0px 30px rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu a,
+  .navmenu a, .navmenu button,
   .navmenu a:focus {
     color: var(--black-color);
     padding: 10px 20px;
@@ -464,8 +464,7 @@ section {
     color: var(--light-blue);
     transform: rotate(180deg);
   }
-
-  .navmenu .dropdown ul,
+  
   .navmenu .megamenu ul {
     position: static;
     display: none;
@@ -1749,6 +1748,9 @@ iframe {
   }
 }
 @media (max-width: 800px) {
+  .hero {
+    height: 900px;
+  }
   .hero .img img {
     padding: 0px;
     margin-bottom: -100px;
