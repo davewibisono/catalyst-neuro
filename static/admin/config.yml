@@ -145,8 +145,8 @@ collections:
         - { label: 'Card Heading', name: 'card_heading', widget: 'string', default: 'OUR CULTURE' }
         - { label: 'Card Paragraph', name: 'card_paragraph', widget: 'text', default: 'Please write paragraph for this card in CMS' }
         - { label: 'Card Image', name: 'card_image', widget: 'image', default: 'assets/img/culture.png' }
-        - { label: 'Video', name: 'video', widget: 'file', allow_multiple: false, choose_url: false }
-        - { label: 'Youtube', name: 'youtube', widget: 'string' }
+        - { label: 'Video', name: 'video', widget: 'file', allow_multiple: false, choose_url: false, required: false }
+        - { label: 'Youtube', name: 'youtube', widget: 'string', required: false }
         - { label: 'New Job', name: 'new_job', widget: 'list', fields: [
             { label: 'Post', name: 'post', widget: 'string' },
             { label: 'Date', name: 'date', widget: 'string' },
