@@ -992,6 +992,13 @@ article blockquote::before {
   position: absolute;
   left: 20px;
 }
+
+article p img {
+  border-radius: 16px;
+  width: 100%;
+  height: 100%;
+  margin: 15px 0;
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
