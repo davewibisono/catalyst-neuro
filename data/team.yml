@@ -71,21 +71,24 @@ current_team_card:
       interests focus on information processing and flow through biophysical
       neural models, which can eventually allow a thorough understanding of
       high-level cognitive function.
-  - post: Lead Neurodata Scientist
-    github: "#"
-    facebook: "#"
-    bio: Allen has a BSc in Electrical Engineering, MSc in Biomedical Engineering
-      and am currently at the late stages of his PhD in Computational
-      Neuroscience.
-    name: Ken Allen
-    twitter: "#"
+  - post: Neurodata Scientist
+    github: ""
+    facebook: ""
+    bio: Ramón Heberto Martinez Mayorquin has a BSC in Physics and an MSc in
+      Complexity Science and a Ph.D. in Computational Neuroscience.
+    name: Ramón Mayorquin, PhD
+    twitter: ""
     card_number: 5
-    website: "#"
-    image: /assets/img/ramon_square.jpg
-    linkedin: "#"
-    more_bio: Allen has a BSc in Electrical Engineering, MSc in Biomedical
-      Engineering and am currently at the late stages of his PhD in
-      Computational Neuroscience.
+    website: ""
+    image: static/assets/img/ramon_square.jpg
+    linkedin: ""
+    more_bio: During his Ph.D., he studied in the theoretical and computational
+      study of associative neural networks (e.g. Hopfield Network). During his
+      studies, he has developed an interest in software practices that assure
+      efficient, reproducible, and robust scientific simulations. This, together
+      with his love for statistics and data wrangling has led him to move
+      forward with a career in data science where he can combine and further
+      develop those interests.
 collaborators:
   - collaborator: Oliver Ruebel
   - collaborator: Ryan Ly
