@@ -27,7 +27,7 @@ current_team_card:
     twitter: ""
     card_number: 2
     website: https://luiztauffer.github.io/guacamole-data-science/
-    image: /assets/img/luiz-tauffer.jpg
+    image: static/assets/img/luiz-tauffer.jpg
     linkedin: https://www.linkedin.com/in/luiz-tauffer
     more_bio: His research work has been focused on mathematical modelling of
       biological systems and behaviour, i.e. machine learning and data science
@@ -43,7 +43,7 @@ current_team_card:
     twitter: ""
     card_number: 3
     website: https://scholar.google.com/citations?user=UmLW1NAAAAAJ&hl=en
-    image: /assets/img/alessio_profile.jpg
+    image: static/assets/img/alessio_profile.jpg
     linkedin: ""
     more_bio: During his PhD at the University of Oslo, he explored the use of
       advanced modeling techniques and engineering solution to improve the
@@ -63,7 +63,7 @@ current_team_card:
     twitter: ""
     card_number: 4
     website: ""
-    image: /assets/img/codybakerpic.jpg
+    image: static/assets/img/codybakerpic.jpg
     linkedin: ""
     more_bio: His thesis focused on inference problems for second-order moments of
       activity in biological neural networks, including spike-time correlations,
