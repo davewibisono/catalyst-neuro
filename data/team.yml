@@ -131,6 +131,45 @@ current_team_card:
       spike sorting pipelines available to all.  In his free time he enjoys rock
       climbing and backpacking.
     image: /assets/img/paul_profile.jpg
+  - name: Anna (Szonja) Weigl
+    card_number: 9
+    post: Neurodata Programmer
+    bio: Szonja comes from the interdisciplinary field between computer science and
+      neuroscience. She holds a BSc and MSc in Info-bionics Engineering, and has
+      experience in software development.
+    more_bio: She is keen to learn about and to build reliable, scalable, and
+      maintainable data analysis tools and pipelines. Besides working at
+      CatalystNeuro, she is also working at the Lyon Neuroscience Research
+      Center (CRNL) as an Engineer in a research group interested in learning
+      and memory in the field of Cognitive Neuroscience.
+    github: https://github.com/weiglszonja
+    linkedin: https://www.linkedin.com/in/weiglszonja/
+    image: /assets/img/id_weigl.jpg
+  - name: Felix Pei
+    post: Neurodata Programmer
+    card_number: 10
+    bio: "Felix Pei received a BS in Electrical Engineering from Georgia Tech. "
+    more_bio: During his studies, he developed an interest in understanding neural
+      computation through latent dynamics. He is passionate about contributing
+      to accessible, standardized, open-source software for efficient and
+      reproducible neuroscience.
+    github: https://github.com/felixp8
+    image: /assets/img/felix.jpg
+  - image: /assets/img/jason.jpg
+    name: Jason Dichter
+    card_number: 11
+    post: Intern
+    bio: Jason is a sophomore at the University of Pittsburgh, where he is pursuing
+      a BS in Computational Biology.
+    more_bio: Jason’s passion for the intersection of biology and technology led him
+      to choose this multidisciplinary field, where he can utilize his
+      analytical skills to advance medical research and patient care. With his
+      unwavering dedication to both computational biology and medicine, Jason
+      aspires to attend medical school following the completion of his
+      undergraduate studies. He envisions integrating his expertise in
+      computational techniques with clinical training, ultimately contributing
+      to the development of personalized medicine and optimizing patient
+      outcomes.
 collaborators:
   - collaborator: Oliver Ruebel
   - collaborator: Ryan Ly
