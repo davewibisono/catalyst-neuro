@@ -81,7 +81,7 @@ current_team_card:
     twitter: "#"
     card_number: 5
     website: "#"
-    image: assets/img/team-2.png
+    image: /assets/img/ramon_square.jpg
     linkedin: "#"
     more_bio: Allen has a BSc in Electrical Engineering, MSc in Biomedical
       Engineering and am currently at the late stages of his PhD in
