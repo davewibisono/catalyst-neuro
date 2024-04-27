@@ -134,7 +134,7 @@
       <h2>Latest News and Blog</h2>
     </header>
     <div class="row mt-5 my-padi">
-      {{ range where .Site.RegularPages "Type" "feature" }}
+      {{ range where .Site.RegularPages "Type" "featured" }}
       <div class="col-lg-6 featured-blogs p-5 mb-3" style="background-image: url('{{ .Params.image }}');">
         <p class="tag">Featured</p>
         <a href="{{.Permalink}}">
