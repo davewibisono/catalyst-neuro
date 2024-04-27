@@ -89,6 +89,48 @@ current_team_card:
       with his love for statistics and data wrangling has led him to move
       forward with a career in data science where he can combine and further
       develop those interests.
+  - name: Garrett Flynn
+    card_number: 6
+    post: Neurodata Programmer
+    image: /assets/img/garrett.jpg
+    bio: "Garrett Flynn is a graduate of the Computational Neuroscience (BS) and
+      Media Arts, Games, and Health (MA) programs at the University of Southern
+      California. "
+    more_bio: His interdisciplinary thesis focused on the use of web technologies to
+      build brain-computer interface systems with and for everyone. As a
+      founding partner of Brains@Play, he develops biomedical infrastructure on
+      the Open Web with research universities and organizations like Catalyst
+      Neuro.
+    github: https://github.com/garrettmflynn
+    website: https://www.garrettflynn.com
+  - name: Julia Sprenger, PhD
+    card_number: 7
+    post: Neurodata Scientist
+    bio: "Julia Sprenger has a BSc and MSc in physics from the RWTH Aachen
+      University. "
+    more_bio: >-
+      During her master thesis and PhD at the Jülich Research Centre, she
+      investigated spike-LFP relations using massively parallel extracellular
+      electrophysiology recordings and related artefacts as well as data and
+      metadata organization for the generation of FAIR electrophysiology
+      datasets. She is the author of the odMLtables package for simplified
+      metadata collection.
+
+
+      She is currently a research engineer at the Institut de Neurosciences de la Timone in Marseille where she works on the development and implementation of data and metadata standards for electrophysiology datasets. She is co-leading the BIDS Extension Proposal 032 for animal electrophysiology and is a maintainer of the Neo package for electrophysiology data representation and conversion.
+    image: /assets/img/julia_sprenger.jpg
+  - name: Paul Adkisson
+    post: Neurodata Programmer
+    card_number: 8
+    bio: "Paul Adkisson received his B.S. in Neuroscience from the University of
+      California Los Angeles and his M.S.E. in Biomedical Engineering from Johns
+      Hopkins. "
+    more_bio: In his Master’s research, he investigated the effects of different
+      types of electrical stimulation on networks of neurons using computational
+      models.  Now, he works on the SpikeInterface platform to develop modular
+      spike sorting pipelines available to all.  In his free time he enjoys rock
+      climbing and backpacking.
+    image: /assets/img/paul_profile.jpg
 collaborators:
   - collaborator: Oliver Ruebel
   - collaborator: Ryan Ly
