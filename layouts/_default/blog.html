@@ -28,7 +28,7 @@
       </div>
 
       <div class="col-lg-6 align-items-stretch d-flex flex-column gap-5 my-padi">
-        {{ $featuredPages := where .Site.RegularPages "Type" "featured" }}
+        {{ $featuredPages := where .Site.RegularPages "Type" "other" }}
         <!---->
         {{ $featuredPagesLimited := first 4 $featuredPages }}
         <!---->
