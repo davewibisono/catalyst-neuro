@@ -103,22 +103,6 @@ current_team_card:
       Neuro.
     github: https://github.com/garrettmflynn
     website: https://www.garrettflynn.com
-  - name: Julia Sprenger, PhD
-    card_number: 7
-    post: Neurodata Scientist
-    bio: "Julia Sprenger has a BSc and MSc in physics from the RWTH Aachen
-      University. "
-    more_bio: >-
-      During her master thesis and PhD at the Jülich Research Centre, she
-      investigated spike-LFP relations using massively parallel extracellular
-      electrophysiology recordings and related artefacts as well as data and
-      metadata organization for the generation of FAIR electrophysiology
-      datasets. She is the author of the odMLtables package for simplified
-      metadata collection.
-
-
-      She is currently a research engineer at the Institut de Neurosciences de la Timone in Marseille where she works on the development and implementation of data and metadata standards for electrophysiology datasets. She is co-leading the BIDS Extension Proposal 032 for animal electrophysiology and is a maintainer of the Neo package for electrophysiology data representation and conversion.
-    image: /assets/img/julia_sprenger.jpg
   - name: Paul Adkisson
     post: Neurodata Programmer
     card_number: 8
@@ -145,44 +129,6 @@ current_team_card:
     github: https://github.com/weiglszonja
     linkedin: https://www.linkedin.com/in/weiglszonja/
     image: /assets/img/id_weigl.jpg
-  - name: Felix Pei
-    post: Neurodata Programmer
-    card_number: 10
-    bio: "Felix Pei received a BS in Electrical Engineering from Georgia Tech. "
-    more_bio: During his studies, he developed an interest in understanding neural
-      computation through latent dynamics. He is passionate about contributing
-      to accessible, standardized, open-source software for efficient and
-      reproducible neuroscience.
-    github: https://github.com/felixp8
-    image: /assets/img/felix.jpg
-  - image: /assets/img/jason.jpg
-    name: Jason Dichter
-    card_number: 11
-    post: Intern
-    bio: Jason is a sophomore at the University of Pittsburgh, where he is pursuing
-      a BS in Computational Biology.
-    more_bio: Jason’s passion for the intersection of biology and technology led him
-      to choose this multidisciplinary field, where he can utilize his
-      analytical skills to advance medical research and patient care. With his
-      unwavering dedication to both computational biology and medicine, Jason
-      aspires to attend medical school following the completion of his
-      undergraduate studies. He envisions integrating his expertise in
-      computational techniques with clinical training, ultimately contributing
-      to the development of personalized medicine and optimizing patient
-      outcomes.
-  - name: Melissa Hersh
-    image: /assets/img/melissa_hersh.jpg
-    card_number: 12
-    post: Business manager
-    bio: Melissa Hersh graduated with a B.A. in Psychology from Elon University and
-      then pursued a career in managing businesses and teams.
-    more_bio: With over 18 years of experience, her business aptitude spans several
-      industries, including hospitality, events, online retail, music, and
-      nonprofits. With an analytical head for numbers, a certification in Human
-      Resources, marketing & branding knowledge, and vast experience at
-      implementing process changes, her general management skills help
-      CatalystNeuro grow by providing consistency and efficiency to our business
-      processes.
 collaborators:
   - collaborator: Oliver Ruebel
   - collaborator: Ryan Ly
