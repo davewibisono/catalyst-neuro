@@ -8,7 +8,7 @@ categories:
   - outreach
 image: assets/img/whatsapp-image-2024-02-13-at-11.00.00-2.jpeg
 author: Ben Dichter
-type: featured
+type: other
 ---
 At CatalystNeuro, we are passionate about fostering global collaborations that advance the frontiers of neuroscience research and education. Recently, we had the distinct opportunity to contribute to the African Brain Data Science Academy, an initiative under the African Brain Data Network aimed at enhancing data science skills across the continent.
 
