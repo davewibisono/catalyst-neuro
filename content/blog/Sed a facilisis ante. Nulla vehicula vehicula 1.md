@@ -10,7 +10,7 @@ categories:
   - Neuro
 image: assets/img/whatsapp-image-2024-04-22-at-09.50.24.jpeg
 author: Ben Dichter
-type: featured
+type: other
 ---
 ## Embracing Work and Play at Villa Mas Sant Jordi
 
