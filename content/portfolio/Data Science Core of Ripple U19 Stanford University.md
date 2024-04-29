@@ -2,7 +2,7 @@
 title: Data Science Core of Ripple U19 Stanford University
 tag_bar: Role - Lead Data Scientist
 sub_title: Collaboration with - Stanford University
-image: assets/img/portfolio-7.jpeg
+image: /assets/img/portfolio-7.jpeg
 id: dataScience
 layout: portfolio
 weight: 4
