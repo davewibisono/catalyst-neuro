@@ -64,3 +64,7 @@ repositories:
     url: /
   - name: Neurosift
     url: https://github.com/flatironinstitute/neurosift
+  - name: Dendro
+    url: https://github.com/flatironinstitute/dendro
+  - name: BIDS Specification
+    url: https://github.com/bids-standard/bids-specification
