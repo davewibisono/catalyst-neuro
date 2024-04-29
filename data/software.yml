@@ -68,3 +68,5 @@ repositories:
     url: https://github.com/flatironinstitute/dendro
   - name: BIDS Specification
     url: https://github.com/bids-standard/bids-specification
+  - name: NEO
+    url: https://github.com/NeuralEnsemble/python-neo
