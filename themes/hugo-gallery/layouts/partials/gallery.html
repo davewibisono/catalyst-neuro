@@ -1,0 +1,18 @@
+<!--
+  SPDX-FileCopyrightText: 2024 Max Mehl <https://mehl.mx>
+  SPDX-License-Identifier: MIT
+-->
+{{- $imgs := .imgs -}}
+{{- $galno := .galno -}}
+<div class="snap-gallery" style="--columns:{{ default 4 .columns }};--min-width:{{ default "200px" .minwidth }};--gap:10px;--cursor:{{ .cursor }};--aspectratio:{{ safeCSS (default "16/10" .aspectratio) }};">
+  {{- range $i, $img := $imgs }}
+  <div class="snap-image">
+    <img
+      src="{{ relURL $img.src }}"
+      {{ range $attr, $value := $img.html -}}
+        {{ safeHTMLAttr $attr }}={{ $value }}
+      {{ end -}}
+      onclick="openLightbox({{ $galno }});openLightboxItem({{ $galno }}, {{ add $i 1 }});" />
+  </div>
+  {{- end }}
+</div>

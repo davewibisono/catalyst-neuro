@@ -1,0 +1,87 @@
+<!--
+  SPDX-FileCopyrightText: 2024 Max Mehl <https://mehl.mx>
+  SPDX-License-Identifier: MIT
+-->
+{{/*  Count number of gallery on page  */}}
+{{- $.Page.Scratch.Add "gallerycount" 1 -}}
+{{- $galno := $.Page.Scratch.Get "gallerycount" -}}
+
+{{/*  Load CSS/JS and make sure it is only loaded once  */}}
+{{- if eq ($.Page.Scratch.Get "gallerycount") 1 -}}
+{{- with resources.Get "scss/snap-gallery.scss" | toCSS -}}
+<link rel="stylesheet" href="{{ .RelPermalink }}" crossorigin="anonymous">
+{{- end -}}
+<script src="/js/snap-gallery.js"></script>
+{{- end -}}
+
+{{/*  Initialise index of this gallery  */}}
+<script>imageIndex[{{ $galno }}] = 1;</script>
+
+{{/*  Initialise variables holding image paths and extension  */}}
+{{- $imgs_collect := slice -}}
+{{- $imgs := slice -}}
+{{- $img_exts := slice ".jpg" ".jpeg" ".png" ".gif" ".webp" ".tiff" -}}
+
+{{/*  Get information from optional metadata file  */}}
+{{- $metadata := dict -}}
+{{- with .Params.metadata -}}
+  {{- $metadata = index $.Site.Data . -}}
+{{- end -}}
+
+{{/*  Get images from src Param, separated by comma  */}}
+{{- range (split .Params.src ",") -}}
+  {{- $img := (trim . " ") -}}
+  {{- $img_static := print "/static/" $img -}}
+  {{/*  Only proceed when path exists  */}}
+  {{- if os.FileExists $img_static -}}
+    {{/*  If current item is a directory, range each of them, and add with full path to the slice  */}}
+    {{- if (os.Stat $img_static).IsDir -}}
+      {{- range readDir $img_static -}}
+        {{- $imgs_collect = $imgs_collect | append (path.Join $img .Name ) -}}
+      {{- end -}}
+    {{/*  If a single file, just add it to the slice  */}}
+    {{- else -}}
+      {{- $imgs_collect = $imgs_collect | append $img -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{/*  Filter collected files, store them as slice of dicts/maps  */}}
+{{- range $imgs_collect -}}
+  {{/*  Only process files if they are recognised as an image  */}}
+  {{- if in $img_exts (lower (path.Ext .)) -}}
+    {{/*  Create a dict holding path and optional metadata  */}}
+    {{- $imgdict := dict "src" . -}}
+    {{/*  If metadata for this image path found, add all of it to dict  */}}
+    {{- $img_metadata := where $metadata "src" . -}}
+    {{- with $img_metadata -}}
+      {{- $imgdict = merge $imgdict (index . 0) -}}
+    {{- end -}}
+    {{/*  Add final dict to slice  */}}
+    {{- $imgs = $imgs | append $imgdict -}}
+  {{- end -}}
+{{- end -}}
+
+{{/*  Define cursor when hovering over images, depending on lightbox status  */}}
+{{- $lightbox := (default true .Params.lightbox) -}}
+{{- $cursor := "auto" -}}
+{{- if $lightbox }}{{ $cursor = "zoom-in" }}{{ end -}}
+
+{{/*  Visible images in separate modes  */}}
+{{- $mode := default "gallery" .Params.mode -}}
+{{/*  Gallery mode  */}}
+{{- if eq $mode "gallery" -}}
+{{- partial "gallery" (dict "columns" .Params.columns "minwidth" .Params.minwidth "imgs" $imgs "galno" $galno "cursor" $cursor "aspectratio" .Params.aspectratio) -}}
+{{/*  Slideshow mode  */}}
+{{- else if eq $mode "slideshow" -}}
+{{- partial "slideshow" (dict "imgs" $imgs "galno" $galno "width" .Params.slideshowwidth "cursor" $cursor "aspectratio" .Params.aspectratio) -}}
+{{/*  Set autorotate timer for slideshow, if configured (default: yes)  */}}
+{{- if (default true .Params.slideshowrotate) -}}
+<script>const autoSlideshow = setInterval(moveSlideshowItem, {{ default 5000 .Params.slideshowrotate_timer }}, {{ $galno }}, 1, "auto");</script>
+{{- end -}}
+{{- end -}}
+
+{{/*  The Modal/Lightbox  */}}
+{{ if $lightbox -}}
+{{- partial "lightbox" (dict "galno" $galno "imgs" $imgs) -}}
+{{- end -}}

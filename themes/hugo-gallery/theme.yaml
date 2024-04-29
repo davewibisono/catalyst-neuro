@@ -1,0 +1,17 @@
+# SPDX-FileCopyrightText: 2019 Max Mehl <mail@mehl.mx>
+# SPDX-License-Identifier: MIT
+
+name: Snap Gallery
+license: MIT
+licenselink: https://src.mehl.mx/mxmehl/hugo-snap-gallery/src/branch/master/LICENSES/MIT.txt
+description: Advanced image gallery using shortcodes. It offers a lightbox and is also usable for single images. CSS only, no Javascript!
+homepage: https://src.mehl.mx/mxmehl/hugo-snap-gallery
+tags:
+  - component
+features:
+  - gallery
+min_version: 0.60.0
+
+author:
+  name: Max Mehl
+  homepage: https://mehl.mx

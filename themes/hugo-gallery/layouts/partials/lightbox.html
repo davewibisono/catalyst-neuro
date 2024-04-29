@@ -1,0 +1,28 @@
+<!--
+  SPDX-FileCopyrightText: 2024 Max Mehl <https://mehl.mx>
+  SPDX-License-Identifier: MIT
+-->
+{{- $imgs := .imgs -}}
+{{- $galno := .galno -}}
+<div class="snap-lightbox" id="snap-lightbox-{{ $galno }}">
+  {{- range $i, $img := $imgs }}
+  <div class="snap-lightbox-inner">
+    <div class="snap-numbertext">{{ add $i 1 }} / {{ len $imgs }}</div>
+    <img
+      src="{{ relURL $img.src }}"
+      {{ range $attr, $value := $img.html -}}
+        {{ safeHTMLAttr $attr }}={{ $value }}
+      {{ end -}}
+    />
+    {{- with $img.html.title }}
+      <div class="snap-caption">{{ . }}</div>
+    {{- end }}
+  </div>
+  {{- end -}}
+
+  <!-- Close and Next/previous controls -->
+  <span class="snap-close" onclick="closeLightbox({{ $galno }})">&times;</span>
+
+  <a class="snap-prev" onclick="moveLightboxItem({{ $galno }}, -1)"><span>&#10094;</span></a>
+  <a class="snap-next" onclick="moveLightboxItem({{ $galno }}, 1)"><span>&#10095;</span></a>
+</div>
