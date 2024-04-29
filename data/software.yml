@@ -62,3 +62,5 @@ repositories:
     url: /
   - name: HDMF
     url: /
+  - name: Neurosift
+    url: https://github.com/flatironinstitute/neurosift
