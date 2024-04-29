@@ -113,7 +113,7 @@
                     <img
                       src="{{ .Site.BaseURL }}/{{ .image }}"
                       alt=""
-                      class="img-fluid"
+                      class="img-fluid mx-auto d-block custom-image" style="max-width:350px"
                     />
                   </div>
                 </div>
@@ -137,7 +137,7 @@
     </header>
     <div class="row justify-content-center mt-5">
       {{ range .Site.Data.software.repositories }}
-      <div class="col-lg-2 d-flex align-items-stretch">
+      <div class="col-lg-2 d-flex align-items-stretch pb-5">
         <div class="card">
           <i class="bi bi-github"></i>
           <a href="{{ .url }}" class="stretched-link">{{ .name }}</a>
