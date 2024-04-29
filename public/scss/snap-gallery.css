@@ -1,0 +1,173 @@
+/*
+  SPDX-FileCopyrightText: 2024 Max Mehl <https://mehl.mx>
+  SPDX-License-Identifier: MIT
+*/
+.snap-gallery,
+.snap-slideshow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 15px;
+  /* Create equal columns in flexbox */ }
+  .snap-gallery .snap-image,
+  .snap-slideshow .snap-image {
+    cursor: var(--cursor);
+    /* Column amount and width are configurable by style variables */
+    width: calc(100% / var(--columns) - var(--gap));
+    min-width: var(--min-width); }
+    .snap-gallery .snap-image img,
+    .snap-slideshow .snap-image img {
+      aspect-ratio: var(--aspectratio);
+      width: 100%;
+      object-fit: cover; }
+
+.snap-gallery {
+  flex-wrap: wrap;
+  gap: var(--gap); }
+
+.snap-slideshow {
+  width: var(--slideshow-width);
+  margin-left: auto;
+  margin-right: auto; }
+  .snap-slideshow .snap-image:not(:first-child) {
+    display: none; }
+
+.snap-slideshow .snap-image,
+.snap-lightbox .snap-lightbox-inner {
+  animation: 1s fade; }
+
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+
+.snap-lightbox {
+  /** Default lightbox to hidden */
+  display: none;
+  /** Position and style */
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  /* keep lightbox in middle. TODO: hacky, and not realibly in middle */ }
+  .snap-lightbox:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    /* adjust for white space between pseudo element and next sibling */
+    margin-right: -.25em;
+    /* stretch line height */
+    height: 100%; }
+
+.snap-lightbox,
+.snap-slideshow {
+  user-select: none; }
+
+/* Container for image */
+.snap-lightbox-inner {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  max-width: 90%;
+  max-height: 80%;
+  height: 100%; }
+  .snap-lightbox-inner img {
+    max-height: 100%; }
+  @media screen and (max-width: 767px) {
+    .snap-lightbox-inner {
+      max-width: 80%; } }
+/* Number text (1/3 etc) and captions*/
+.snap-numbertext {
+  position: absolute;
+  color: #f2f2f2;
+  background-color: #000;
+  font-size: 12px;
+  padding: 8px 12px; }
+
+.snap-caption {
+  bottom: 0;
+  color: #f2f2f2;
+  padding: 8px 0;
+  left: 10%;
+  width: 80%;
+  text-shadow: 1px 1px 10px #000;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-align: center; }
+  .snap-slideshow .snap-caption {
+    position: absolute; }
+    @media screen and (max-width: 767px) {
+      .snap-slideshow .snap-caption {
+        display: none; } }
+  .snap-lightbox .snap-caption {
+    position: relative; }
+
+/* prev/next arrows & close button */
+.snap-prev,
+.snap-next {
+  color: #fff;
+  text-decoration: none !important;
+  font-size: 30px;
+  position: absolute;
+  height: 100%;
+  z-index: 800;
+  width: 5%;
+  cursor: pointer; }
+  .snap-slideshow .snap-prev, .snap-slideshow .snap-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 15%;
+    width: 10%;
+    min-height: 50px;
+    min-width: 50px; }
+    .snap-slideshow .snap-prev:hover, .snap-slideshow .snap-next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+      transition: all 0.25s ease; }
+  @media screen and (max-width: 767px) {
+    .snap-lightbox .snap-prev, .snap-lightbox .snap-next {
+      width: 10%; } }
+  .snap-prev span,
+  .snap-next span {
+    padding: 1%; }
+    .snap-lightbox .snap-prev span, .snap-lightbox .snap-next span {
+      position: fixed;
+      top: 50%; }
+
+.snap-prev {
+  left: 0; }
+  .snap-lightbox .snap-prev span {
+    left: 0.5%; }
+
+.snap-next {
+  right: 0; }
+  .snap-lightbox .snap-next span {
+    right: 0.5%; }
+
+/* The Close Button */
+.snap-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 50px;
+  width: 50px;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 900; }
+  .snap-close:hover, .snap-close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer; }
