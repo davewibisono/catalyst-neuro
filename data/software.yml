@@ -70,3 +70,7 @@ repositories:
     url: https://github.com/bids-standard/bids-specification
   - name: NEO
     url: https://github.com/NeuralEnsemble/python-neo
+  - name: SpikeInterface
+    url: https://github.com/SpikeInterface/spikeinterface
+  - name: ProbeInterface
+    url: https://github.com/SpikeInterface/probeinterface
