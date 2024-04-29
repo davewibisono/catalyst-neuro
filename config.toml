@@ -3,7 +3,6 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 paginate = '1'
 paginatePath = ''
-theme = 'image-gallery'
 
 
 [taxonomies]
