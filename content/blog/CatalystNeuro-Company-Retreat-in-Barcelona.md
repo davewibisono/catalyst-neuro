@@ -41,4 +41,4 @@ Stay tuned for our gallery of retreat highlights—coming soon!
 
 <img src="/assets/img/0v8a2080.jpg" width=400 height=200>
 
-{{< snap-gallery src="/assets/img/" mode="slideshow" >}}
+{{< snap-gallery src="/assets/img/team/" mode="slideshow" >}}
