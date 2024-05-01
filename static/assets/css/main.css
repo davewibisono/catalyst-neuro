@@ -592,10 +592,10 @@ section,
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: -1;
+  z-index: 1;
   padding-bottom: 160px;
 }
-
+/*
 .hero:before {
   content: "";
   background: rgba(255, 255, 255, 0);
@@ -607,7 +607,7 @@ section,
 .hero .container {
   position: relative;
   z-index: 3;
-}
+}*/
 
 .hero h2 {
   color: #fff;
@@ -644,11 +644,31 @@ section,
   font-weight: 400;
   line-height: 28px;
 }
-.mission {
+/*.mission {
   z-index: 9;
   margin-top: -130px;
   background-color: transparent;
+}*/
+.mission {
+  z-index: 1;
+   position: relative;
+/*  margin-top: -130px;*/
+  background-color: transparent;
 }
+.mission::before {
+      content: "";
+      position: absolute;
+      margin-top: -130px; /* Adjust to overlap 130 on top */
+      right: 0;
+      left: 0;
+      height: 100%;
+       background-color: transparent;
+      z-index: -1; /* Ensure it's behind other content */
+}
+    .mission .overlap-content {
+      position: relative; /* Change position to relative */
+      z-index: 2; /* Ensure it's above other content */
+    }
 .mission .imgs {
   padding: 2rem;
 }
