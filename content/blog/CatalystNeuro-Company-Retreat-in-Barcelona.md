@@ -37,8 +37,6 @@ As we checked out on Friday, it was clear that our retreat at Villa Mas Sant Jor
 
 We're returning to our roles at CatalystNeuro recharged and more connected than ever, carrying with us not just the memories of a delightful retreat but also the seeds of new ideas and projects sparked in those five transformative days.
 
-Stay tuned for our gallery of retreat highlights—coming soon!
-
 <img src="/assets/img/0v8a2080.jpg" width=400 height=200>
 
 {{< snap-gallery src="/assets/img/team/" mode="slideshow" >}}
