@@ -5,4 +5,4 @@ project: SCGB NWB Adoption
 Dates: 2022-01-01 to 2022-12-31
 number: 2
 ---
-We developed ndx-patterend-ogen, an NWB extension for holographic patterned optogenetic stimulation as part of the MouseV1 U19 project. We used this extension in a custom conversion pipeline, mousev1-to-nwb, converting data from their Nature Neuroscience 2024 paper, "The logic of recurrent circuits in the primary visual cortex.
+Working with Misha Ahrens' lab at Janelia, we developed ahrens-lab-to-nwb, an open repo to convert data from their custom optical physiology acquisition system to NWB. This pipeline was used to standardize and publish the data associated with their Cell 2019 paper, "Glia Accumulate Evidence that Actions Are Futile and Suppress Unsuccessful Behavior." The NWB dataset is published on DANDI as DANDI:000350/0.221219.1506. The dataset contains 5.9 TB of optical physiology data from zebrafish.
