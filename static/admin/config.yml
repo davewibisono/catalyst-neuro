@@ -34,7 +34,7 @@ collections:
       - { label: 'Institution', name: 'institution', widget: 'string' }
       - { label: 'Project', name: 'project', widget: 'string' }
       - { label: 'Dates', name: 'Dates', widget: 'string' }
-      - { label: 'Box Number', name: 'number', widget: 'number', required }
+      - { label: 'Box Number', name: 'number', widget: 'number', required: true }
       - { label: 'Details', name: 'body', widget: 'markdown' }
 
   - name: "pages"
