@@ -31,14 +31,11 @@ collections:
       preview: false
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Tag Bar', name: 'tag_bar', widget: 'string' }
-      - { label: 'Subtitle', name: 'sub_title', widget: 'string' }
+      - { label: 'Institution', name: 'institution', widget: 'string' }
+      - { label: 'Project', name: 'project', widget: 'string' }
+      - { label: 'Dates', name: 'Dates', widget: 'string' }
+      - { label: 'Box Number', name: 'number', widget: 'number', required }
       - { label: 'Details', name: 'body', widget: 'markdown' }
-      - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: 'ID', name: 'id', widget: 'string' }
-      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'portfolio' }
-      - { label: 'Weight', name: 'weight', widget: 'number' }
-      - { label: 'Type', name: 'type', widget: 'select', options: ['featured-entery', 'other'], default: 'other' }
 
   - name: "pages"
     label: "Pages"

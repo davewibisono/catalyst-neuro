@@ -1,240 +1,334 @@
 {{define "main"}}
 
 <section class="inner-page-hero custom">
-    <div class="container">
-        <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-12 text-center">
-                <h2>Clients</h2>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-12 text-center">
+        <h2>Clients</h2>
+      </div>
     </div>
+  </div>
 </section>
 
-{{ range .Paginator.Pages }}
-<!---->
-{{ if mod .Weight 2 }}
-<section class="text left" id="{{ .Params.id }}">
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-lg-5 col-md-12 col-sm-12 img" ta-aos="fade-down" data-aos-delay="200">
-                <img src="{{ $.Site.BaseURL }}{{ .Params.image }}" alt="CTA Image" class="img-fluid" />
+<section class="shadow-sm p-4 container nt-margin rounded-4">
+    <div class="row g-3">
+    {{ range .Paginator.Pages }}
+    {{ with .Params }}
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="rounded-4 border p-4">
+        <h4 class="text-dark fs-5">{{ .title }}</h4>
+        <p class="text-body-secondary fs-6">
+          Institution: <span class="text-dark">{{ .institution }}</span>
+        </p>
+        <p class="text-body-secondary fs-6">
+          Project:
+          <a
+            data-bs-toggle="modal"
+            data-bs-target="#dropBox{{ .number }}"
+            class="text-primary text-decoration-underline link-offset-2"
+            href="/"
+            >{{ .project }}</a
+          >
+        </p>
+        <p class="text-body-secondary fs-6">
+          Date: <span class="text-dark">{{ .dates }}</span>
+        </p>
+        <br />
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#dropBox{{ .number }}"
+          class="btn btn-outline-primary rounded-5 px-5 clients-btn"
+        >
+          Details
+        </button>
+        {{ end }}
+        <div
+          class="modal fade"
+          id="dropBox{{ .Params.number }}"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header row pt-1 pb-3">
+                <div class="col-5">
+                  <h1 class="modal-title fs-5 mb-2" id="staticBackdropLabel">
+                    {{ .Title }}
+                  </h1>
+                  <p class="text-body-secondary fs-6 mb-0">
+                    Institution: <span class="text-dark">{{ .Params.institution }}</span>
+                  </p>
+                </div>
+                <div class="col-5">
+                  <p class="text-body-secondary fs-6 mb-2 mt-4">
+                    Project: <span class="text-dark">{{ .Params.project }}</span>
+                  </p>
+                  <p class="text-body-secondary fs-6 mb-0">
+                    Dates: <span class="text-dark">{{ .Params.dates }}</span>
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  class="btn-close col-2 align-self-start me-1 mt-2"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">{{ .Content }}</div>
             </div>
-            <div class="col-lg-7 col-md-12 col-sm-12 p-5" ta-aos="fade-up" data-aos-delay="100">
-                <p><span>{{.Params.tag_bar}}</span></p>
-                <h2>{{.Title}}</h2>
-                <br />
-                <p><strong>{{.Params.sub_title}}</strong></p>
-                <br />
-                <div class="scontent">{{.Content }}</div>
-            </div>
+          </div>
         </div>
-    </div>
-</section>
-
-<!-- End Text Section -->
-{{else}}
-<!-- Text sections -->
-<section class="text right" id="p2">
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-lg-5 col-md-12 col-sm-12 d-block d-lg-none p-5 img" ta-aos="fade-down" data-aos-delay="200">
-                <img src="{{ $.Site.BaseURL }}{{ .Params.image }}" alt="CTA Image" class="img-fluid" />
-            </div>
-            <div class="col-lg-7 col-md-12 col-sm-12 p-5" ta-aos="fade-up" data-aos-delay="100">
-                <p><span>{{.Params.tag_bar}}</span></p>
-                <h2>{{.Title}}</h2>
-                <br />
-                <p><strong>{{.Params.sub_title}}</strong></p>
-                <br />
-                <div class="scontent">{{.Content }}</div>
-            </div>
-
-            <div class="col-lg-5 col-md-12 col-sm-12 d-none d-lg-block p-5 img" ta-aos="fade-down" data-aos-delay="200">
-                <img src="{{ $.Site.BaseURL }}{{.Params.image}}" alt="CTA Image" class="img-fluid" />
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Text Section -->
-{{end}} {{end}}
-
-<section class="pagination">
-    {{ $pag := $.Paginator }}
-    {{ if gt $pag.TotalPages 1 }}
-    <div class="container">
-        <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-md-6">
-                <ul class="d-flex justify-content-center align-items-center text-center">
-                    <!--First-->
-                    <li>
-                        <a href="{{ if $pag.First }}{{ $pag.First.URL }}{{ end }}"
-                            class="page-link {{ if eq $pag.PageNumber 1 }}disabled{{ end }}"><i
-                                class="bi bi-chevron-double-left"></i></a>
-                    </li>
-
-                    <!--Previous-->
-                    <li>
-                        <a href="{{ if $pag.Prev }}{{ $pag.Prev.URL }}{{ end }}"
-                            class="page-link {{ if eq $pag.PageNumber 1 }}disabled{{ end }}"><i
-                                class="bi bi-chevron-left"></i></a>
-                    </li>
-
-                    <!--Pages-->
-                    {{- $currentPage := $pag.PageNumber }}
-                    {{- $totalPages := $pag.TotalPages }}
-                    {{- $start := sub $currentPage 2 }}
-                    {{- $end := add $currentPage 2 }}
-                    {{- if gt $start 1 }}
-                    <li><a href="{{ $pag.First.URL }}" class="page-link">1</a></li>
-                    {{ if gt $start 2 }}<li><span>...</span></li>{{ end }}
-                    {{- end }}
-                    {{- range $i, $page := seq $start $end }}
-                    {{ if and (ge $page 1) (le $page $totalPages) }}
-                    <li><a href="{{ (index $pag.Pagers (sub $page 1)).URL }}"
-                            class="page-link {{ if eq $currentPage $page }}active{{ end }}">{{ $page }}</a></li>
-                    {{ end }}
-                    {{- end }}
-                    {{- if lt $end $totalPages }}
-                    {{ if lt (add $end 1) $totalPages }}<li><span>...</span></li>{{ end }}
-                    <li><a href="{{ $pag.Last.URL }}" class="page-link">{{ $totalPages }}</a></li>
-                    {{- end }}
-
-                    <!--Next-->
-                    <li>
-                        <a href="{{ if $pag.Next }}{{ $pag.Next.URL }}{{ end }}"
-                            class="page-link {{ if eq $pag.PageNumber $pag.TotalPages }}disabled{{ end }}"><i
-                                class="bi bi-chevron-right"></i></a>
-                    </li>
-
-                    <!--Last-->
-                    <li>
-                        <a href="{{ if $pag.Last }}{{ $pag.Last.URL }}{{ end }}"
-                            class="page-link {{ if eq $pag.PageNumber $pag.TotalPages }}disabled{{ end }}"><i
-                                class="bi bi-chevron-double-right"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+      </div>
     </div>
     {{ end }}
+  </div>
+</section>
+
+<section class="pagination">
+  {{ $pag := $.Paginator }} {{ if gt $pag.TotalPages 1 }}
+  <div class="container">
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-md-6">
+        <ul
+          class="d-flex justify-content-center align-items-center text-center"
+        >
+          <!--First-->
+          <li>
+            <a
+              href="{{ if $pag.First }}{{ $pag.First.URL }}{{ end }}"
+              class="page-link {{ if eq $pag.PageNumber 1 }}disabled{{ end }}"
+              ><i class="bi bi-chevron-double-left"></i
+            ></a>
+          </li>
+
+          <!--Previous-->
+          <li>
+            <a
+              href="{{ if $pag.Prev }}{{ $pag.Prev.URL }}{{ end }}"
+              class="page-link {{ if eq $pag.PageNumber 1 }}disabled{{ end }}"
+              ><i class="bi bi-chevron-left"></i
+            ></a>
+          </li>
+
+          <!--Pages-->
+          {{- $currentPage := $pag.PageNumber }} {{- $totalPages :=
+          $pag.TotalPages }} {{- $start := sub $currentPage 2 }} {{- $end := add
+          $currentPage 2 }} {{- if gt $start 1 }}
+          <li><a href="{{ $pag.First.URL }}" class="page-link">1</a></li>
+          {{ if gt $start 2 }}
+          <li><span>...</span></li>
+          {{ end }} {{- end }} {{- range $i, $page := seq $start $end }} {{ if
+          and (ge $page 1) (le $page $totalPages) }}
+          <li>
+            <a
+              href="{{ (index $pag.Pagers (sub $page 1)).URL }}"
+              class="page-link {{ if eq $currentPage $page }}active{{ end }}"
+              >{{ $page }}</a
+            >
+          </li>
+          {{ end }} {{- end }} {{- if lt $end $totalPages }} {{ if lt (add $end
+          1) $totalPages }}
+          <li><span>...</span></li>
+          {{ end }}
+          <li>
+            <a href="{{ $pag.Last.URL }}" class="page-link"
+              >{{ $totalPages }}</a
+            >
+          </li>
+          {{- end }}
+
+          <!--Next-->
+          <li>
+            <a
+              href="{{ if $pag.Next }}{{ $pag.Next.URL }}{{ end }}"
+              class="page-link {{ if eq $pag.PageNumber $pag.TotalPages }}disabled{{ end }}"
+              ><i class="bi bi-chevron-right"></i
+            ></a>
+          </li>
+
+          <!--Last-->
+          <li>
+            <a
+              href="{{ if $pag.Last }}{{ $pag.Last.URL }}{{ end }}"
+              class="page-link {{ if eq $pag.PageNumber $pag.TotalPages }}disabled{{ end }}"
+              ><i class="bi bi-chevron-double-right"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  {{ end }}
 </section>
 
 <!--Call to action-->
 <section class="call-to-action">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 my-padi">
-                <h2>Availability for helping other labs</h2>
-                <br />
-                <img src="{{ .Site.BaseURL }}/assets/img/call-to-action.png" alt="cta"
-                    class="img-fluid d-block d-lg-none" />
-                <br />
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 my-padi">
+        <h2>Availability for helping other labs</h2>
+        <br />
+        <img
+          src="{{ .Site.BaseURL }}/assets/img/call-to-action.png"
+          alt="cta"
+          class="img-fluid d-block d-lg-none"
+        />
+        <br />
 
+        <p>
+          We are always interested in opportunities to work with labs on data
+          infrastructure. We have a team of computational neuroscientists who
+          are experts in building conversion scripts, porting tools to NWB, and
+          helping to package and publicly release data. We also have experience
+          building custom databases and user interfaces for lab experimental
+          records. If you are interested in working with us
+        </p>
+        <br />
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 normal-btn">
+            <a href="mailto:contact@website.com"
+              >Contact Us <i class="bi bi-arrow-up-right"></i
+            ></a>
+          </div>
+          <div class="col-md-6 contact-btn mt-5 mt-md-0">
+            <a href="">
+              <img src="{{ .Site.BaseURL }}/assets/img/mail.svg" alt="Mail" />
+              <div class="text">
                 <p>
-                    We are always interested in opportunities to work with labs on data
-                    infrastructure. We have a team of computational neuroscientists who
-                    are experts in building conversion scripts, porting tools to NWB, and
-                    helping to package and publicly release data. We also have experience
-                    building custom databases and user interfaces for lab experimental
-                    records. If you are interested in working with us
+                  <span class="text-wrap">Please contact us at </span> <br />
+                  inquiry@catalystneuro.com
                 </p>
-                <br />
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-md-6 normal-btn">
-                        <a href="mailto:contact@website.com">Contact Us <i class="bi bi-arrow-up-right"></i></a>
-                    </div>
-                    <div class="col-md-6 contact-btn mt-5 mt-md-0">
-                        <a href="">
-                            <img src="{{ .Site.BaseURL }}/assets/img/mail.svg" alt="Mail" />
-                            <div class="text">
-                                <p>
-                                    <span class="text-wrap">Please contact us at </span> <br />
-                                    inquiry@catalystneuro.com
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <br />
-
-                <p>
-                    Our work is entirely open source. See our
-                    <a href="/">GitHub organization</a> for code of past and ongoing
-                    projects.
-                </p>
-            </div>
-
-            <div class="col-md-6">
-                <img src="{{ .Site.BaseURL }}/assets/img/call-to-action.png" alt="cta"
-                    class="img-fluid d-none d-lg-block" />
-            </div>
+              </div>
+            </a>
+          </div>
         </div>
+        <br />
+
+        <p>
+          Our work is entirely open source. See our
+          <a href="/">GitHub organization</a> for code of past and ongoing
+          projects.
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <img
+          src="{{ .Site.BaseURL }}/assets/img/call-to-action.png"
+          alt="cta"
+          class="img-fluid d-none d-lg-block"
+        />
+      </div>
     </div>
+  </div>
 </section>
 <!--End call to action-->
 
 <!-- Client Section - Home Page -->
-<secion class="client d-none d-lg-block">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <img src="{{ .Site.BaseURL }}/assets/img/logo-1.png" alt="Client Logo 1" class="img-fluid p-2" />
-            </div>
+<section class="client d-none d-lg-block">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img
+          src="{{ .Site.BaseURL }}/assets/img/logo-1.png"
+          alt="Client Logo 1"
+          class="img-fluid p-2"
+        />
+      </div>
 
-            <!--End Image-->
+      <!--End Image-->
 
-            <div class="col">
-                <img src="{{ .Site.BaseURL }}/assets/img/logo-2.png" alt="Client Logo 2" class="img-fluid p-2" />
-            </div>
+      <div class="col">
+        <img
+          src="{{ .Site.BaseURL }}/assets/img/logo-2.png"
+          alt="Client Logo 2"
+          class="img-fluid p-2"
+        />
+      </div>
 
-            <!--End Image-->
+      <!--End Image-->
 
-            <div class="col">
-                <img src="{{ .Site.BaseURL }}/assets/img/logo-3.png" alt="Client Logo 3" class="img-fluid p-2" />
-            </div>
+      <div class="col">
+        <img
+          src="{{ .Site.BaseURL }}/assets/img/logo-3.png"
+          alt="Client Logo 3"
+          class="img-fluid p-2"
+        />
+      </div>
 
-            <!--End Image-->
+      <!--End Image-->
 
-            <div class="col">
-                <img src="{{ .Site.BaseURL }}/assets/img/logo-4.png" alt="Client Logo 4" class="img-fluid p-2" />
-            </div>
+      <div class="col">
+        <img
+          src="{{ .Site.BaseURL }}/assets/img/logo-4.png"
+          alt="Client Logo 4"
+          class="img-fluid p-2"
+        />
+      </div>
 
-            <!--End Image-->
+      <!--End Image-->
 
-            <div class="col">
-                <img src="{{ .Site.BaseURL }}/assets/img/logo-5.png" alt="Client Logo 5" class="img-fluid p-2" />
-            </div>
+      <div class="col">
+        <img
+          src="{{ .Site.BaseURL }}/assets/img/logo-5.png"
+          alt="Client Logo 5"
+          class="img-fluid p-2"
+        />
+      </div>
 
-            <!--End Image-->
-        </div>
+      <!--End Image-->
     </div>
-</secion>
+  </div>
+</section>
 <!-- End Client Section -->
 
 <!-- ======= Clients Section ======= -->
 <section id="clients" class="clients d-block d-lg-none">
-    <div class="container" data-aos="fade-up">
-        <div class="clients-slider swiper">
-            <div class="swiper-wrapper align-items-center mb-md-5">
-                <div class="swiper-slide px-5  px-lg-0">
-                    <img src="{{ .Site.BaseURL }}/assets/img/logo-1.png" class="img-fluid" alt="" />
-                </div>
-                <div class="swiper-slide px-5  px-lg-0">
-                    <img src="{{ .Site.BaseURL }}/assets/img/logo-2.png" class="img-fluid" alt="" />
-                </div>
-                <div class="swiper-slide px-5  px-lg-0">
-                    <img src="a{{ .Site.BaseURL }}/assets/img/logo-3.png" class="img-fluid" alt="" />
-                </div>
-                <div class="swiper-slide px-5  px-lg-0">
-                    <img src="{{ .Site.BaseURL }}/assets/img/logo-4.png" class="img-fluid" alt="" />
-                </div>
-                <div class="swiper-slide px-5  px-lg-0">
-                    <img src="{{ .Site.BaseURL }}/assets/img/logo-5.png" class="img-fluid" alt="" />
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
+  <div class="container" data-aos="fade-up">
+    <div class="clients-slider swiper">
+      <div class="swiper-wrapper align-items-center mb-md-5">
+        <div class="swiper-slide px-5 px-lg-0">
+          <img
+            src="{{ .Site.BaseURL }}/assets/img/logo-1.png"
+            class="img-fluid"
+            alt=""
+          />
         </div>
+        <div class="swiper-slide px-5 px-lg-0">
+          <img
+            src="{{ .Site.BaseURL }}/assets/img/logo-2.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide px-5 px-lg-0">
+          <img
+            src="a{{ .Site.BaseURL }}/assets/img/logo-3.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide px-5 px-lg-0">
+          <img
+            src="{{ .Site.BaseURL }}/assets/img/logo-4.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide px-5 px-lg-0">
+          <img
+            src="{{ .Site.BaseURL }}/assets/img/logo-5.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
     </div>
+  </div>
 </section>
 <!-- End Clients Section -->
 

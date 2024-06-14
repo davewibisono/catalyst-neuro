@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <title>Mission</title>
+  <title>projects</title>
   <meta content="" name="description" />
   <meta content="" name="keywords" />
 
@@ -93,55 +93,241 @@
 
     <main id="main">
       
-
+<div
+  class="modal fade"
+  id="dropBox"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">
+          projects
+        </h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+</div>
 <section class="inner-page-hero ww-inner">
   <div class="container d-flex justify-content-center align-items-center">
     <div class="row d-flex justify-content-center align-items-center">
       <div class="col-12 text-center">
-        <h2>Our Mission</h2>
+        <h2>Projects</h2>
       </div>
     </div>
   </div>
 </section>
 
-
 <section class="mission inner">
-  <div class="container mission-bg p-5">
-    <div class="row align-items-center">
-      <div
-        class="col-md-5 d-block d-lg-none mb-5"
-        data-aos="fade-up"
-        data-aos-delay="100"
-      >
-        <img
-          src="http://localhost:1313/assets/img/mission-page.png"
-          alt="Mission Image"
-          class="img-fluid"
-        />
-      </div>
+  <div class="container mission-bg bg-white p-5">
+    <div class="border rounded-3">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th class="p-3 fs-5">Project</th>
+            <th class="p-3 fs-5 border-start">Client</th>
+            <th class="p-3 fs-5 border-start text-end">Dates</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="p-3">
+              <a
+                href=""
+                data-bs-toggle="modal"
+                data-bs-target="#dropBox"
+                class="text-primary text-decoration-underline link-offset-2"
+                >Lorem, ipsum dolor. Lorem ipsum dolor, sit amet consectetur
+                adipisicing.</a
+              >
+            </td>
+            <td class="p-3 border-start text-secondary">Lorem, ipsum dolor.</td>
+            <td class="p-3 border-start text-end fw-semibold">
+              Lorem ipsum dolor sit amet.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
 
-      <div class="col-md-7 px-xxl-5 p-0">
-        <p data-aos="fade-up" data-aos-delay="300">
-          We believe that the future of neuroscience will be driven by collaboration between labs. Our mission is to develop channels of communication and distribution of resources between labs to enable exponential growth and innovation <br /><br />
-          We are at the forefront of this effort, shaping the way data, analysis and visualization tools are standardized and shared across the international community of systems neuroscientists.
+
+<section class="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 my-padi">
+        <h2>Availability for helping other labs</h2>
+        <br />
+        <img
+          src="http://localhost:1313//assets/img/call-to-action.png"
+          alt="cta"
+          class="img-fluid d-block d-lg-none"
+        />
+        <br />
+
+        <p>
+          We are always interested in opportunities to work with labs on data
+          infrastructure. We have a team of computational neuroscientists who
+          are experts in building conversion scripts, porting tools to NWB, and
+          helping to package and publicly release data. We also have experience
+          building custom databases and user interfaces for lab experimental
+          records. If you are interested in working with us
+        </p>
+        <br />
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 normal-btn">
+            <a href="mailto:contact@website.com"
+              >Contact Us <i class="bi bi-arrow-up-right"></i
+            ></a>
+          </div>
+          <div class="col-md-6 contact-btn mt-5 mt-md-0">
+            <a href="">
+              <img src="http://localhost:1313//assets/img/mail.svg" alt="Mail" />
+              <div class="text">
+                <p>
+                  <span class="text-wrap">Please contact us at </span> <br />
+                  inquiry@catalystneuro.com
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <br />
+
+        <p>
+          Our work is entirely open source. See our
+          <a href="/">GitHub organization</a> for code of past and ongoing
+          projects.
         </p>
       </div>
 
-      <div
-        class="col-md-5 d-none d-lg-block"
-        data-aos="fade-up"
-        data-aos-delay="100"
-      >
+      <div class="col-md-6">
         <img
-          src="http://localhost:1313/assets/img/mission-page.png"
-          alt="Mission Image"
-          class="img-fluid"
+          src="http://localhost:1313//assets/img/call-to-action.png"
+          alt="cta"
+          class="img-fluid d-none d-lg-block"
         />
       </div>
     </div>
   </div>
 </section>
 
+
+
+<section class="client d-none d-lg-block">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img
+          src="http://localhost:1313//assets/img/logo-1.png"
+          alt="Client Logo 1"
+          class="img-fluid p-2"
+        />
+      </div>
+
+      
+
+      <div class="col">
+        <img
+          src="http://localhost:1313//assets/img/logo-2.png"
+          alt="Client Logo 2"
+          class="img-fluid p-2"
+        />
+      </div>
+
+      
+
+      <div class="col">
+        <img
+          src="http://localhost:1313//assets/img/logo-3.png"
+          alt="Client Logo 3"
+          class="img-fluid p-2"
+        />
+      </div>
+
+      
+
+      <div class="col">
+        <img
+          src="http://localhost:1313//assets/img/logo-4.png"
+          alt="Client Logo 4"
+          class="img-fluid p-2"
+        />
+      </div>
+
+      
+
+      <div class="col">
+        <img
+          src="http://localhost:1313//assets/img/logo-5.png"
+          alt="Client Logo 5"
+          class="img-fluid p-2"
+        />
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+
+
+<section id="clients" class="clients d-block d-lg-none">
+  <div class="container" data-aos="fade-up">
+    <div class="clients-slider swiper">
+      <div class="swiper-wrapper align-items-center mb-md-5">
+        <div class="swiper-slide px-5 px-lg-0">
+          <img
+            src="http://localhost:1313//assets/img/logo-1.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide px-5 px-lg-0">
+          <img
+            src="http://localhost:1313//assets/img/logo-2.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide px-5 px-lg-0">
+          <img
+            src="ahttp://localhost:1313//assets/img/logo-3.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide px-5 px-lg-0">
+          <img
+            src="http://localhost:1313//assets/img/logo-4.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide px-5 px-lg-0">
+          <img
+            src="http://localhost:1313//assets/img/logo-5.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
 
 
     </main>
