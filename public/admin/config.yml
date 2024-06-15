@@ -34,8 +34,9 @@ collections:
       - { label: 'Institution', name: 'institution', widget: 'string' }
       - { label: 'Project', name: 'project', widget: 'string' }
       - { label: 'Dates', name: 'Dates', widget: 'string' }
-      - { label: 'Box Number', name: 'number', widget: 'number', required }
+      - { label: 'Box Number', name: 'number', widget: 'number', required: true }
       - { label: 'Details', name: 'body', widget: 'markdown' }
+      - { label: 'Order Number', name: 'weight', widget: 'number', required: true }
 
   - name: "pages"
     label: "Pages"
@@ -155,3 +156,23 @@ collections:
             { label: 'Requirements', name: 'requirements', widget: 'list', field: { widget: 'string', name: 'requirement' } }
           ]
         }
+
+      - file: 'data/projects'
+        label: 'Projects'
+        name: 'projects'
+        fields:
+        - label: 'Column'
+          name: 'column'
+          widget: 'list'
+          fields:
+          - { label: 'Project', name: 'project', widget: 'string' }
+          - { label: 'Client', name: 'client', widget: 'string' }
+          - { label: 'Dates', name: 'dates', widget: 'string' }
+          - { label: 'Number', name: 'number', widget: 'number' }
+          - { label: 'Details', name: 'details', widget: 'markdown' }
+          - label: 'Institutes'
+            name: 'institute'
+            widget: 'list'
+            fields:
+            - { label: 'Date', name: 'date', widget: 'string' }
+            - { label: 'Name', name: 'name', widget: 'text' }

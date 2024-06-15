@@ -93,32 +93,12 @@
 
     <main id="main">
       
-<div
-  class="modal fade"
-  id="dropBox"
-  data-bs-backdrop="static"
-  data-bs-keyboard="false"
-  tabindex="-1"
-  aria-labelledby="staticBackdropLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">
-          projects
-        </h1>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body"></div>
-    </div>
-  </div>
-</div>
+<style>
+  .modal-backdrop {
+    display: none;
+  }
+</style>
+
 <section class="inner-page-hero ww-inner">
   <div class="container d-flex justify-content-center align-items-center">
     <div class="row d-flex justify-content-center align-items-center">
@@ -141,22 +121,120 @@
           </tr>
         </thead>
         <tbody>
+          
           <tr>
             <td class="p-3">
               <a
                 href=""
                 data-bs-toggle="modal"
-                data-bs-target="#dropBox"
+                data-bs-target="#popbox1"
+                data-bs-backdrop="false"
                 class="text-primary text-decoration-underline link-offset-2"
-                >Lorem, ipsum dolor. Lorem ipsum dolor, sit amet consectetur
-                adipisicing.</a
+                >SCGB and SCPAB NWB Adoption</a
               >
             </td>
-            <td class="p-3 border-start text-secondary">Lorem, ipsum dolor.</td>
-            <td class="p-3 border-start text-end fw-semibold">
-              Lorem ipsum dolor sit amet.
-            </td>
+            <td class="p-3 border-start text-secondary">Simons Foundation</td>
+            <td class="p-3 border-start text-end fw-semibold">2019-2024</td>
           </tr>
+          <div
+            class="modal fade"
+            id="popbox1"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="popbox1"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+            >
+              <div class="modal-content">
+                <div class="modal-header row">
+                  <div class="col-5">
+                    <h1 class="modal-title fs-5 mb-2" id="popbox1">
+                      SCGB and SCPAB NWB Adoption
+                    </h1>
+                    <p class="text-body-secondary fs-6 mb-0">
+                      Client:
+                      <span class="text-dark"
+                        >Simons Foundation</span
+                      >
+                    </p>
+                  </div>
+                  <div class="col-5">
+                    <p class="text-body-secondary fs-6 mb-0">
+                      Dates:
+                      <span class="text-dark"
+                        >2019-2024</span
+                      >
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close col-2 align-self-start me-1"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    CatalystNeuro has been working with labs in the Simons Collaboration on the Global Brain (SCGB) for 5 years, and the Simons Foundation Plasticity and the Aging Brain for 2 years. In this project, we work with neurophysiology labs that are supported by these collaborations, helping them build custom pipelines to standardize and publish their data, and to integrate NWB into the lab&#39;s analysis tools. This project has provided the opportunity to work with a large number of influential neurophysiology research groups from some of the leading research institutes in the United States:
+                  </div>
+                  
+                  <div class="row py-2 my-2 align-items-center">
+                    <div class="col-1 fw-semibold">2019</div>
+                    <div class="col-10">
+                      Richard Axel, Columbia University Beth Buffalo, University of Washington
+                    </div>
+                  </div>
+                  
+                  <div class="row py-2 my-2 align-items-center">
+                    <div class="col-1 fw-semibold">2020</div>
+                    <div class="col-10">
+                      International Brain Lab Lisa Giocomo, Stanford University
+                    </div>
+                  </div>
+                  
+                  <div class="row py-2 my-2 align-items-center">
+                    <div class="col-1 fw-semibold">2021</div>
+                    <div class="col-10">
+                      Carlos Brody, Princeton University Tony Movshon, New York University David Tank, Princeton University
+                    </div>
+                  </div>
+                  
+                  <div class="row py-2 my-2 align-items-center">
+                    <div class="col-1 fw-semibold">2022</div>
+                    <div class="col-10">
+                      Misha Ahrens, Janelia
+                    </div>
+                  </div>
+                  
+                  <div class="row py-2 my-2 align-items-center">
+                    <div class="col-1 fw-semibold">2023</div>
+                    <div class="col-10">
+                      Mehrdad Jazayeri, MIT Mala Murthy, Princeton Lucas Pinto, Northwestern Bob Datta, Harvard University Thomas Clandinin, Stanford University Sergey Stavisky, UC Davis
+                    </div>
+                  </div>
+                  
+                  <div class="row py-2 my-2 align-items-center">
+                    <div class="col-1 fw-semibold">2022</div>
+                    <div class="col-10">
+                      Misha Ahrens, Janelia
+                    </div>
+                  </div>
+                  
+                  <div class="row py-2 my-2 align-items-center">
+                    <div class="col-1 fw-semibold">2024</div>
+                    <div class="col-10">
+                      Andrew Leifer, Princeton James DiCarlo, MIT
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </tbody>
       </table>
     </div>

@@ -1,30 +1,10 @@
 {{ define "main" }}
-<div
-  class="modal fade"
-  id="dropBox"
-  data-bs-backdrop="static"
-  data-bs-keyboard="false"
-  tabindex="-1"
-  aria-labelledby="staticBackdropLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">
-          {{ .Params.title }}
-        </h1>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="modal-body">{{ .Content }}</div>
-    </div>
-  </div>
-</div>
+<style>
+  .modal-backdrop {
+    display: none;
+  }
+</style>
+
 <section class="inner-page-hero ww-inner">
   <div class="container d-flex justify-content-center align-items-center">
     <div class="row d-flex justify-content-center align-items-center">
@@ -47,22 +27,78 @@
           </tr>
         </thead>
         <tbody>
+          {{ range .Site.Data.projects.column }}
           <tr>
             <td class="p-3">
               <a
                 href=""
                 data-bs-toggle="modal"
-                data-bs-target="#dropBox"
+                data-bs-target="#popbox{{ .number }}"
+                data-bs-backdrop="false"
                 class="text-primary text-decoration-underline link-offset-2"
-                >Lorem, ipsum dolor. Lorem ipsum dolor, sit amet consectetur
-                adipisicing.</a
+                >{{ .project }}</a
               >
             </td>
-            <td class="p-3 border-start text-secondary">Lorem, ipsum dolor.</td>
-            <td class="p-3 border-start text-end fw-semibold">
-              Lorem ipsum dolor sit amet.
-            </td>
+            <td class="p-3 border-start text-secondary">{{ .client }}</td>
+            <td class="p-3 border-start text-end fw-semibold">{{ .dates }}</td>
           </tr>
+          <div
+            class="modal fade"
+            id="popbox{{ .number }}"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="popbox{{ .number }}"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+            >
+              <div class="modal-content">
+                <div class="modal-header row">
+                  <div class="col-5">
+                    <h1 class="modal-title fs-5 mb-2" id="popbox{{ .number }}">
+                      {{ .project }}
+                    </h1>
+                    <p class="text-body-secondary fs-6 mb-0">
+                      Client:
+                      <span class="text-dark"
+                        >{{ .client }}</span
+                      >
+                    </p>
+                  </div>
+                  <div class="col-5">
+                    <p class="text-body-secondary fs-6 mb-0">
+                      Dates:
+                      <span class="text-dark"
+                        >{{ .dates }}</span
+                      >
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn-close col-2 align-self-start me-1"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    {{ .details }}
+                  </div>
+                  {{ range .institute }}
+                  <div class="row py-2 my-2 align-items-center">
+                    <div class="col-1 fw-semibold">{{ .date }}</div>
+                    <div class="col-10">
+                      {{ .name }}
+                    </div>
+                  </div>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+          {{ end }}
         </tbody>
       </table>
     </div>

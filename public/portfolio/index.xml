@@ -14,5 +14,12 @@
       <guid>http://localhost:1313/portfolio/hillel-adesnik/</guid>
       <description>We developed ndx-patterend-ogen, an NWB extension for holographic patterned optogenetic stimulation as part of the MouseV1 U19 project. We used this extension in a custom conversion pipeline, mousev1-to-nwb, converting data from their Nature Neuroscience 2024 paper, &amp;ldquo;The logic of recurrent circuits in the primary visual cortex.&amp;rdquo;</description>
     </item>
+    <item>
+      <title>Misha Ahrens</title>
+      <link>http://localhost:1313/portfolio/misha-ahrens/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/misha-ahrens/</guid>
+      <description>We developed ndx-patterend-ogen, an NWB extension for holographic patterned optogenetic stimulation as part of the MouseV1 U19 project. We used this extension in a custom conversion pipeline, mousev1-to-nwb, converting data from their Nature Neuroscience 2024 paper, &amp;ldquo;The logic of recurrent circuits in the primary visual cortex.</description>
+    </item>
   </channel>
 </rss>

@@ -15,7 +15,7 @@
     {{ range .Paginator.Pages }}
     {{ with .Params }}
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="rounded-4 border p-4">
+      <div class="rounded-4 border p-4 h-100">
         <h4 class="text-dark fs-5">{{ .title }}</h4>
         <p class="text-body-secondary fs-6">
           Institution: <span class="text-dark">{{ .institution }}</span>
@@ -52,9 +52,9 @@
           aria-labelledby="staticBackdropLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
             <div class="modal-content">
-              <div class="modal-header row pt-1 pb-3">
+              <div class="modal-header row">
                 <div class="col-5">
                   <h1 class="modal-title fs-5 mb-2" id="staticBackdropLabel">
                     {{ .Title }}
@@ -64,7 +64,7 @@
                   </p>
                 </div>
                 <div class="col-5">
-                  <p class="text-body-secondary fs-6 mb-2 mt-4">
+                  <p class="text-body-secondary fs-6 mb-2">
                     Project: <span class="text-dark">{{ .Params.project }}</span>
                   </p>
                   <p class="text-body-secondary fs-6 mb-0">
