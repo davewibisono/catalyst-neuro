@@ -157,7 +157,7 @@ collections:
           ]
         }
 
-      - file: 'data/projects'
+      - file: 'data/projects.yml'
         label: 'Projects'
         name: 'projects'
         fields:

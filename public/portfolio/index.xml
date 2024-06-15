@@ -19,7 +19,35 @@
       <link>http://localhost:1313/portfolio/misha-ahrens/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/portfolio/misha-ahrens/</guid>
-      <description>We developed ndx-patterend-ogen, an NWB extension for holographic patterned optogenetic stimulation as part of the MouseV1 U19 project. We used this extension in a custom conversion pipeline, mousev1-to-nwb, converting data from their Nature Neuroscience 2024 paper, &amp;ldquo;The logic of recurrent circuits in the primary visual cortex.</description>
+      <description>Working with Misha Ahrens&amp;rsquo; lab at Janelia, we developed ahrens-lab-to-nwb, an open repo to convert data from their custom optical physiology acquisition system to NWB. This pipeline was used to standardize and publish the data associated with their Cell 2019 paper, &amp;ldquo;Glia Accumulate Evidence that Actions Are Futile and Suppress Unsuccessful Behavior.&amp;rdquo; The NWB dataset is published on DANDI as DANDI:000350/0.221219.1506. The dataset contains 5.9 TB of optical physiology data from zebrafish.</description>
+    </item>
+    <item>
+      <title>Richard Axel</title>
+      <link>http://localhost:1313/portfolio/richard-axel/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/richard-axel/</guid>
+      <description>Working with Richard Axel&amp;rsquo;s lab at Columbia University, we developed axel-lab-to-nwb, a pipelin for converting their whole-brain fly two photon neurophysiology to NWB.</description>
+    </item>
+    <item>
+      <title>Daniel Dombeck</title>
+      <link>http://localhost:1313/portfolio/daniel-dombeck/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/daniel-dombeck/</guid>
+      <description>We developed dombeck-lab-to-nwb, an open NWB conversion pipeline including fiber photometry, ScanImage two-photon microscopy, suite2p, video camera, and DeepLabCut data as well as behavioral metrics.</description>
+    </item>
+    <item>
+      <title>Michael Higley</title>
+      <link>http://localhost:1313/portfolio/michael-higley/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/michael-higley/</guid>
+      <description>We developed higley-lab-to-nwb, an open source NWB conversion pipeline including two-photon imaging data from ScanImage, custom ROI segmentation, wheel motion recorded with Spike2, and face motion captured with a CMOS camera.</description>
+    </item>
+    <item>
+      <title>Robert Turner</title>
+      <link>http://localhost:1313/portfolio/robert-turner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/robert-turner/</guid>
+      <description>We developed turner-lab-to-nwb, an open source NWB conversion pipeline using NeuroConv. The data was of extracellular electrophysiology using a TDT system on non-human primates (NHPs) during a 2-choice reaction time reaching task. The data also included spike sorting using Plexon software and trial events. This data was published as DANDI:000947/0.240510.2211, which contains 1 TB of neurophysiology data, which at the time of publication is the biggest NHP dataset. We also released this electronic notebook to demonstrate how to read and analyze the data directly from the archive.</description>
     </item>
   </channel>
 </rss>
