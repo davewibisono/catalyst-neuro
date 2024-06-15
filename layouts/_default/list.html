@@ -15,7 +15,7 @@
     {{ range .Paginator.Pages }}
     {{ with .Params }}
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="rounded-4 border p-4 h-100">
+      <div class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between">
         <h4 class="text-dark fs-5">{{ .title }}</h4>
         <p class="text-body-secondary fs-6">
           Institution: <span class="text-dark">{{ .institution }}</span>
@@ -34,14 +34,16 @@
           Date: <span class="text-dark">{{ .dates }}</span>
         </p>
         <br />
-        <button
-          type="button"
-          data-bs-toggle="modal"
-          data-bs-target="#dropBox{{ .number }}"
-          class="btn btn-outline-primary rounded-5 px-5 clients-btn"
-        >
-          Details
-        </button>
+        <div>
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#dropBox{{ .number }}"
+            class="btn btn-outline-primary rounded-5 px-5 clients-btn"
+          >
+            Details
+          </button>
+        </div>
         {{ end }}
         <div
           class="modal fade"
@@ -73,7 +75,8 @@
                 </div>
                 <button
                   type="button"
-                  class="btn-close col-2 align-self-start me-1 mt-2"
+                  class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
+                  style="top: -30px;"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
