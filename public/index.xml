@@ -51,6 +51,13 @@
       <description>We developed turner-lab-to-nwb, an open source NWB conversion pipeline using NeuroConv. The data was of extracellular electrophysiology using a TDT system on non-human primates (NHPs) during a 2-choice reaction time reaching task. The data also included spike sorting using Plexon software and trial events. This data was published as DANDI:000947/0.240510.2211, which contains 1 TB of neurophysiology data, which at the time of publication is the biggest NHP dataset. We also released this electronic notebook to demonstrate how to read and analyze the data directly from the archive.</description>
     </item>
     <item>
+      <title>Talia Lerner</title>
+      <link>http://localhost:1313/portfolio/talia-lerner/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/portfolio/talia-lerner/</guid>
+      <description>We developed lerner-lab-to-nwb, an open source NWB conversion pipeline using NeuroConv.</description>
+    </item>
+    <item>
       <title>CatalystNeuro at Cosyne 2024</title>
       <link>http://localhost:1313/blog/catalystneuro-at-cosyne-2024/</link>
       <pubDate>Mon, 22 Apr 2024 19:12:27 +0000</pubDate>

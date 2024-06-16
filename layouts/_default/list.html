@@ -1,5 +1,20 @@
 {{define "main"}}
 
+<style>
+  .customBg:hover {
+    background-color: #1466a7;
+  }
+
+  .customBg:hover .customText {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 350ms;
+    color: white !important;
+    border-color: white;
+    cursor: pointer;
+  }
+</style>
+
 <section class="inner-page-hero custom">
   <div class="container">
     <div class="row d-flex justify-content-center align-items-center">
@@ -11,50 +26,54 @@
 </section>
 
 <section class="shadow-sm p-4 container nt-margin rounded-4">
-    <div class="row g-3">
-    {{ range .Paginator.Pages }}
-    {{ with .Params }}
+  <div class="row g-3">
+    {{ range .Paginator.Pages }} {{ with .Params }}
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between">
-        <h4 class="text-dark fs-5">{{ .title }}</h4>
-        <p class="text-body-secondary fs-6">
-          Institution: <span class="text-dark">{{ .institution }}</span>
+      <div
+        class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between customBg"
+      >
+        <h4 class="text-dark fs-5 customText">{{ .title }}</h4>
+        <p class="text-body-secondary fs-6 customText">
+          Institution: <span class="text-dark customText">{{ .institution }}</span>
         </p>
-        <p class="text-body-secondary fs-6">
+        <p class="text-body-secondary fs-6 customText">
           Project:
           <a
             data-bs-toggle="modal"
-            data-bs-target="#dropBox{{ .number }}"
-            class="text-primary text-decoration-underline link-offset-2"
+            data-bs-target="#popBox{{ .number }}"
+            class="text-primary text-decoration-underline link-offset-2 customText"
             href="/"
             >{{ .project }}</a
           >
         </p>
-        <p class="text-body-secondary fs-6">
-          Date: <span class="text-dark">{{ .dates }}</span>
+        <p class="text-body-secondary fs-6 customText">
+          Date: <span class="text-dark customText">{{ .dates }}</span>
         </p>
         <br />
         <div>
           <button
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#dropBox{{ .number }}"
-            class="btn btn-outline-primary rounded-5 px-5 clients-btn"
+            data-bs-target='#dropBox{{ replace .Title " " "" }}'
+            class="btn btn-outline-primary rounded-5 px-5 clients-btn customText"
           >
             Details
           </button>
         </div>
         {{ end }}
+
         <div
           class="modal fade"
-          id="dropBox{{ .Params.number }}"
+          id='dropBox{{ replace .Title " " "" }}'
           data-bs-backdrop="static"
           data-bs-keyboard="false"
           tabindex="-1"
           aria-labelledby="staticBackdropLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+          >
             <div class="modal-content">
               <div class="modal-header row">
                 <div class="col-5">
@@ -62,12 +81,14 @@
                     {{ .Title }}
                   </h1>
                   <p class="text-body-secondary fs-6 mb-0">
-                    Institution: <span class="text-dark">{{ .Params.institution }}</span>
+                    Institution:
+                    <span class="text-dark">{{ .Params.institution }}</span>
                   </p>
                 </div>
                 <div class="col-5">
                   <p class="text-body-secondary fs-6 mb-2">
-                    Project: <span class="text-dark">{{ .Params.project }}</span>
+                    Project:
+                    <span class="text-dark">{{ .Params.project }}</span>
                   </p>
                   <p class="text-body-secondary fs-6 mb-0">
                     Dates: <span class="text-dark">{{ .Params.dates }}</span>
@@ -76,7 +97,7 @@
                 <button
                   type="button"
                   class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
-                  style="top: -30px;"
+                  style="top: -30px"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>

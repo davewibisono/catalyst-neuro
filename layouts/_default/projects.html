@@ -3,6 +3,12 @@
   .modal-backdrop {
     display: none;
   }
+
+  @media (max-width: 1200px) {
+    .customTop {
+      top: 100px;
+    }
+  }
 </style>
 
 <section class="inner-page-hero ww-inner">
@@ -28,12 +34,14 @@
         </thead>
         <tbody>
           {{ range .Site.Data.projects.column }}
+          {{ $cleanedTitle := .project | replaceRE " " "" }}
+          {{ $id := $cleanedTitle | truncate 5 "" }}
           <tr>
             <td class="p-3">
               <a
                 href=""
                 data-bs-toggle="modal"
-                data-bs-target="#popbox{{ .number }}"
+                data-bs-target='#dropBox{{ $id }}'
                 data-bs-backdrop="false"
                 class="text-primary text-decoration-underline link-offset-2"
                 >{{ .project }}</a
@@ -44,20 +52,20 @@
           </tr>
           <div
             class="modal fade"
-            id="popbox{{ .number }}"
+            id='dropBox{{ $id }}'
             data-bs-backdrop="static"
             data-bs-keyboard="false"
             tabindex="-1"
-            aria-labelledby="popbox{{ .number }}"
+            aria-labelledby='dropBox{{ $id }}'
             aria-hidden="true"
           >
             <div
               class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
             >
-              <div class="modal-content">
+              <div class="modal-content customTop">
                 <div class="modal-header row">
                   <div class="col-5">
-                    <h1 class="modal-title fs-5 mb-2" id="popbox{{ .number }}">
+                    <h1 class="modal-title fs-5 mb-2" id='dropBox{{ $id }}'>
                       {{ .project }}
                     </h1>
                     <p class="text-body-secondary fs-6 mb-0">
@@ -89,7 +97,7 @@
                   </div>
                   {{ range .institute }}
                   <div class="row py-2 my-2 align-items-center">
-                    <div class="col-1 fw-semibold">{{ .date }}</div>
+                    <div class="col-2 fw-semibold">{{ .date }}</div>
                     <div class="col-10">
                       {{ .name }}
                     </div>

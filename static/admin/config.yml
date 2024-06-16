@@ -34,7 +34,6 @@ collections:
       - { label: 'Institution', name: 'institution', widget: 'string' }
       - { label: 'Project', name: 'project', widget: 'string' }
       - { label: 'Dates', name: 'Dates', widget: 'string' }
-      - { label: 'Box Number', name: 'number', widget: 'number', required: true }
       - { label: 'Details', name: 'body', widget: 'markdown' }
       - { label: 'Order Number', name: 'weight', widget: 'number', required: true }
 
@@ -165,7 +164,6 @@ collections:
             { label: 'Project', name: 'project', widget: 'string' },
             { label: 'Client', name: 'client', widget: 'string' },
             { label: 'Dates', name: 'dates', widget: 'string' },
-            { label: 'Number', name: 'number', widget: 'number' },
             { label: 'Details', name: 'details', widget: 'markdown' },
             { label: 'Institutes', name: 'institute', widget: 'list', fields: [
               { label: 'Date', name: 'date', widget: 'string' },

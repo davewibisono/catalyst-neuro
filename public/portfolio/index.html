@@ -88,6 +88,21 @@
     <main id="main">
       
 
+<style>
+  .customBg:hover {
+    background-color: #1466a7;
+  }
+
+  .customBg:hover .customText {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 350ms;
+    color: white !important;
+    border-color: white;
+    cursor: pointer;
+  }
+</style>
+
 <section class="inner-page-hero custom">
   <div class="container">
     <div class="row d-flex justify-content-center align-items-center">
@@ -99,50 +114,54 @@
 </section>
 
 <section class="shadow-sm p-4 container nt-margin rounded-4">
-    <div class="row g-3">
-    
-    
+  <div class="row g-3">
+     
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between">
-        <h4 class="text-dark fs-5">Hillel Adesnik</h4>
-        <p class="text-body-secondary fs-6">
-          Institution: <span class="text-dark">UC Berkeley</span>
+      <div
+        class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between customBg"
+      >
+        <h4 class="text-dark fs-5 customText">Hillel Adesnik</h4>
+        <p class="text-body-secondary fs-6 customText">
+          Institution: <span class="text-dark customText">UC Berkeley</span>
         </p>
-        <p class="text-body-secondary fs-6">
+        <p class="text-body-secondary fs-6 customText">
           Project:
           <a
             data-bs-toggle="modal"
-            data-bs-target="#dropBox1"
-            class="text-primary text-decoration-underline link-offset-2"
+            data-bs-target="#popBox1"
+            class="text-primary text-decoration-underline link-offset-2 customText"
             href="/"
             >MouseV1 U19</a
           >
         </p>
-        <p class="text-body-secondary fs-6">
-          Date: <span class="text-dark">2023-06-01 to 2024-02-15</span>
+        <p class="text-body-secondary fs-6 customText">
+          Date: <span class="text-dark customText">2023-06-01 to 2024-02-15</span>
         </p>
         <br />
         <div>
           <button
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#dropBox1"
-            class="btn btn-outline-primary rounded-5 px-5 clients-btn"
+            data-bs-target='#dropBoxHillelAdesnik'
+            class="btn btn-outline-primary rounded-5 px-5 clients-btn customText"
           >
             Details
           </button>
         </div>
         
+
         <div
           class="modal fade"
-          id="dropBox1"
+          id='dropBoxHillelAdesnik'
           data-bs-backdrop="static"
           data-bs-keyboard="false"
           tabindex="-1"
           aria-labelledby="staticBackdropLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+          >
             <div class="modal-content">
               <div class="modal-header row">
                 <div class="col-5">
@@ -150,12 +169,14 @@
                     Hillel Adesnik
                   </h1>
                   <p class="text-body-secondary fs-6 mb-0">
-                    Institution: <span class="text-dark">UC Berkeley</span>
+                    Institution:
+                    <span class="text-dark">UC Berkeley</span>
                   </p>
                 </div>
                 <div class="col-5">
                   <p class="text-body-secondary fs-6 mb-2">
-                    Project: <span class="text-dark">MouseV1 U19</span>
+                    Project:
+                    <span class="text-dark">MouseV1 U19</span>
                   </p>
                   <p class="text-body-secondary fs-6 mb-0">
                     Dates: <span class="text-dark">2023-06-01 to 2024-02-15</span>
@@ -164,7 +185,7 @@
                 <button
                   type="button"
                   class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
-                  style="top: -30px;"
+                  style="top: -30px"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -176,49 +197,53 @@
         </div>
       </div>
     </div>
-    
-    
+     
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between">
-        <h4 class="text-dark fs-5">Misha Ahrens</h4>
-        <p class="text-body-secondary fs-6">
-          Institution: <span class="text-dark">HHMI Janelia Research ca.</span>
+      <div
+        class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between customBg"
+      >
+        <h4 class="text-dark fs-5 customText">Misha Ahrens</h4>
+        <p class="text-body-secondary fs-6 customText">
+          Institution: <span class="text-dark customText">HHMI Janelia Research Campus</span>
         </p>
-        <p class="text-body-secondary fs-6">
+        <p class="text-body-secondary fs-6 customText">
           Project:
           <a
             data-bs-toggle="modal"
-            data-bs-target="#dropBox2"
-            class="text-primary text-decoration-underline link-offset-2"
+            data-bs-target="#popBox"
+            class="text-primary text-decoration-underline link-offset-2 customText"
             href="/"
             >SCGB NWB Adoption</a
           >
         </p>
-        <p class="text-body-secondary fs-6">
-          Date: <span class="text-dark">2022-01-01 to 2022-12-31</span>
+        <p class="text-body-secondary fs-6 customText">
+          Date: <span class="text-dark customText">2022-01-01 to 2022-12-31</span>
         </p>
         <br />
         <div>
           <button
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#dropBox2"
-            class="btn btn-outline-primary rounded-5 px-5 clients-btn"
+            data-bs-target='#dropBoxMishaAhrens'
+            class="btn btn-outline-primary rounded-5 px-5 clients-btn customText"
           >
             Details
           </button>
         </div>
         
+
         <div
           class="modal fade"
-          id="dropBox2"
+          id='dropBoxMishaAhrens'
           data-bs-backdrop="static"
           data-bs-keyboard="false"
           tabindex="-1"
           aria-labelledby="staticBackdropLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+          >
             <div class="modal-content">
               <div class="modal-header row">
                 <div class="col-5">
@@ -226,12 +251,14 @@
                     Misha Ahrens
                   </h1>
                   <p class="text-body-secondary fs-6 mb-0">
-                    Institution: <span class="text-dark">HHMI Janelia Research ca.</span>
+                    Institution:
+                    <span class="text-dark">HHMI Janelia Research Campus</span>
                   </p>
                 </div>
                 <div class="col-5">
                   <p class="text-body-secondary fs-6 mb-2">
-                    Project: <span class="text-dark">SCGB NWB Adoption</span>
+                    Project:
+                    <span class="text-dark">SCGB NWB Adoption</span>
                   </p>
                   <p class="text-body-secondary fs-6 mb-0">
                     Dates: <span class="text-dark">2022-01-01 to 2022-12-31</span>
@@ -240,7 +267,7 @@
                 <button
                   type="button"
                   class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
-                  style="top: -30px;"
+                  style="top: -30px"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -252,49 +279,53 @@
         </div>
       </div>
     </div>
-    
-    
+     
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between">
-        <h4 class="text-dark fs-5">Richard Axel</h4>
-        <p class="text-body-secondary fs-6">
-          Institution: <span class="text-dark">Columbia University</span>
+      <div
+        class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between customBg"
+      >
+        <h4 class="text-dark fs-5 customText">Richard Axel</h4>
+        <p class="text-body-secondary fs-6 customText">
+          Institution: <span class="text-dark customText">Columbia University</span>
         </p>
-        <p class="text-body-secondary fs-6">
+        <p class="text-body-secondary fs-6 customText">
           Project:
           <a
             data-bs-toggle="modal"
-            data-bs-target="#dropBox3"
-            class="text-primary text-decoration-underline link-offset-2"
+            data-bs-target="#popBox3"
+            class="text-primary text-decoration-underline link-offset-2 customText"
             href="/"
             >SCGB NWB Adoption</a
           >
         </p>
-        <p class="text-body-secondary fs-6">
-          Date: <span class="text-dark">2019-01-01 to 2019-12-31</span>
+        <p class="text-body-secondary fs-6 customText">
+          Date: <span class="text-dark customText">2019-01-01 to 2019-12-31</span>
         </p>
         <br />
         <div>
           <button
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#dropBox3"
-            class="btn btn-outline-primary rounded-5 px-5 clients-btn"
+            data-bs-target='#dropBoxRichardAxel'
+            class="btn btn-outline-primary rounded-5 px-5 clients-btn customText"
           >
             Details
           </button>
         </div>
         
+
         <div
           class="modal fade"
-          id="dropBox3"
+          id='dropBoxRichardAxel'
           data-bs-backdrop="static"
           data-bs-keyboard="false"
           tabindex="-1"
           aria-labelledby="staticBackdropLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+          >
             <div class="modal-content">
               <div class="modal-header row">
                 <div class="col-5">
@@ -302,12 +333,14 @@
                     Richard Axel
                   </h1>
                   <p class="text-body-secondary fs-6 mb-0">
-                    Institution: <span class="text-dark">Columbia University</span>
+                    Institution:
+                    <span class="text-dark">Columbia University</span>
                   </p>
                 </div>
                 <div class="col-5">
                   <p class="text-body-secondary fs-6 mb-2">
-                    Project: <span class="text-dark">SCGB NWB Adoption</span>
+                    Project:
+                    <span class="text-dark">SCGB NWB Adoption</span>
                   </p>
                   <p class="text-body-secondary fs-6 mb-0">
                     Dates: <span class="text-dark">2019-01-01 to 2019-12-31</span>
@@ -316,7 +349,7 @@
                 <button
                   type="button"
                   class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
-                  style="top: -30px;"
+                  style="top: -30px"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -328,49 +361,53 @@
         </div>
       </div>
     </div>
-    
-    
+     
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between">
-        <h4 class="text-dark fs-5">Daniel Dombeck</h4>
-        <p class="text-body-secondary fs-6">
-          Institution: <span class="text-dark">Northwestern</span>
+      <div
+        class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between customBg"
+      >
+        <h4 class="text-dark fs-5 customText">Daniel Dombeck</h4>
+        <p class="text-body-secondary fs-6 customText">
+          Institution: <span class="text-dark customText">Northwestern</span>
         </p>
-        <p class="text-body-secondary fs-6">
+        <p class="text-body-secondary fs-6 customText">
           Project:
           <a
             data-bs-toggle="modal"
-            data-bs-target="#dropBox4"
-            class="text-primary text-decoration-underline link-offset-2"
+            data-bs-target="#popBox4"
+            class="text-primary text-decoration-underline link-offset-2 customText"
             href="/"
             >MJF ASAP NWB Adoption</a
           >
         </p>
-        <p class="text-body-secondary fs-6">
-          Date: <span class="text-dark">2023-09-01 to 2024-09-01</span>
+        <p class="text-body-secondary fs-6 customText">
+          Date: <span class="text-dark customText">2023-09-01 to 2024-09-01</span>
         </p>
         <br />
         <div>
           <button
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#dropBox4"
-            class="btn btn-outline-primary rounded-5 px-5 clients-btn"
+            data-bs-target='#dropBoxDanielDombeck'
+            class="btn btn-outline-primary rounded-5 px-5 clients-btn customText"
           >
             Details
           </button>
         </div>
         
+
         <div
           class="modal fade"
-          id="dropBox4"
+          id='dropBoxDanielDombeck'
           data-bs-backdrop="static"
           data-bs-keyboard="false"
           tabindex="-1"
           aria-labelledby="staticBackdropLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+          >
             <div class="modal-content">
               <div class="modal-header row">
                 <div class="col-5">
@@ -378,12 +415,14 @@
                     Daniel Dombeck
                   </h1>
                   <p class="text-body-secondary fs-6 mb-0">
-                    Institution: <span class="text-dark">Northwestern</span>
+                    Institution:
+                    <span class="text-dark">Northwestern</span>
                   </p>
                 </div>
                 <div class="col-5">
                   <p class="text-body-secondary fs-6 mb-2">
-                    Project: <span class="text-dark">MJF ASAP NWB Adoption</span>
+                    Project:
+                    <span class="text-dark">MJF ASAP NWB Adoption</span>
                   </p>
                   <p class="text-body-secondary fs-6 mb-0">
                     Dates: <span class="text-dark">2023-09-01 to 2024-09-01</span>
@@ -392,7 +431,7 @@
                 <button
                   type="button"
                   class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
-                  style="top: -30px;"
+                  style="top: -30px"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -404,49 +443,53 @@
         </div>
       </div>
     </div>
-    
-    
+     
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between">
-        <h4 class="text-dark fs-5">Michael Higley</h4>
-        <p class="text-body-secondary fs-6">
-          Institution: <span class="text-dark">Yale University</span>
+      <div
+        class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between customBg"
+      >
+        <h4 class="text-dark fs-5 customText">Michael Higley</h4>
+        <p class="text-body-secondary fs-6 customText">
+          Institution: <span class="text-dark customText">Yale University</span>
         </p>
-        <p class="text-body-secondary fs-6">
+        <p class="text-body-secondary fs-6 customText">
           Project:
           <a
             data-bs-toggle="modal"
-            data-bs-target="#dropBox5"
-            class="text-primary text-decoration-underline link-offset-2"
+            data-bs-target="#popBox5"
+            class="text-primary text-decoration-underline link-offset-2 customText"
             href="/"
             >MJF ASAP NWB Adoption</a
           >
         </p>
-        <p class="text-body-secondary fs-6">
-          Date: <span class="text-dark">2023-09-01 to 2024-09-01</span>
+        <p class="text-body-secondary fs-6 customText">
+          Date: <span class="text-dark customText">2023-09-01 to 2024-09-01</span>
         </p>
         <br />
         <div>
           <button
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#dropBox5"
-            class="btn btn-outline-primary rounded-5 px-5 clients-btn"
+            data-bs-target='#dropBoxMichaelHigley'
+            class="btn btn-outline-primary rounded-5 px-5 clients-btn customText"
           >
             Details
           </button>
         </div>
         
+
         <div
           class="modal fade"
-          id="dropBox5"
+          id='dropBoxMichaelHigley'
           data-bs-backdrop="static"
           data-bs-keyboard="false"
           tabindex="-1"
           aria-labelledby="staticBackdropLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+          >
             <div class="modal-content">
               <div class="modal-header row">
                 <div class="col-5">
@@ -454,12 +497,14 @@
                     Michael Higley
                   </h1>
                   <p class="text-body-secondary fs-6 mb-0">
-                    Institution: <span class="text-dark">Yale University</span>
+                    Institution:
+                    <span class="text-dark">Yale University</span>
                   </p>
                 </div>
                 <div class="col-5">
                   <p class="text-body-secondary fs-6 mb-2">
-                    Project: <span class="text-dark">MJF ASAP NWB Adoption</span>
+                    Project:
+                    <span class="text-dark">MJF ASAP NWB Adoption</span>
                   </p>
                   <p class="text-body-secondary fs-6 mb-0">
                     Dates: <span class="text-dark">2023-09-01 to 2024-09-01</span>
@@ -468,7 +513,7 @@
                 <button
                   type="button"
                   class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
-                  style="top: -30px;"
+                  style="top: -30px"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -480,49 +525,53 @@
         </div>
       </div>
     </div>
-    
-    
+     
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between">
-        <h4 class="text-dark fs-5">Robert Turner</h4>
-        <p class="text-body-secondary fs-6">
-          Institution: <span class="text-dark">University of Pittsburgh</span>
+      <div
+        class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between customBg"
+      >
+        <h4 class="text-dark fs-5 customText">Robert Turner</h4>
+        <p class="text-body-secondary fs-6 customText">
+          Institution: <span class="text-dark customText">University of Pittsburgh</span>
         </p>
-        <p class="text-body-secondary fs-6">
+        <p class="text-body-secondary fs-6 customText">
           Project:
           <a
             data-bs-toggle="modal"
-            data-bs-target="#dropBox6"
-            class="text-primary text-decoration-underline link-offset-2"
+            data-bs-target="#popBox6"
+            class="text-primary text-decoration-underline link-offset-2 customText"
             href="/"
             >MJF ASAP NWB Adoption</a
           >
         </p>
-        <p class="text-body-secondary fs-6">
-          Date: <span class="text-dark">2023-09-01 to 2024-09-01</span>
+        <p class="text-body-secondary fs-6 customText">
+          Date: <span class="text-dark customText">2023-09-01 to 2024-09-01</span>
         </p>
         <br />
         <div>
           <button
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#dropBox6"
-            class="btn btn-outline-primary rounded-5 px-5 clients-btn"
+            data-bs-target='#dropBoxRobertTurner'
+            class="btn btn-outline-primary rounded-5 px-5 clients-btn customText"
           >
             Details
           </button>
         </div>
         
+
         <div
           class="modal fade"
-          id="dropBox6"
+          id='dropBoxRobertTurner'
           data-bs-backdrop="static"
           data-bs-keyboard="false"
           tabindex="-1"
           aria-labelledby="staticBackdropLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+          >
             <div class="modal-content">
               <div class="modal-header row">
                 <div class="col-5">
@@ -530,12 +579,14 @@
                     Robert Turner
                   </h1>
                   <p class="text-body-secondary fs-6 mb-0">
-                    Institution: <span class="text-dark">University of Pittsburgh</span>
+                    Institution:
+                    <span class="text-dark">University of Pittsburgh</span>
                   </p>
                 </div>
                 <div class="col-5">
                   <p class="text-body-secondary fs-6 mb-2">
-                    Project: <span class="text-dark">MJF ASAP NWB Adoption</span>
+                    Project:
+                    <span class="text-dark">MJF ASAP NWB Adoption</span>
                   </p>
                   <p class="text-body-secondary fs-6 mb-0">
                     Dates: <span class="text-dark">2023-09-01 to 2024-09-01</span>
@@ -544,12 +595,94 @@
                 <button
                   type="button"
                   class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
-                  style="top: -30px;"
+                  style="top: -30px"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
               </div>
               <div class="modal-body"><p>We developed <a href="https://github.com/catalystneuro/turner-lab-to-nwb">turner-lab-to-nwb</a>, an open source NWB conversion pipeline using NeuroConv. The data was of extracellular electrophysiology using a TDT system on non-human primates (NHPs) during a 2-choice reaction time reaching task. The data also included spike sorting using Plexon software and trial events. This data was published as <a href="https://doi.org/10.48324/dandi.000947/0.240510.2211">DANDI:000947/0.240510.2211</a>, which contains 1 TB of neurophysiology data, which at the time of publication is the biggest NHP dataset. We also released <a href="https://github.com/dandi/example-notebooks/blob/master/000947/TurnerLab/public_demo/000947_demo.ipynb">this electronic notebook</a> to demonstrate how to read and analyze the data directly from the archive. This data is associated with the article  “Neural activity during a simple reaching task in macaques is counter to gating and rebound in basal ganglia–thalamic communication,” published in PLoS Biology, 2020.</p>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div
+        class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between customBg"
+      >
+        <h4 class="text-dark fs-5 customText">Talia Lerner</h4>
+        <p class="text-body-secondary fs-6 customText">
+          Institution: <span class="text-dark customText">Northwestern</span>
+        </p>
+        <p class="text-body-secondary fs-6 customText">
+          Project:
+          <a
+            data-bs-toggle="modal"
+            data-bs-target="#popBox7"
+            class="text-primary text-decoration-underline link-offset-2 customText"
+            href="/"
+            >MJF ASAP NWB Adoption</a
+          >
+        </p>
+        <p class="text-body-secondary fs-6 customText">
+          Date: <span class="text-dark customText">2023-09-01 to 2024-09-01</span>
+        </p>
+        <br />
+        <div>
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target='#dropBoxTaliaLerner'
+            class="btn btn-outline-primary rounded-5 px-5 clients-btn customText"
+          >
+            Details
+          </button>
+        </div>
+        
+
+        <div
+          class="modal fade"
+          id='dropBoxTaliaLerner'
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+          >
+            <div class="modal-content">
+              <div class="modal-header row">
+                <div class="col-5">
+                  <h1 class="modal-title fs-5 mb-2" id="staticBackdropLabel">
+                    Talia Lerner
+                  </h1>
+                  <p class="text-body-secondary fs-6 mb-0">
+                    Institution:
+                    <span class="text-dark">Northwestern</span>
+                  </p>
+                </div>
+                <div class="col-5">
+                  <p class="text-body-secondary fs-6 mb-2">
+                    Project:
+                    <span class="text-dark">MJF ASAP NWB Adoption</span>
+                  </p>
+                  <p class="text-body-secondary fs-6 mb-0">
+                    Dates: <span class="text-dark">2023-09-01 to 2024-09-01</span>
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
+                  style="top: -30px"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body"><p>We developed <a href="https://github.com/catalystneuro/lerner-lab-to-nwb">lerner-lab-to-nwb</a>, an open source NWB conversion pipeline using NeuroConv.</p>
 </div>
             </div>
           </div>
