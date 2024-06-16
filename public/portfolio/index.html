@@ -94,12 +94,23 @@
   }
 
   .customBg:hover .customText {
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 350ms;
     color: white !important;
     border-color: white;
     cursor: pointer;
+  }
+
+  .customTop {
+    top: -140px;
+  }
+
+  @media (min-width: 768px) {
+    .customTop {
+      top: -20px;
+    }
   }
 </style>
 
@@ -122,7 +133,8 @@
       >
         <h4 class="text-dark fs-5 customText">Hillel Adesnik</h4>
         <p class="text-body-secondary fs-6 customText">
-          Institution: <span class="text-dark customText">UC Berkeley</span>
+          Institution:
+          <span class="text-dark customText">UC Berkeley</span>
         </p>
         <p class="text-body-secondary fs-6 customText">
           Project:
@@ -163,17 +175,19 @@
             class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
           >
             <div class="modal-content">
-              <div class="modal-header row">
-                <div class="col-5">
+              <div
+                class="modal-header align-items-start flex-column flex-md-row row"
+              >
+                <div class="col-md-5">
                   <h1 class="modal-title fs-5 mb-2" id="staticBackdropLabel">
                     Hillel Adesnik
                   </h1>
-                  <p class="text-body-secondary fs-6 mb-0">
+                  <p class="text-body-secondary fs-6 mb-2 mb-md-0">
                     Institution:
                     <span class="text-dark">UC Berkeley</span>
                   </p>
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                   <p class="text-body-secondary fs-6 mb-2">
                     Project:
                     <span class="text-dark">MouseV1 U19</span>
@@ -184,8 +198,7 @@
                 </div>
                 <button
                   type="button"
-                  class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
-                  style="top: -30px"
+                  class="btn-close col-md-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customTop"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -204,7 +217,8 @@
       >
         <h4 class="text-dark fs-5 customText">Misha Ahrens</h4>
         <p class="text-body-secondary fs-6 customText">
-          Institution: <span class="text-dark customText">HHMI Janelia Research Campus</span>
+          Institution:
+          <span class="text-dark customText">HHMI Janelia Research Campus</span>
         </p>
         <p class="text-body-secondary fs-6 customText">
           Project:
@@ -245,17 +259,19 @@
             class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
           >
             <div class="modal-content">
-              <div class="modal-header row">
-                <div class="col-5">
+              <div
+                class="modal-header align-items-start flex-column flex-md-row row"
+              >
+                <div class="col-md-5">
                   <h1 class="modal-title fs-5 mb-2" id="staticBackdropLabel">
                     Misha Ahrens
                   </h1>
-                  <p class="text-body-secondary fs-6 mb-0">
+                  <p class="text-body-secondary fs-6 mb-2 mb-md-0">
                     Institution:
                     <span class="text-dark">HHMI Janelia Research Campus</span>
                   </p>
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                   <p class="text-body-secondary fs-6 mb-2">
                     Project:
                     <span class="text-dark">SCGB NWB Adoption</span>
@@ -266,8 +282,7 @@
                 </div>
                 <button
                   type="button"
-                  class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
-                  style="top: -30px"
+                  class="btn-close col-md-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customTop"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -286,7 +301,8 @@
       >
         <h4 class="text-dark fs-5 customText">Richard Axel</h4>
         <p class="text-body-secondary fs-6 customText">
-          Institution: <span class="text-dark customText">Columbia University</span>
+          Institution:
+          <span class="text-dark customText">Columbia University</span>
         </p>
         <p class="text-body-secondary fs-6 customText">
           Project:
@@ -327,17 +343,19 @@
             class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
           >
             <div class="modal-content">
-              <div class="modal-header row">
-                <div class="col-5">
+              <div
+                class="modal-header align-items-start flex-column flex-md-row row"
+              >
+                <div class="col-md-5">
                   <h1 class="modal-title fs-5 mb-2" id="staticBackdropLabel">
                     Richard Axel
                   </h1>
-                  <p class="text-body-secondary fs-6 mb-0">
+                  <p class="text-body-secondary fs-6 mb-2 mb-md-0">
                     Institution:
                     <span class="text-dark">Columbia University</span>
                   </p>
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                   <p class="text-body-secondary fs-6 mb-2">
                     Project:
                     <span class="text-dark">SCGB NWB Adoption</span>
@@ -348,8 +366,7 @@
                 </div>
                 <button
                   type="button"
-                  class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
-                  style="top: -30px"
+                  class="btn-close col-md-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customTop"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -368,7 +385,8 @@
       >
         <h4 class="text-dark fs-5 customText">Daniel Dombeck</h4>
         <p class="text-body-secondary fs-6 customText">
-          Institution: <span class="text-dark customText">Northwestern</span>
+          Institution:
+          <span class="text-dark customText">Northwestern</span>
         </p>
         <p class="text-body-secondary fs-6 customText">
           Project:
@@ -409,17 +427,19 @@
             class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
           >
             <div class="modal-content">
-              <div class="modal-header row">
-                <div class="col-5">
+              <div
+                class="modal-header align-items-start flex-column flex-md-row row"
+              >
+                <div class="col-md-5">
                   <h1 class="modal-title fs-5 mb-2" id="staticBackdropLabel">
                     Daniel Dombeck
                   </h1>
-                  <p class="text-body-secondary fs-6 mb-0">
+                  <p class="text-body-secondary fs-6 mb-2 mb-md-0">
                     Institution:
                     <span class="text-dark">Northwestern</span>
                   </p>
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                   <p class="text-body-secondary fs-6 mb-2">
                     Project:
                     <span class="text-dark">MJF ASAP NWB Adoption</span>
@@ -430,8 +450,7 @@
                 </div>
                 <button
                   type="button"
-                  class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
-                  style="top: -30px"
+                  class="btn-close col-md-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customTop"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -450,7 +469,8 @@
       >
         <h4 class="text-dark fs-5 customText">Michael Higley</h4>
         <p class="text-body-secondary fs-6 customText">
-          Institution: <span class="text-dark customText">Yale University</span>
+          Institution:
+          <span class="text-dark customText">Yale University</span>
         </p>
         <p class="text-body-secondary fs-6 customText">
           Project:
@@ -491,17 +511,19 @@
             class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
           >
             <div class="modal-content">
-              <div class="modal-header row">
-                <div class="col-5">
+              <div
+                class="modal-header align-items-start flex-column flex-md-row row"
+              >
+                <div class="col-md-5">
                   <h1 class="modal-title fs-5 mb-2" id="staticBackdropLabel">
                     Michael Higley
                   </h1>
-                  <p class="text-body-secondary fs-6 mb-0">
+                  <p class="text-body-secondary fs-6 mb-2 mb-md-0">
                     Institution:
                     <span class="text-dark">Yale University</span>
                   </p>
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                   <p class="text-body-secondary fs-6 mb-2">
                     Project:
                     <span class="text-dark">MJF ASAP NWB Adoption</span>
@@ -512,8 +534,7 @@
                 </div>
                 <button
                   type="button"
-                  class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
-                  style="top: -30px"
+                  class="btn-close col-md-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customTop"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -532,7 +553,8 @@
       >
         <h4 class="text-dark fs-5 customText">Robert Turner</h4>
         <p class="text-body-secondary fs-6 customText">
-          Institution: <span class="text-dark customText">University of Pittsburgh</span>
+          Institution:
+          <span class="text-dark customText">University of Pittsburgh</span>
         </p>
         <p class="text-body-secondary fs-6 customText">
           Project:
@@ -573,17 +595,19 @@
             class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
           >
             <div class="modal-content">
-              <div class="modal-header row">
-                <div class="col-5">
+              <div
+                class="modal-header align-items-start flex-column flex-md-row row"
+              >
+                <div class="col-md-5">
                   <h1 class="modal-title fs-5 mb-2" id="staticBackdropLabel">
                     Robert Turner
                   </h1>
-                  <p class="text-body-secondary fs-6 mb-0">
+                  <p class="text-body-secondary fs-6 mb-2 mb-md-0">
                     Institution:
                     <span class="text-dark">University of Pittsburgh</span>
                   </p>
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                   <p class="text-body-secondary fs-6 mb-2">
                     Project:
                     <span class="text-dark">MJF ASAP NWB Adoption</span>
@@ -594,8 +618,7 @@
                 </div>
                 <button
                   type="button"
-                  class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
-                  style="top: -30px"
+                  class="btn-close col-md-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customTop"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -614,7 +637,8 @@
       >
         <h4 class="text-dark fs-5 customText">Talia Lerner</h4>
         <p class="text-body-secondary fs-6 customText">
-          Institution: <span class="text-dark customText">Northwestern</span>
+          Institution:
+          <span class="text-dark customText">Northwestern</span>
         </p>
         <p class="text-body-secondary fs-6 customText">
           Project:
@@ -655,17 +679,19 @@
             class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
           >
             <div class="modal-content">
-              <div class="modal-header row">
-                <div class="col-5">
+              <div
+                class="modal-header align-items-start flex-column flex-md-row row"
+              >
+                <div class="col-md-5">
                   <h1 class="modal-title fs-5 mb-2" id="staticBackdropLabel">
                     Talia Lerner
                   </h1>
-                  <p class="text-body-secondary fs-6 mb-0">
+                  <p class="text-body-secondary fs-6 mb-2 mb-md-0">
                     Institution:
                     <span class="text-dark">Northwestern</span>
                   </p>
                 </div>
-                <div class="col-5">
+                <div class="col-md-5">
                   <p class="text-body-secondary fs-6 mb-2">
                     Project:
                     <span class="text-dark">MJF ASAP NWB Adoption</span>
@@ -676,8 +702,7 @@
                 </div>
                 <button
                   type="button"
-                  class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
-                  style="top: -30px"
+                  class="btn-close col-md-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customTop"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>

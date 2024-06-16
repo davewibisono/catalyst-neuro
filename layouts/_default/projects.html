@@ -9,6 +9,16 @@
       top: 100px;
     }
   }
+
+  .customBtn {
+    top: -120px;
+  }
+
+  @media (min-width: 768px) {
+    .customBtn {
+      top: -10px;
+    }
+  }
 </style>
 
 <section class="inner-page-hero ww-inner">
@@ -22,7 +32,7 @@
 </section>
 
 <section class="mission inner">
-  <div class="container mission-bg bg-white p-5">
+  <div class="container mission-bg bg-white px-0 px-md-5 py-5">
     <div class="border rounded-3">
       <table class="table table-striped">
         <thead>
@@ -63,19 +73,19 @@
               class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
             >
               <div class="modal-content customTop">
-                <div class="modal-header row">
-                  <div class="col-5">
+                <div class="modal-header align-items-start flex-column flex-md-row row">
+                  <div class="col-md-5 pe-5">
                     <h1 class="modal-title fs-5 mb-2" id='dropBox{{ $id }}'>
                       {{ .project }}
                     </h1>
-                    <p class="text-body-secondary fs-6 mb-0">
+                    <p class="text-body-secondary fs-6 mb-2 mb-md-0">
                       Client:
                       <span class="text-dark"
                         >{{ .client }}</span
                       >
                     </p>
                   </div>
-                  <div class="col-5">
+                  <div class="col-md-5 pe-5">
                     <p class="text-body-secondary fs-6 mb-0">
                       Dates:
                       <span class="text-dark"
@@ -85,8 +95,7 @@
                   </div>
                   <button
                   type="button"
-                  class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative"
-                  style="top: -30px;"
+                  class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customBtn"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
