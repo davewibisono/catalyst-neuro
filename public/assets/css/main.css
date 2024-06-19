@@ -223,10 +223,6 @@ section {
     padding: 0;
   }
 
-  .navmenu .dropdown:hover > .dropdown-mneu {
-    display: block;
-  }
-
   .navmenu .headlist {
     margin: 0;
     padding: 0;
