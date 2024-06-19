@@ -86,11 +86,11 @@
       <description>Embracing Work and Play at Villa Mas Sant Jordi In the heart of the Costa Brava, just a stone&amp;rsquo;s throw from the bustling city of Barcelona and the serene beaches of the Mediterranean, CatalystNeuro recently found a perfect fusion of work and relaxation at Villa Mas Sant Jordi. Our annual company retreat was not only a chance to bond and brainstorm but also to immerse ourselves in the splendor of Spanish culture and nature.</description>
     </item>
     <item>
-      <title>another new project</title>
-      <link>http://localhost:1313/project/map-type-column-project-another-new-project-client-another-new-client-dates-another-new-date-body-another-new-details/</link>
+      <title>i&#39;m new title</title>
+      <link>http://localhost:1313/project/im-new-title/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/map-type-column-project-another-new-project-client-another-new-client-dates-another-new-date-body-another-new-details/</guid>
-      <description>another new details</description>
+      <guid>http://localhost:1313/project/im-new-title/</guid>
+      <description>i&amp;rsquo;m new detail</description>
     </item>
     <item>
       <title>Mission</title>
@@ -98,13 +98,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/mission/</guid>
       <description></description>
-    </item>
-    <item>
-      <title>new project</title>
-      <link>http://localhost:1313/project/map-type-column-project-new-project-client-new-client-dates-new-dates-body-new-details/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/map-type-column-project-new-project-client-new-client-dates-new-dates-body-new-details/</guid>
-      <description>new details</description>
     </item>
     <item>
       <title>projects</title>
