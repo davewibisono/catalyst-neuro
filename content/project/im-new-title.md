@@ -1,7 +1,7 @@
 ---
-title: i'm new title
-client: i'm new client
-dates: i'm new date
+title: DANDI Archive
+client: Satrajit Ghosh, MIT
+dates: 2019 - 2029
 type: column
 ---
-i'm new detail
+CatalystNeuro is part of a team comprising MIT, Dartmouth, and Kitware to build and maintain the DANDI Archive, an archive for neurophysiology data that facilitates open data and reuse of data in neurophysiology...
