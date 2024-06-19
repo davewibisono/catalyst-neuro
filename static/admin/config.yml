@@ -40,6 +40,7 @@ collections:
   - name: 'projects'
     label: 'Projects'
     folder: 'content/project'
+    slug: '{{slug}}'
     create: true
     fields:
       - { label: 'Project', name: 'project', widget: 'string' }
