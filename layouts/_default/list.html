@@ -5,10 +5,6 @@
     background-color: #1466a7;
   }
 
-  .modal-backdrop {
-    z-index: -1000;
-  }
-
   .customBg:hover .customText {
     transition-property: color, background-color, border-color,
       text-decoration-color, fill, stroke;
@@ -30,6 +26,54 @@
   }
 </style>
 
+{{ range .Pages }}
+{{ with .Params }}
+<div
+  class="modal fade"
+  id='dropBox{{ replace .Title " " "" }}'
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+  >
+    <div class="modal-content">
+      <div class="modal-header align-items-start flex-column flex-md-row row">
+        <div class="col-md-5">
+          <h1 class="modal-title fs-5 mb-2" id="staticBackdropLabel">
+            {{ .Title }}
+          </h1>
+          <p class="text-body-secondary fs-6 mb-2 mb-md-0">
+            Institution:
+            <span class="text-dark">{{ .institution }}</span>
+          </p>
+        </div>
+        <div class="col-md-5">
+          <p class="text-body-secondary fs-6 mb-2">
+            Project:
+            <span class="text-dark">{{ .project }}</span>
+          </p>
+          <p class="text-body-secondary fs-6 mb-0">
+            Dates: <span class="text-dark">{{ .dates }}</span>
+          </p>
+        </div>
+        <button
+          type="button"
+          class="btn-close col-md-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customTop"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      {{ end }}
+      <div class="modal-body">{{ .Content }}</div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
 <section class="inner-page-hero ww-inner">
   <div class="container d-flex justify-content-center align-items-center">
     <div class="row d-flex justify-content-center align-items-center">
@@ -41,94 +85,48 @@
 </section>
 
 <section class="mission inner">
-<div class="shadow mb-5 p-4 container rounded-4 bg-white">
-  <div class="row g-3">
-    {{ range .Paginator.Pages }} {{ with .Params }}
-    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-      <div
-        class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between customBg"
-      >
-        <h4 class="text-dark fs-5 customText">{{ .title }}</h4>
-        <p class="text-body-secondary fs-6 customText">
-          Institution:
-          <span class="text-dark customText">{{ .institution }}</span>
-        </p>
-        <p class="text-body-secondary fs-6 customText">
-          Project:
-          <a
-            data-bs-toggle="modal"
-            data-bs-target="#popBox{{ .number }}"
-            class="text-primary text-decoration-underline link-offset-2 customText"
-            href="/"
-            >{{ .project }}</a
-          >
-        </p>
-        <p class="text-body-secondary fs-6 customText">
-          Date: <span class="text-dark customText">{{ .dates }}</span>
-        </p>
-        <br />
-        <div>
-          <button
-            type="button"
-            data-bs-toggle="modal"
-            data-bs-target='#dropBox{{ replace .Title " " "" }}'
-            class="btn btn-outline-primary rounded-5 px-5 clients-btn customText"
-          >
-            Details
-          </button>
-        </div>
-        {{ end }}
-
+  <div class="shadow mb-5 p-4 container rounded-4 bg-white">
+    <div class="row g-3">
+      {{ range .Paginator.Pages }} {{ with .Params }}
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
         <div
-          class="modal fade"
-          id='dropBox{{ replace .Title " " "" }}'
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
+          class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between customBg"
         >
-          <div
-            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
-          >
-            <div class="modal-content">
-              <div
-                class="modal-header align-items-start flex-column flex-md-row row"
-              >
-                <div class="col-md-5">
-                  <h1 class="modal-title fs-5 mb-2" id="staticBackdropLabel">
-                    {{ .Title }}
-                  </h1>
-                  <p class="text-body-secondary fs-6 mb-2 mb-md-0">
-                    Institution:
-                    <span class="text-dark">{{ .Params.institution }}</span>
-                  </p>
-                </div>
-                <div class="col-md-5">
-                  <p class="text-body-secondary fs-6 mb-2">
-                    Project:
-                    <span class="text-dark">{{ .Params.project }}</span>
-                  </p>
-                  <p class="text-body-secondary fs-6 mb-0">
-                    Dates: <span class="text-dark">{{ .Params.dates }}</span>
-                  </p>
-                </div>
-                <button
-                  type="button"
-                  class="btn-close col-md-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customTop"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">{{ .Content }}</div>
-            </div>
+          <h4 class="text-dark fs-5 customText">{{ .title }}</h4>
+          <p class="text-body-secondary fs-6 customText">
+            Institution:
+            <span class="text-dark customText">{{ .institution }}</span>
+          </p>
+          <p class="text-body-secondary fs-6 customText">
+            Project:
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#popBox"
+              class="text-primary text-decoration-underline link-offset-2 customText"
+              href="/"
+              >{{ .project }}</a
+            >
+          </p>
+          <p class="text-body-secondary fs-6 customText">
+            Date: <span class="text-dark customText">{{ .dates }}</span>
+          </p>
+          <br />
+          <div>
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target='#dropBox{{ replace .Title " " "" }}'
+              class="btn btn-outline-primary rounded-5 px-5 clients-btn customText"
+            >
+              Details
+            </button>
           </div>
+          {{ end }}
         </div>
       </div>
+      {{ end }}
     </div>
-    {{ end }}
   </div>
-</div>
 </section>
 
 <section class="pagination">
