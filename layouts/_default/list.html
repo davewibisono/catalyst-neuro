@@ -26,8 +26,8 @@
   }
 </style>
 
-<section class="inner-page-hero custom">
-  <div class="container">
+<section class="inner-page-hero ww-inner">
+  <div class="container d-flex justify-content-center align-items-center">
     <div class="row d-flex justify-content-center align-items-center">
       <div class="col-12 text-center">
         <h2>Clients</h2>
@@ -36,7 +36,8 @@
   </div>
 </section>
 
-<section class="shadow-sm p-4 container nt-margin rounded-4">
+<section class="mission inner">
+<div class="shadow mb-5 p-4 container rounded-4 bg-white">
   <div class="row g-3">
     {{ range .Paginator.Pages }} {{ with .Params }}
     <div class="col-12 col-sm-6 col-md-4 col-lg-3">
@@ -123,6 +124,7 @@
     </div>
     {{ end }}
   </div>
+</div>
 </section>
 
 <section class="pagination">

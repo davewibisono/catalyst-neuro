@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <title>projects</title>
+  <title>Columns</title>
   <meta content="" name="description" />
   <meta content="" name="keywords" />
 
@@ -103,24 +103,29 @@
 
     <main id="main">
       
+
 <style>
-  .modal-backdrop {
-    display: none;
+  .customBg:hover {
+    background-color: #1466a7;
   }
 
-  @media (max-width: 1200px) {
-    .customTop {
-      top: 100px;
-    }
+  .customBg:hover .customText {
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 350ms;
+    color: white !important;
+    border-color: white;
+    cursor: pointer;
   }
 
-  .customBtn {
-    top: -120px;
+  .customTop {
+    top: -140px;
   }
 
   @media (min-width: 768px) {
-    .customBtn {
-      top: -10px;
+    .customTop {
+      top: -20px;
     }
   }
 </style>
@@ -129,145 +134,106 @@
   <div class="container d-flex justify-content-center align-items-center">
     <div class="row d-flex justify-content-center align-items-center">
       <div class="col-12 text-center">
-        <h2>Projects</h2>
+        <h2>Clients</h2>
       </div>
     </div>
   </div>
 </section>
 
 <section class="mission inner">
-  <div class="container shadow mission-bg bg-white px-0 px-md-5 py-5">
-    <div class="rounded-3">
-      <table class="table table-striped border">
-        <thead>
-          <tr>
-            <th class="p-3 fs-5">Project</th>
-            <th class="p-3 fs-5 border-start">Client</th>
-            <th class="p-3 fs-5 border-start text-end">Dates</th>
-          </tr>
-        </thead>
-        <tbody>
-          
-          
-          
-          <tr>
-            <td class="p-3 border-start">
-              <a
-                href=""
-                data-bs-toggle="modal"
-                data-bs-target='#dropBoxSCGBa'
-                data-bs-backdrop="false"
-                class="text-primary text-decoration-underline link-offset-2"
-                >SCGB and SCPAB NWB Adoption</a
-              >
-            </td>
-            <td class="p-3 border-start text-secondary">Simons Foundation</td>
-            <td class="p-3 border-start border-end text-end fw-semibold">2019-2024</td>
-          </tr>
-          <div
-            class="modal fade"
-            id='dropBoxSCGBa'
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby='dropBoxSCGBa'
-            aria-hidden="true"
+<div class="shadow mb-5 p-4 container rounded-4 bg-white">
+  <div class="row g-3">
+     
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div
+        class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between customBg"
+      >
+        <h4 class="text-dark fs-5 customText"></h4>
+        <p class="text-body-secondary fs-6 customText">
+          Institution:
+          <span class="text-dark customText"></span>
+        </p>
+        <p class="text-body-secondary fs-6 customText">
+          Project:
+          <a
+            data-bs-toggle="modal"
+            data-bs-target="#popBox"
+            class="text-primary text-decoration-underline link-offset-2 customText"
+            href="/"
+            >SCGB and SCPAB NWB Adoption</a
           >
-            <div
-              class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
-            >
-              <div class="modal-content customTop">
-                <div class="modal-header align-items-start flex-column flex-md-row row">
-                  <div class="col-md-5 pe-5">
-                    <h1 class="modal-title fs-5 mb-2" id='dropBoxSCGBa'>
-                      SCGB and SCPAB NWB Adoption
-                    </h1>
-                    <p class="text-body-secondary fs-6 mb-2 mb-md-0">
-                      Client:
-                      <span class="text-dark"
-                        >Simons Foundation</span
-                      >
-                    </p>
-                  </div>
-                  <div class="col-md-5 pe-5">
-                    <p class="text-body-secondary fs-6 mb-0">
-                      Dates:
-                      <span class="text-dark"
-                        >2019-2024</span
-                      >
-                    </p>
-                  </div>
-                  <button
+        </p>
+        <p class="text-body-secondary fs-6 customText">
+          Date: <span class="text-dark customText">2019-2024</span>
+        </p>
+        <br />
+        <div>
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target='#dropBox'
+            class="btn btn-outline-primary rounded-5 px-5 clients-btn customText"
+          >
+            Details
+          </button>
+        </div>
+        
+
+        <div
+          class="modal fade"
+          id='dropBox'
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+          >
+            <div class="modal-content">
+              <div
+                class="modal-header align-items-start flex-column flex-md-row row"
+              >
+                <div class="col-md-5">
+                  <h1 class="modal-title fs-5 mb-2" id="staticBackdropLabel">
+                    
+                  </h1>
+                  <p class="text-body-secondary fs-6 mb-2 mb-md-0">
+                    Institution:
+                    <span class="text-dark"></span>
+                  </p>
+                </div>
+                <div class="col-md-5">
+                  <p class="text-body-secondary fs-6 mb-2">
+                    Project:
+                    <span class="text-dark">SCGB and SCPAB NWB Adoption</span>
+                  </p>
+                  <p class="text-body-secondary fs-6 mb-0">
+                    Dates: <span class="text-dark">2019-2024</span>
+                  </p>
+                </div>
+                <button
                   type="button"
-                  class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customBtn"
+                  class="btn-close col-md-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customTop"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
-                </div>
-                <div class="modal-body">
-                  <div>
-                    <p>CatalystNeuro has been working with labs in the Simons Collaboration on the Global Brain (SCGB) for 5 years, and the Simons Foundation Plasticity and the Aging Brain for 2 years. In this project, we work with neurophysiology labs that are supported by these collaborations, helping them build custom pipelines to standardize and publish their data, and to integrate NWB into the lab&rsquo;s analysis tools. This project has provided the opportunity to work with a large number of influential neurophysiology research groups from some of the leading research institutes in the United States:</p>
-
-                  </div>
-                  
-                  <div class="row py-2 my-2 align-items-center">
-                    <div class="col-2 fw-semibold">2019</div>
-                    <div class="col-10">
-                      Richard Axel, Columbia University Beth Buffalo, University of Washington
-                    </div>
-                  </div>
-                  
-                  <div class="row py-2 my-2 align-items-center">
-                    <div class="col-2 fw-semibold">2020</div>
-                    <div class="col-10">
-                      International Brain Lab Lisa Giocomo, Stanford University
-                    </div>
-                  </div>
-                  
-                  <div class="row py-2 my-2 align-items-center">
-                    <div class="col-2 fw-semibold">2021</div>
-                    <div class="col-10">
-                      Carlos Brody, Princeton University Tony Movshon, New York University David Tank, Princeton University
-                    </div>
-                  </div>
-                  
-                  <div class="row py-2 my-2 align-items-center">
-                    <div class="col-2 fw-semibold">2022</div>
-                    <div class="col-10">
-                      Misha Ahrens, Janelia
-                    </div>
-                  </div>
-                  
-                  <div class="row py-2 my-2 align-items-center">
-                    <div class="col-2 fw-semibold">2023</div>
-                    <div class="col-10">
-                      Mehrdad Jazayeri, MIT Mala Murthy, Princeton Lucas Pinto, Northwestern Bob Datta, Harvard University Thomas Clandinin, Stanford University Sergey Stavisky, UC Davis
-                    </div>
-                  </div>
-                  
-                  <div class="row py-2 my-2 align-items-center">
-                    <div class="col-2 fw-semibold">2022</div>
-                    <div class="col-10">
-                      Misha Ahrens, Janelia
-                    </div>
-                  </div>
-                  
-                  <div class="row py-2 my-2 align-items-center">
-                    <div class="col-2 fw-semibold">2024</div>
-                    <div class="col-10">
-                      Andrew Leifer, Princeton James DiCarlo, MIT
-                    </div>
-                  </div>
-                  
-                </div>
               </div>
+              <div class="modal-body"><p>CatalystNeuro has been working with labs in the Simons Collaboration on the Global Brain (SCGB) for 5 years, and the Simons Foundation Plasticity and the Aging Brain for 2 years. In this project, we work with neurophysiology labs that are supported by these collaborations, helping them build custom pipelines to standardize and publish their data, and to integrate NWB into the lab&rsquo;s analysis tools. This project has provided the opportunity to work with a large number of influential neurophysiology research groups from some of the leading research institutes in the United States:</p>
+</div>
             </div>
           </div>
-          
-        </tbody>
-      </table>
+        </div>
+      </div>
     </div>
+    
   </div>
+</div>
+</section>
+
+<section class="pagination">
+   
 </section>
 
 
@@ -435,6 +401,7 @@
     </div>
   </div>
 </section>
+
 
 
     </main>

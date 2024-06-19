@@ -2,19 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/portfolio/hillel-adesnik/</loc>
+    <loc>http://localhost:1313/clients/hillel-adesnik/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/misha-ahrens/</loc>
+    <loc>http://localhost:1313/clients/misha-ahrens/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/richard-axel/</loc>
+    <loc>http://localhost:1313/clients/richard-axel/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/daniel-dombeck/</loc>
+    <loc>http://localhost:1313/clients/daniel-dombeck/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/michael-higley/</loc>
+    <loc>http://localhost:1313/clients/michael-higley/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/robert-turner/</loc>
+    <loc>http://localhost:1313/clients/robert-turner/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/talia-lerner/</loc>
+    <loc>http://localhost:1313/clients/talia-lerner/</loc>
   </url><url>
     <loc>http://localhost:1313/blog/</loc>
     <lastmod>2024-04-22T19:12:27+00:00</lastmod>
@@ -40,9 +40,13 @@
     <loc>http://localhost:1313/categories/neuro/</loc>
     <lastmod>2024-04-07T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/column/scgb-and-scpab-nwb-adoption/</loc>
+  </url><url>
+    <loc>http://localhost:1313/column/</loc>
+  </url><url>
     <loc>http://localhost:1313/mission/</loc>
   </url><url>
-    <loc>http://localhost:1313/portfolio/</loc>
+    <loc>http://localhost:1313/clients/</loc>
   </url><url>
     <loc>http://localhost:1313/projects/</loc>
   </url><url>

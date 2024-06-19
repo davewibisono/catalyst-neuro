@@ -235,10 +235,6 @@ section {
     position: relative;
   }
 
-  .navmenu .dropdown-center:hover > .dropdown-menu {
-    display: block;
-  }
-
   .navmenu a,
   .navmenu a:focus {
     color: var(--black-color);

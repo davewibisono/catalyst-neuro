@@ -32,9 +32,9 @@
 </section>
 
 <section class="mission inner">
-  <div class="container mission-bg bg-white px-0 px-md-5 py-5">
-    <div class="border rounded-3">
-      <table class="table table-striped">
+  <div class="container shadow mission-bg bg-white px-0 px-md-5 py-5">
+    <div class="rounded-3">
+      <table class="table table-striped border">
         <thead>
           <tr>
             <th class="p-3 fs-5">Project</th>
@@ -43,22 +43,22 @@
           </tr>
         </thead>
         <tbody>
-          {{ range .Site.Data.projects.column }}
-          {{ $cleanedTitle := .project | replaceRE " " "" }}
+          {{ range where .Site.RegularPages "Type" "column" }}
+          {{ $cleanedTitle := .Params.project | replaceRE " " "" }}
           {{ $id := $cleanedTitle | truncate 5 "" }}
           <tr>
-            <td class="p-3">
+            <td class="p-3 border-start">
               <a
                 href=""
                 data-bs-toggle="modal"
                 data-bs-target='#dropBox{{ $id }}'
                 data-bs-backdrop="false"
                 class="text-primary text-decoration-underline link-offset-2"
-                >{{ .project }}</a
+                >{{ .Params.project }}</a
               >
             </td>
-            <td class="p-3 border-start text-secondary">{{ .client }}</td>
-            <td class="p-3 border-start text-end fw-semibold">{{ .dates }}</td>
+            <td class="p-3 border-start text-secondary">{{ .Params.client }}</td>
+            <td class="p-3 border-start border-end text-end fw-semibold">{{ .Params.dates }}</td>
           </tr>
           <div
             class="modal fade"
@@ -76,12 +76,12 @@
                 <div class="modal-header align-items-start flex-column flex-md-row row">
                   <div class="col-md-5 pe-5">
                     <h1 class="modal-title fs-5 mb-2" id='dropBox{{ $id }}'>
-                      {{ .project }}
+                      {{ .Params.project }}
                     </h1>
                     <p class="text-body-secondary fs-6 mb-2 mb-md-0">
                       Client:
                       <span class="text-dark"
-                        >{{ .client }}</span
+                        >{{ .Params.client }}</span
                       >
                     </p>
                   </div>
@@ -89,7 +89,7 @@
                     <p class="text-body-secondary fs-6 mb-0">
                       Dates:
                       <span class="text-dark"
-                        >{{ .dates }}</span
+                        >{{ .Params.dates }}</span
                       >
                     </p>
                   </div>
@@ -102,9 +102,9 @@
                 </div>
                 <div class="modal-body">
                   <div>
-                    {{ .details }}
+                    {{ .Content }}
                   </div>
-                  {{ range .institute }}
+                  {{ range .Params.institute }}
                   <div class="row py-2 my-2 align-items-center">
                     <div class="col-2 fw-semibold">{{ .date }}</div>
                     <div class="col-10">
