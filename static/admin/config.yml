@@ -37,6 +37,21 @@ collections:
       - { label: 'Details', name: 'body', widget: 'markdown' }
       - { label: 'Order Number', name: 'weight', widget: 'number', required: true }
 
+  - name: 'projects'
+    label: 'Projects'
+    folder: 'content/project'
+    create: true
+    fields:
+      - { label: 'Project', name: 'project', widget: 'string' },
+      - { label: 'Client', name: 'client', widget: 'string' },
+      - { label: 'Dates', name: 'dates', widget: 'string' },
+      - { label: 'Details', name: 'body', widget: 'markdown' },
+      - { label: 'Institutes', name: 'institute', widget: 'list', fields: [
+          { label: 'Date', name: 'date', widget: 'string' },
+          { label: 'Name', name: 'name', widget: 'text' } 
+          ]
+        }
+
   - name: "pages"
     label: "Pages"
     files:
@@ -155,17 +170,3 @@ collections:
             { label: 'Requirements', name: 'requirements', widget: 'list', field: { widget: 'string', name: 'requirement' } }
           ]
         }
-
-  - folder: 'content/project'
-    label: 'Projects'
-    name: 'projects'
-    fields:
-    - { label: 'Project', name: 'project', widget: 'string' },
-    - { label: 'Client', name: 'client', widget: 'string' },
-    - { label: 'Dates', name: 'dates', widget: 'string' },
-    - { label: 'Details', name: 'body', widget: 'markdown' },
-    - { label: 'Institutes', name: 'institute', widget: 'list', fields: [
-        { label: 'Date', name: 'date', widget: 'string' },
-        { label: 'Name', name: 'name', widget: 'text' } 
-        ]
-      }
