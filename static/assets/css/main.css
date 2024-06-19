@@ -386,6 +386,16 @@ section {
 .navmenu ul .btn-getstarted a:hover {
   background-color: #0b487a;
 }
+@media (min-widht: 1200px) {
+  .navmenu .dropdown-center:hover>.dropdown-menu {
+    display: block;
+  }
+  
+  .navmenu .dropdown-center>.dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+      pointer-events: none;
+  }
+}
 /* Mobile Navigation */
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
