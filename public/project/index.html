@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <title>Software Solution</title>
+  <title>Projects</title>
   <meta content="" name="description" />
   <meta content="" name="keywords" />
 
@@ -105,47 +105,193 @@
     <main id="main">
       
 
-<section class="inner-page-hero sf-inner ww-inner">
-  <div class="container">
+<style>
+  .customBg:hover {
+    background-color: #1466a7;
+  }
+
+  .customBg:hover .customText {
+    transition-property: color, background-color, border-color,
+      text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 350ms;
+    color: white !important;
+    border-color: white;
+    cursor: pointer;
+  }
+
+  .customTop {
+    top: -140px;
+  }
+
+  @media (min-width: 768px) {
+    .customTop {
+      top: -20px;
+    }
+  }
+</style>
+
+<section class="inner-page-hero ww-inner">
+  <div class="container d-flex justify-content-center align-items-center">
     <div class="row d-flex justify-content-center align-items-center">
       <div class="col-12 text-center">
-        <h2>Software Solutions</h2>
+        <h2>Clients</h2>
       </div>
     </div>
   </div>
 </section>
 
-
 <section class="mission inner">
-  <div class="container mission-bg p-5">
-    <div class="row align-items-center">
+<div class="shadow mb-5 p-4 container rounded-4 bg-white">
+  <div class="row g-3">
+     
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
       <div
-        class="col-md-6 d-block d-lg-none mb-5"
-        data-aos="fade-up"
-        data-aos-delay="100"
+        class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between customBg"
       >
-        <img
-          src="http://localhost:1313/assets/img/software-solution.png"
-          alt="Mission Image"
-          class="img-fluid"
-        />
-      </div>
+        <h4 class="text-dark fs-5 customText"></h4>
+        <p class="text-body-secondary fs-6 customText">
+          Institution:
+          <span class="text-dark customText"></span>
+        </p>
+        <p class="text-body-secondary fs-6 customText">
+          Project:
+          <a
+            data-bs-toggle="modal"
+            data-bs-target="#popBox"
+            class="text-primary text-decoration-underline link-offset-2 customText"
+            href="/"
+            >SCGB and SCPAB NWB Adoption</a
+          >
+        </p>
+        <p class="text-body-secondary fs-6 customText">
+          Date: <span class="text-dark customText">2019-2024</span>
+        </p>
+        <br />
+        <div>
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target='#dropBox'
+            class="btn btn-outline-primary rounded-5 px-5 clients-btn customText"
+          >
+            Details
+          </button>
+        </div>
+        
 
-      <div class="col-md-6 p-0">
-        <p data-aos="fade-up" data-aos-delay="300">
-          CatalystNeuro develops software solutions across the data pipeline aimed to help neuroscientists focus on the science and accelerate their discovery process immediately. We release and support packages for data homogenization, visualization, analysis, and lab-wide records. These libraries are developed by a team that focuses specifically on neural data and good software practices. Our projects are packaged, documented, and tested for robustness and ease of use. Everything we build is released as it is developed under a permissive license. We commonly work with labs to customize these software solutions to the specific needs of the lab, interfacing our platforms with their data formats and analysis packages.
+        <div
+          class="modal fade"
+          id='dropBox'
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+          >
+            <div class="modal-content">
+              <div
+                class="modal-header align-items-start flex-column flex-md-row row"
+              >
+                <div class="col-md-5">
+                  <h1 class="modal-title fs-5 mb-2" id="staticBackdropLabel">
+                    
+                  </h1>
+                  <p class="text-body-secondary fs-6 mb-2 mb-md-0">
+                    Institution:
+                    <span class="text-dark"></span>
+                  </p>
+                </div>
+                <div class="col-md-5">
+                  <p class="text-body-secondary fs-6 mb-2">
+                    Project:
+                    <span class="text-dark">SCGB and SCPAB NWB Adoption</span>
+                  </p>
+                  <p class="text-body-secondary fs-6 mb-0">
+                    Dates: <span class="text-dark">2019-2024</span>
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  class="btn-close col-md-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customTop"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body"><p>CatalystNeuro has been working with labs in the Simons Collaboration on the Global Brain (SCGB) for 5 years, and the Simons Foundation Plasticity and the Aging Brain for 2 years. In this project, we work with neurophysiology labs that are supported by these collaborations, helping them build custom pipelines to standardize and publish their data, and to integrate NWB into the lab&rsquo;s analysis tools. This project has provided the opportunity to work with a large number of influential neurophysiology research groups from some of the leading research institutes in the United States:</p>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</section>
+
+<section class="pagination">
+   
+</section>
+
+
+<section class="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 my-padi">
+        <h2>Availability for helping other labs</h2>
+        <br />
+        <img
+          src="http://localhost:1313//assets/img/call-to-action.png"
+          alt="cta"
+          class="img-fluid d-block d-lg-none"
+        />
+        <br />
+
+        <p>
+          We are always interested in opportunities to work with labs on data
+          infrastructure. We have a team of computational neuroscientists who
+          are experts in building conversion scripts, porting tools to NWB, and
+          helping to package and publicly release data. We also have experience
+          building custom databases and user interfaces for lab experimental
+          records. If you are interested in working with us
+        </p>
+        <br />
+        <div class="row justify-content-center align-items-center">
+          <div class="col-md-6 normal-btn">
+            <a href="mailto:contact@website.com"
+              >Contact Us <i class="bi bi-arrow-up-right"></i
+            ></a>
+          </div>
+          <div class="col-md-6 contact-btn mt-5 mt-md-0">
+            <a href="">
+              <img src="http://localhost:1313//assets/img/mail.svg" alt="Mail" />
+              <div class="text">
+                <p>
+                  <span class="text-wrap">Please contact us at </span> <br />
+                  inquiry@catalystneuro.com
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <br />
+
+        <p>
+          Our work is entirely open source. See our
+          <a href="/">GitHub organization</a> for code of past and ongoing
+          projects.
         </p>
       </div>
 
-      <div
-        class="col-md-6 d-none d-lg-block"
-        data-aos="fade-up"
-        data-aos-delay="100"
-      >
+      <div class="col-md-6">
         <img
-          src="http://localhost:1313/assets/img/software-solution.png"
-          alt="Mission Image"
-          class="img-fluid"
+          src="http://localhost:1313//assets/img/call-to-action.png"
+          alt="cta"
+          class="img-fluid d-none d-lg-block"
         />
       </div>
     </div>
@@ -154,298 +300,109 @@
 
 
 
-<section id="faq" class="faq">
-  <div class="container" data-aos="fade-up">
-    <div class="row gy-4">
-      <div class="col-lg-12 my-padi">
-        <div
-          class="accordion accordion-flush"
-          id="faqlist"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
-
-        
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq-content-1"
-              >
-              NWB GUIDE
-              </button>
-            </h3>
-            <div
-              id="faq-content-1"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqlist"
-            >
-              <div class="accordion-body">
-                <div class="row mt-5">
-                  <div class="col-lg-6 d-block d-lg-none mb-5">
-                    <img
-                      src="/assets/img/logo-guide-draft-transparent-tight.png"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="col-lg-6">
-                    <h3>NWB Graphical User Interface for Data Entry</h3>
-                    
-                    <p class="pb-2">
-                      NWB GUIDE is a desktop app that provides a no-code user interface for converting neurophysiology data to NWB.
-                    </p>
-                    
-                    <ul class="flex-row gap-3">
-                      
-                      <li class="btn p-0"><a class="btn-getstarted" href="https://nwb-guide.readthedocs.io/en/latest/">
-                        Documentation
-                        <i class="bi bi-arrow-up-right text-light"> </i>
-                      </a></li>
-                      
-                      
-                      <li class="btn p-0"><a class="btn-getstarted" href="https://github.com/NeurodataWithoutBorders/nwb-guide">
-                        Github
-                        <i class="bi bi-arrow-up-right text-light"> </i>
-                      </a></li>
-                      
-                    </ul>
-                  </div>
-
-                  <div class="col-lg-6 d-none d-lg-block">
-                    <img
-                      src="/assets/img/logo-guide-draft-transparent-tight.png"
-                      alt=""
-                      class="img-fluid mx-auto d-block custom-image" style="max-width:350px"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq-content-2"
-              >
-              NeuroConv
-              </button>
-            </h3>
-            <div
-              id="faq-content-2"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqlist"
-            >
-              <div class="accordion-body">
-                <div class="row mt-5">
-                  <div class="col-lg-6 d-block d-lg-none mb-5">
-                    <img
-                      src="/assets/img/neuroconv_logo.png"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="col-lg-6">
-                    <h3>NeuroConv</h3>
-                    
-                    <p class="pb-2">
-                      Automatically convert neurophysiology data to NWB
-                    </p>
-                    
-                    <p class="pb-2">
-                      NeuroConv is a Python package for converting neurophysiology data in a variety of proprietary formats to the Neurodata Without Borders (NWB) standard.  Features:  Reads data from 40 popular neurophysiology data formats and writes to NWB using best practices. Extracts relevant metadata from each format. Handles large data volume by reading datasets piece-wise. Minimizes the size of the NWB files by automatically applying chunking and lossless compression. Supports ensembles of multiple data streams, and supports common methods for temporal alignment of streams.
-                    </p>
-                    
-                    <ul class="flex-row gap-3">
-                      
-                      <li class="btn p-0"><a class="btn-getstarted" href="https://neuroconv.readthedocs.io/en/main/">
-                        Documentation
-                        <i class="bi bi-arrow-up-right text-light"> </i>
-                      </a></li>
-                      
-                      
-                      <li class="btn p-0"><a class="btn-getstarted" href="https://github.com/catalystneuro/neuroconv/">
-                        Github
-                        <i class="bi bi-arrow-up-right text-light"> </i>
-                      </a></li>
-                      
-                    </ul>
-                  </div>
-
-                  <div class="col-lg-6 d-none d-lg-block">
-                    <img
-                      src="/assets/img/neuroconv_logo.png"
-                      alt=""
-                      class="img-fluid mx-auto d-block custom-image" style="max-width:350px"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="accordion-item">
-            <h3 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#faq-content-3"
-              >
-              NWB Inspector
-              </button>
-            </h3>
-            <div
-              id="faq-content-3"
-              class="accordion-collapse collapse"
-              data-bs-parent="#faqlist"
-            >
-              <div class="accordion-body">
-                <div class="row mt-5">
-                  <div class="col-lg-6 d-block d-lg-none mb-5">
-                    <img
-                      src="/assets/img/nwb-inspector-logo.png"
-                      alt=""
-                      class="img-fluid"
-                    />
-                  </div>
-                  <div class="col-lg-6">
-                    <h3>NWB Inspector</h3>
-                    
-                    <p class="pb-2">
-                      NWB Inspector is a Python-based package designed to asses the quality of Neurodata Without Borders (NWB) files and based on compliance with Best Practice. This tool is meant as a companion to the PyNWB validator, which checks for strict schema compliance. In contrast, this tool attempts to apply some commonsense rules and heuristics to find data components of a file that pass validation, but are probably incorrect, or suboptimal, or deviate from best practices.
-                    </p>
-                    
-                    <ul class="flex-row gap-3">
-                      
-                      <li class="btn p-0"><a class="btn-getstarted" href="https://nwbinspector.readthedocs.io/">
-                        Documentation
-                        <i class="bi bi-arrow-up-right text-light"> </i>
-                      </a></li>
-                      
-                      
-                      <li class="btn p-0"><a class="btn-getstarted" href="https://github.com/NeurodataWithoutBorders/nwbinspector">
-                        Github
-                        <i class="bi bi-arrow-up-right text-light"> </i>
-                      </a></li>
-                      
-                    </ul>
-                  </div>
-
-                  <div class="col-lg-6 d-none d-lg-block">
-                    <img
-                      src="/assets/img/nwb-inspector-logo.png"
-                      alt=""
-                      class="img-fluid mx-auto d-block custom-image" style="max-width:350px"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="social">
+<section class="client d-none d-lg-block">
   <div class="container">
-    <header class="text-center mb-5">
-      <h2>Contributions:</h2>
-      <p>We are major contribution to the following repositories:</p>
-    </header>
-    <div class="row justify-content-center mt-5">
-      
-      <div class="col-lg-2 d-flex align-items-stretch pb-5">
-        <div class="card">
-          <i class="bi bi-github"></i>
-          <a href="/" class="stretched-link">SpikeExtractors</a>
-        </div>
+    <div class="row">
+      <div class="col">
+        <img
+          src="http://localhost:1313//assets/img/logo-1.png"
+          alt="Client Logo 1"
+          class="img-fluid p-2"
+        />
       </div>
+
       
-      <div class="col-lg-2 d-flex align-items-stretch pb-5">
-        <div class="card">
-          <i class="bi bi-github"></i>
-          <a href="/" class="stretched-link">NWB schema</a>
-        </div>
+
+      <div class="col">
+        <img
+          src="http://localhost:1313//assets/img/logo-2.png"
+          alt="Client Logo 2"
+          class="img-fluid p-2"
+        />
       </div>
+
       
-      <div class="col-lg-2 d-flex align-items-stretch pb-5">
-        <div class="card">
-          <i class="bi bi-github"></i>
-          <a href="/" class="stretched-link">PyNWB</a>
-        </div>
+
+      <div class="col">
+        <img
+          src="http://localhost:1313//assets/img/logo-3.png"
+          alt="Client Logo 3"
+          class="img-fluid p-2"
+        />
       </div>
+
       
-      <div class="col-lg-2 d-flex align-items-stretch pb-5">
-        <div class="card">
-          <i class="bi bi-github"></i>
-          <a href="/" class="stretched-link">MatNWB</a>
-        </div>
+
+      <div class="col">
+        <img
+          src="http://localhost:1313//assets/img/logo-4.png"
+          alt="Client Logo 4"
+          class="img-fluid p-2"
+        />
       </div>
+
       
-      <div class="col-lg-2 d-flex align-items-stretch pb-5">
-        <div class="card">
-          <i class="bi bi-github"></i>
-          <a href="/" class="stretched-link">HDMF</a>
-        </div>
+
+      <div class="col">
+        <img
+          src="http://localhost:1313//assets/img/logo-5.png"
+          alt="Client Logo 5"
+          class="img-fluid p-2"
+        />
       </div>
-      
-      <div class="col-lg-2 d-flex align-items-stretch pb-5">
-        <div class="card">
-          <i class="bi bi-github"></i>
-          <a href="https://github.com/flatironinstitute/neurosift" class="stretched-link">Neurosift</a>
-        </div>
-      </div>
-      
-      <div class="col-lg-2 d-flex align-items-stretch pb-5">
-        <div class="card">
-          <i class="bi bi-github"></i>
-          <a href="https://github.com/flatironinstitute/dendro" class="stretched-link">Dendro</a>
-        </div>
-      </div>
-      
-      <div class="col-lg-2 d-flex align-items-stretch pb-5">
-        <div class="card">
-          <i class="bi bi-github"></i>
-          <a href="https://github.com/bids-standard/bids-specification" class="stretched-link">BIDS Specification</a>
-        </div>
-      </div>
-      
-      <div class="col-lg-2 d-flex align-items-stretch pb-5">
-        <div class="card">
-          <i class="bi bi-github"></i>
-          <a href="https://github.com/NeuralEnsemble/python-neo" class="stretched-link">NEO</a>
-        </div>
-      </div>
-      
-      <div class="col-lg-2 d-flex align-items-stretch pb-5">
-        <div class="card">
-          <i class="bi bi-github"></i>
-          <a href="https://github.com/SpikeInterface/spikeinterface" class="stretched-link">SpikeInterface</a>
-        </div>
-      </div>
-      
-      <div class="col-lg-2 d-flex align-items-stretch pb-5">
-        <div class="card">
-          <i class="bi bi-github"></i>
-          <a href="https://github.com/SpikeInterface/probeinterface" class="stretched-link">ProbeInterface</a>
-        </div>
-      </div>
+
       
     </div>
   </div>
 </section>
+
+
+
+<section id="clients" class="clients d-block d-lg-none">
+  <div class="container" data-aos="fade-up">
+    <div class="clients-slider swiper">
+      <div class="swiper-wrapper align-items-center mb-md-5">
+        <div class="swiper-slide px-5 px-lg-0">
+          <img
+            src="http://localhost:1313//assets/img/logo-1.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide px-5 px-lg-0">
+          <img
+            src="http://localhost:1313//assets/img/logo-2.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide px-5 px-lg-0">
+          <img
+            src="ahttp://localhost:1313//assets/img/logo-3.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide px-5 px-lg-0">
+          <img
+            src="http://localhost:1313//assets/img/logo-4.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="swiper-slide px-5 px-lg-0">
+          <img
+            src="http://localhost:1313//assets/img/logo-5.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
 
 
     </main>
