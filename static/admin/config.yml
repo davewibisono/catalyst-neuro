@@ -47,8 +47,8 @@ collections:
       - { label: 'Dates', name: 'dates', widget: 'string' }
       - { label: 'Details', name: 'body', widget: 'markdown' }
       - { label: 'Institutes', name: 'institute', widget: 'list', fields: [
-          { label: 'Date', name: 'date', widget: 'string' },
-          { label: 'Name', name: 'name', widget: 'text' } 
+          { label: 'Name', name: 'name', widget: 'text' },
+          { label: 'Date', name: 'date', widget: 'string' }
           ]
         }
 
