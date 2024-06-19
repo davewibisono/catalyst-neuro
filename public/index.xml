@@ -58,6 +58,13 @@
       <description>We developed lerner-lab-to-nwb, an open source NWB conversion pipeline using NeuroConv.</description>
     </item>
     <item>
+      <title>Mark Howe</title>
+      <link>http://localhost:1313/clients/mark-howe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/clients/mark-howe/</guid>
+      <description>﻿</description>
+    </item>
+    <item>
       <title>CatalystNeuro at Cosyne 2024</title>
       <link>http://localhost:1313/blog/catalystneuro-at-cosyne-2024/</link>
       <pubDate>Mon, 22 Apr 2024 19:12:27 +0000</pubDate>
@@ -79,11 +86,11 @@
       <description>Embracing Work and Play at Villa Mas Sant Jordi In the heart of the Costa Brava, just a stone&amp;rsquo;s throw from the bustling city of Barcelona and the serene beaches of the Mediterranean, CatalystNeuro recently found a perfect fusion of work and relaxation at Villa Mas Sant Jordi. Our annual company retreat was not only a chance to bond and brainstorm but also to immerse ourselves in the splendor of Spanish culture and nature.</description>
     </item>
     <item>
-      <title></title>
-      <link>http://localhost:1313/project/scgb-and-scpab-nwb-adoption/</link>
+      <title>another new project</title>
+      <link>http://localhost:1313/project/map-type-column-project-another-new-project-client-another-new-client-dates-another-new-date-body-another-new-details/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/scgb-and-scpab-nwb-adoption/</guid>
-      <description>CatalystNeuro has been working with labs in the Simons Collaboration on the Global Brain (SCGB) for 5 years, and the Simons Foundation Plasticity and the Aging Brain for 2 years. In this project, we work with neurophysiology labs that are supported by these collaborations, helping them build custom pipelines to standardize and publish their data, and to integrate NWB into the lab&amp;rsquo;s analysis tools. This project has provided the opportunity to work with a large number of influential neurophysiology research groups from some of the leading research institutes in the United States:</description>
+      <guid>http://localhost:1313/project/map-type-column-project-another-new-project-client-another-new-client-dates-another-new-date-body-another-new-details/</guid>
+      <description>another new details</description>
     </item>
     <item>
       <title>Mission</title>
@@ -93,11 +100,25 @@
       <description></description>
     </item>
     <item>
+      <title>new project</title>
+      <link>http://localhost:1313/project/map-type-column-project-new-project-client-new-client-dates-new-dates-body-new-details/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/map-type-column-project-new-project-client-new-client-dates-new-dates-body-new-details/</guid>
+      <description>new details</description>
+    </item>
+    <item>
       <title>projects</title>
       <link>http://localhost:1313/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/</guid>
       <description></description>
+    </item>
+    <item>
+      <title>SCGB and SCPAB NWB Adoption</title>
+      <link>http://localhost:1313/project/scgb-and-scpab-nwb-adoption/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/scgb-and-scpab-nwb-adoption/</guid>
+      <description>CatalystNeuro has been working with labs in the Simons Collaboration on the Global Brain (SCGB) for 5 years, and the Simons Foundation Plasticity and the Aging Brain for 2 years. In this project, we work with neurophysiology labs that are supported by these collaborations, helping them build custom pipelines to standardize and publish their data, and to integrate NWB into the lab&amp;rsquo;s analysis tools. This project has provided the opportunity to work with a large number of influential neurophysiology research groups from some of the leading research institutes in the United States:</description>
     </item>
     <item>
       <title>Software Solution</title>

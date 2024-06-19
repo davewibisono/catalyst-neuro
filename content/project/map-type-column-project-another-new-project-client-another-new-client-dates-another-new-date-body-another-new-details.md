@@ -1,5 +1,5 @@
 ---
-project: another new project
+title: another new project
 client: another new client
 dates: another new date
 type: column

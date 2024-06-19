@@ -8,7 +8,21 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
+      <title>another new project</title>
+      <link>http://localhost:1313/project/map-type-column-project-another-new-project-client-another-new-client-dates-another-new-date-body-another-new-details/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/map-type-column-project-another-new-project-client-another-new-client-dates-another-new-date-body-another-new-details/</guid>
+      <description>another new details</description>
+    </item>
+    <item>
+      <title>new project</title>
+      <link>http://localhost:1313/project/map-type-column-project-new-project-client-new-client-dates-new-dates-body-new-details/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/map-type-column-project-new-project-client-new-client-dates-new-dates-body-new-details/</guid>
+      <description>new details</description>
+    </item>
+    <item>
+      <title>SCGB and SCPAB NWB Adoption</title>
       <link>http://localhost:1313/project/scgb-and-scpab-nwb-adoption/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project/scgb-and-scpab-nwb-adoption/</guid>

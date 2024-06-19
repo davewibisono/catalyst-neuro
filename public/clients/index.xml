@@ -56,5 +56,12 @@
       <guid>http://localhost:1313/clients/talia-lerner/</guid>
       <description>We developed lerner-lab-to-nwb, an open source NWB conversion pipeline using NeuroConv.</description>
     </item>
+    <item>
+      <title>Mark Howe</title>
+      <link>http://localhost:1313/clients/mark-howe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/clients/mark-howe/</guid>
+      <description>﻿</description>
+    </item>
   </channel>
 </rss>

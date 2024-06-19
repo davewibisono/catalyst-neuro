@@ -1,6 +1,6 @@
 ---
 type: column
-project: "SCGB and SCPAB NWB Adoption"
+title: "SCGB and SCPAB NWB Adoption"
 client: "Simons Foundation"
 dates: "2019-2024"
 institute: 

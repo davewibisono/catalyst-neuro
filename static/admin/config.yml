@@ -43,7 +43,7 @@ collections:
     slug: '{{slug}}'
     create: true
     fields:
-      - { label: 'Project', name: 'project', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Client', name: 'client', widget: 'string' }
       - { label: 'Dates', name: 'dates', widget: 'string' }
       - { label: 'Type', name: 'type', widget: 'hidden', default: 'column' }
