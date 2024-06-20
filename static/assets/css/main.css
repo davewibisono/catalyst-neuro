@@ -237,7 +237,7 @@ section {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--black-color) !important;
+    color: var(--black-color);
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--default-font);
@@ -264,13 +264,13 @@ section {
   .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color) !important;
+    color: var(--nav-hover-color);
   }
 
   .navmenu .dropdown ul {
     margin: 0;
     padding: 10px 0;
-    background: #fff !important;
+    background: #fff;
     display: block;
     position: absolute;
     visibility: hidden;
@@ -290,7 +290,7 @@ section {
     padding: 10px 20px;
     font-size: 15px;
     text-transform: none;
-    color: var(--black-color) !important;
+    color: var(--black-color);
   }
 
   .navmenu .dropdown ul a i {
@@ -300,7 +300,7 @@ section {
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
   .navmenu .dropdown ul li:hover > a {
-    color: var(--light-blue) !important;
+    color: var(--light-blue);
   }
 
   .navmenu .dropdown:hover > ul {
