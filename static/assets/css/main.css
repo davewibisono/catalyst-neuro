@@ -764,8 +764,8 @@ section,
 .nav .swiper-button-next,
 .nav .swiper-button-prev {
   position: relative;
-  top: 70px;
-  left: 90%;
+  top: 30px;
+  left: 85%;
 }
 .nav .swiper-button-next i {
   color: #fff;
@@ -788,10 +788,10 @@ section,
 .nav .swiper-button-prev .line-2 {
   content: "";
   height: 100px;
-  width: 600px;
+  width: 400px;
   background-color: transparent;
   position: absolute;
-  margin-right: 680px;
+  margin-right: 480px;
   margin-top: 100px;
   border-radius: 24px 0px 0px 0px;
   border: none;
@@ -1867,7 +1867,7 @@ iframe {
   .m-nav .swiper-button-prev .line-2 {
     content: "";
     height: 100px;
-    width: 300px;
+    width: 700px;
     background-color: transparent;
     position: absolute;
     margin-right: 550px;

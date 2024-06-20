@@ -35,6 +35,7 @@ collections:
       - { label: 'Project', name: 'project', widget: 'string' }
       - { label: 'Dates', name: 'Dates', widget: 'string' }
       - { label: 'Details', name: 'body', widget: 'markdown' }
+      - { label: 'Type', name: 'type', widget: 'select', options: ['non-featured', 'featured-entery'] }
       - { label: 'Order Number', name: 'weight', widget: 'number', required: true }
 
   - name: 'projects'

@@ -3,20 +3,28 @@
 <section id="hero" class="hero">
   <div class="container">
     <div class="row align-items-center d-flex justify-content-between">
-      <div class="col-xxl-4 col-lg-5 col-md-5 col-sm-12 my-padi mt-0" data-aos="fade-up" data-aos-delay="200">
+      <div
+        class="col-xxl-4 col-lg-5 col-md-5 col-sm-12 my-padi mt-0"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <h2>{{ .Site.Data.home.hero_heading }}</h2>
         <br />
-        <p class="pb-5">
-          {{ .Site.Data.home.hero_paragraph }}
-        </p>
+        <p class="pb-5">{{ .Site.Data.home.hero_paragraph }}</p>
         <div class="btn m-0 p-0">
-          <a class="btn-getstarted" href="mailto:contact@website.com">Contact Us <i class="bi bi-arrow-up-right"></i></a>
+          <a class="btn-getstarted" href="mailto:contact@website.com"
+            >Contact Us <i class="bi bi-arrow-up-right"></i
+          ></a>
         </div>
-      
       </div>
       <div class="col-xxl-7 col-lg-7 col-md-7 col-sm-12 img">
-        <img data-aos="fade-up" data-aos-delay="100" src="{{ .Site.BaseURL }}{{ .Site.Data.home.hero_image }}"
-          alt="Hero Image" class="img-fluid" />
+        <img
+          data-aos="fade-up"
+          data-aos-delay="100"
+          src="{{ .Site.BaseURL }}{{ .Site.Data.home.hero_image }}"
+          alt="Hero Image"
+          class="img-fluid"
+        />
       </div>
     </div>
   </div>
@@ -27,12 +35,23 @@
 <section class="mission">
   <div class="container mission-bg">
     <div class="row align-items-center">
-      <div class="col-lg-6 col-md-12 imgs" data-aos="fade-up" data-aos-delay="100">
-        <h2 data-aos="fade-up" data-aos-delay="200" class="d-block d-lg-none pt-5 px-1 my-padi">
+      <div
+        class="col-lg-6 col-md-12 imgs"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="200"
+          class="d-block d-lg-none pt-5 px-1 my-padi"
+        >
           {{ .Site.Data.home.mission_heading }}
         </h2>
-        <img src="{{ .Site.BaseURL }}{{ .Site.Data.home.mission_image }}" alt="Mission Image"
-          class="img-fluid p-md-5" />
+        <img
+          src="{{ .Site.BaseURL }}{{ .Site.Data.home.mission_image }}"
+          alt="Mission Image"
+          class="img-fluid p-md-5"
+        />
       </div>
       <div class="col-lg-6 col-md-12 content my-padi">
         <h2 data-aos="fade-up" data-aos-delay="200" class="d-none d-lg-block">
@@ -55,19 +74,30 @@
     <div class="row pt-5 pb-5">
       <div class="col-lg-5 my-padi">
         <h2>{{ .Site.Data.home.software_heading }}</h2>
-        <img src="{{ .Site.BaseURL }}{{ .Site.Data.home.software_image }}" alt="Software Image"
-          class="img-fluid p-5 d-block d-lg-none" />
+        <img
+          src="{{ .Site.BaseURL }}{{ .Site.Data.home.software_image }}"
+          alt="Software Image"
+          class="img-fluid p-5 d-block d-lg-none"
+        />
         <p>
           {{ .Site.Data.home.software_paragraph_1 }} <br /><br />
           {{ .Site.Data.home.software_paragraph_2 }}<br /><br />
           {{ .Site.Data.home.software_paragraph_3 }}
         </p>
         <div class="btn m-0 p-0 mt-5">
-          <a class="btn-getstarted" href="https://voluble-souffle-995141.netlify.app//software-solution">Explore more <i class="bi bi-arrow-up-right"></i></a>
+          <a
+            class="btn-getstarted"
+            href="https://voluble-souffle-995141.netlify.app//software-solution"
+            >Explore more <i class="bi bi-arrow-up-right"></i
+          ></a>
         </div>
       </div>
       <div class="col-lg-7 d-none d-lg-block my-padi">
-        <img src="{{ .Site.BaseURL }}{{ .Site.Data.home.software_image }}" alt="Software Image" class="img-fluid" />
+        <img
+          src="{{ .Site.BaseURL }}{{ .Site.Data.home.software_image }}"
+          alt="Software Image"
+          class="img-fluid"
+        />
       </div>
     </div>
   </div>
@@ -78,7 +108,7 @@
 <section class="portflio">
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 my-padi text-area">
+      <div class="col-lg-3 my-padi text-area pb-5">
         <div class="text">
           <h2 class="title">Clients</h2>
           <p class="sub-content">
@@ -86,7 +116,9 @@
             analysis, visualization, organization, sharing, and publishing.
           </p>
         </div>
-        <a href="{{ .Site.BaseURL }}/portfolio/" class="btn d-none d-lg-inline">Explore More ></a>
+        <a href="{{ .Site.BaseURL }}/portfolio/" class="btn d-none d-lg-inline"
+          >Explore More ></a
+        >
       </div>
 
       <div class="col-lg-9 my-padi">
@@ -101,25 +133,35 @@
               <i class="bi bi-chevron-right"></i>
             </div>
           </div>
-          <div class="swiper-wrapper">
-            {{ $counter := 0 }}
-            {{ range where .Site.RegularPages ".Params.type" "featured-entery" }}
-                {{ if eq .Params.layout "portfolio" }}
-                    {{ $counter = add $counter 1 }}
-                    <div class="swiper-slide">
-                        <div class="pt-md-0 pt-lg-5 slide">
-                            <div class="card">
-                                <img src="{{ .Site.BaseURL }}{{ .Params.image }}" alt="{{ .Title }}" class="img-fluid clients-image" />
-                                <p>{{ .Title | truncate 25 }}</p>
-                                <a href="/portfolio/{{$counter}}/" class="btn">View Details <i class="bi bi-arrow-up-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                {{ end }}
+          <div class="swiper-wrapper row g-2 flex-nowrap">
+            {{ $counter := 0 }} {{ range where .Site.RegularPages ".Params.type"
+            "featured-entery" }}
+            <div class="swiper-slide col-12 col-sm-6 col-md-4 mt-sm-5">
+              <div
+                class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between bg-white"
+              >
+                <h4 class="text-dark fs-5 customText">{{ .Title }}</h4>
+                <p class="text-body-secondary fs-6 customText">
+                  Institution:
+                  <span class="text-dark customText">{{ .Params.institution }}</span>
+                </p>
+                <p class="text-body-secondary fs-6 customText">
+                  Project: 
+                  <span class="text-dark customText">{{ .Params.project }}</span>
+                </p>
+                <p class="text-body-secondary fs-6 customText">
+                  Date: <span class="text-dark customText">{{ .Params.dates }}</span>
+                </p>
+              </div>
+            </div>
             {{ end }}
-        </div>                     
+          </div>
 
-          <a href="{{ .Site.BaseURL }}/portfolio/" class="btn d-inline d-md-none">Explore More ></a>
+          <a
+            href="{{ .Site.BaseURL }}/portfolio/"
+            class="btn d-inline d-md-none"
+            >Explore More ></a
+          >
         </div>
       </div>
     </div>
@@ -135,7 +177,10 @@
     </header>
     <div class="row mt-5 my-padi">
       {{ range where .Site.RegularPages "Type" "featured" }}
-      <div class="col-lg-6 featured-blogs p-5 mb-3" style="background-image: url('{{ .Params.image }}'); background-position: top;">
+      <div
+        class="col-lg-6 featured-blogs p-5 mb-3"
+        style="background-image: url('{{ .Params.image }}'); background-position: top;"
+      >
         <p class="tag">Featured</p>
         <a href="{{.Permalink}}">
           <h2>{{.Title}}</h2>
@@ -169,31 +214,51 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <img src="{{ .Site.BaseURL }}/assets/img/logo-1.png" alt="Client Logo 1" class="img-fluid p-2" />
+        <img
+          src="{{ .Site.BaseURL }}/assets/img/logo-1.png"
+          alt="Client Logo 1"
+          class="img-fluid p-2"
+        />
       </div>
 
       <!--End Image-->
 
       <div class="col">
-        <img src="{{ .Site.BaseURL }}/assets/img/logo-2.png" alt="Client Logo 2" class="img-fluid p-2" />
+        <img
+          src="{{ .Site.BaseURL }}/assets/img/logo-2.png"
+          alt="Client Logo 2"
+          class="img-fluid p-2"
+        />
       </div>
 
       <!--End Image-->
 
       <div class="col">
-        <img src="{{ .Site.BaseURL }}/assets/img/logo-3.png" alt="Client Logo 3" class="img-fluid p-2" />
+        <img
+          src="{{ .Site.BaseURL }}/assets/img/logo-3.png"
+          alt="Client Logo 3"
+          class="img-fluid p-2"
+        />
       </div>
 
       <!--End Image-->
 
       <div class="col">
-        <img src="{{ .Site.BaseURL }}/assets/img/logo-4.png" alt="Client Logo 4" class="img-fluid p-2" />
+        <img
+          src="{{ .Site.BaseURL }}/assets/img/logo-4.png"
+          alt="Client Logo 4"
+          class="img-fluid p-2"
+        />
       </div>
 
       <!--End Image-->
 
       <div class="col">
-        <img src="{{ .Site.BaseURL }}/assets/img/logo-5.png" alt="Client Logo 5" class="img-fluid p-2" />
+        <img
+          src="{{ .Site.BaseURL }}/assets/img/logo-5.png"
+          alt="Client Logo 5"
+          class="img-fluid p-2"
+        />
       </div>
 
       <!--End Image-->
@@ -208,19 +273,39 @@
     <div class="clients-slider swiper">
       <div class="swiper-wrapper align-items-center mb-md-5">
         <div class="swiper-slide px-5 px-lg-0">
-          <img src="{{ .Site.BaseURL }}/assets/img/logo-1.png" class="img-fluid" alt="" />
+          <img
+            src="{{ .Site.BaseURL }}/assets/img/logo-1.png"
+            class="img-fluid"
+            alt=""
+          />
         </div>
         <div class="swiper-slide px-5 px-lg-0">
-          <img src="{{ .Site.BaseURL }}/assets/img/logo-2.png" class="img-fluid" alt="" />
+          <img
+            src="{{ .Site.BaseURL }}/assets/img/logo-2.png"
+            class="img-fluid"
+            alt=""
+          />
         </div>
         <div class="swiper-slide px-5 px-lg-0">
-          <img src="{{ .Site.BaseURL }}/assets/img/logo-3.png" class="img-fluid" alt="" />
+          <img
+            src="{{ .Site.BaseURL }}/assets/img/logo-3.png"
+            class="img-fluid"
+            alt=""
+          />
         </div>
         <div class="swiper-slide px-5 px-lg-0">
-          <img src="{{ .Site.BaseURL }}/assets/img/logo-4.png" class="img-fluid" alt="" />
+          <img
+            src="{{ .Site.BaseURL }}/assets/img/logo-4.png"
+            class="img-fluid"
+            alt=""
+          />
         </div>
         <div class="swiper-slide px-5 px-lg-0">
-          <img src="{{ .Site.BaseURL }}/assets/img/logo-5.png" class="img-fluid" alt="" />
+          <img
+            src="{{ .Site.BaseURL }}/assets/img/logo-5.png"
+            class="img-fluid"
+            alt=""
+          />
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -233,21 +318,32 @@
 <section class="cta">
   <div class="container">
     <div class="row justify-content-between">
-      <div class="col-lg-5 col-md-7 flex-desktop" ta-aos="fade-up" data-aos-delay="100">
+      <div
+        class="col-lg-5 col-md-7 flex-desktop"
+        ta-aos="fade-up"
+        data-aos-delay="100"
+      >
         <h2 class="my-padi">{{ .Site.Data.home.cta_heading }}</h2>
         <br />
-        <p class="my-padi">
-          {{ .Site.Data.home.cta_paragraph }}
-        </p>
+        <p class="my-padi">{{ .Site.Data.home.cta_paragraph }}</p>
 
         <div class="btn m-0 mt-5 my-padi">
-          <a class="btn-getstarted" href="mailto:inquiry@catalystneuro.com">Contact Us <i
-              class="bi bi-arrow-up-right"></i></a>
+          <a class="btn-getstarted" href="mailto:inquiry@catalystneuro.com"
+            >Contact Us <i class="bi bi-arrow-up-right"></i
+          ></a>
         </div>
       </div>
 
-      <div class="col-lg-6 col-md-5 img" ta-aos="fade-down" data-aos-delay="200">
-        <img src="{{ .Site.BaseURL }}{{ .Site.Data.home.cta_image }}" alt="CTA Image" class="img-fluid" />
+      <div
+        class="col-lg-6 col-md-5 img"
+        ta-aos="fade-down"
+        data-aos-delay="200"
+      >
+        <img
+          src="{{ .Site.BaseURL }}{{ .Site.Data.home.cta_image }}"
+          alt="CTA Image"
+          class="img-fluid"
+        />
       </div>
     </div>
   </div>
