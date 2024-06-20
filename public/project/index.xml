@@ -8,11 +8,25 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/project/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>i&#39;m new title</title>
-      <link>http://localhost:1313/project/im-new-title/</link>
+      <title>DANDI Archive</title>
+      <link>http://localhost:1313/project/dandi-archive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/project/im-new-title/</guid>
-      <description>i&amp;rsquo;m new detail</description>
+      <guid>http://localhost:1313/project/dandi-archive/</guid>
+      <description>CatalystNeuro is part of a team comprising MIT, Dartmouth, and Kitware to build and maintain the DANDI Archive, an archive for neurophysiology data that facilitates open data and reuse of data in neurophysiology&amp;hellip;</description>
+    </item>
+    <item>
+      <title>Michael J Fox Aligning Science Across Parkinsons’ (ASAP) NWB Adoption</title>
+      <link>http://localhost:1313/project/michael-j-fox-aligning-science-across-parkinsons-asap-nwb-adoption/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/michael-j-fox-aligning-science-across-parkinsons-asap-nwb-adoption/</guid>
+      <description>The goal of the ASAP program is to facilitate collaboration and build resources for labs that study Parkinsons’ disease. CatalystNeuro has been working directly with 7 of the labs funded by this initiative to build custom open source NWB conversion pipelines to facilitate publication of their data on the DANDI Archive.&#xA;2023-2024 Daniel Dombeck, Northwestern Michael Higley, Yale Tania Lerner, Northwestern Robert Turner, University of Pittsburgh Alexandra Nelson, UC San Francisco Jacob Reimer, Baylor College of Medicine Mark Howe, Boston University</description>
+    </item>
+    <item>
+      <title>Ripple U19 Data Core</title>
+      <link>http://localhost:1313/project/ripple-u19-data-core/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/ripple-u19-data-core/</guid>
+      <description>The Ripple U19 was a collaborative effort between Ivan Soltesz (PI), Gyorgy Buzsaki, Attila Losconzy, and Mark Schnitzer, to study the circuit of sharp wave ripples. CatalystNeuro helped develop the NWB standard and associated software infrastructure for sharing data between these labs.</description>
     </item>
     <item>
       <title>SCGB and SCPAB NWB Adoption</title>
@@ -20,6 +34,27 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/project/scgb-and-scpab-nwb-adoption/</guid>
       <description>CatalystNeuro has been working with labs in the Simons Collaboration on the Global Brain (SCGB) for 5 years, and the Simons Foundation Plasticity and the Aging Brain for 2 years. In this project, we work with neurophysiology labs that are supported by these collaborations, helping them build custom pipelines to standardize and publish their data, and to integrate NWB into the lab&amp;rsquo;s analysis tools. This project has provided the opportunity to work with a large number of influential neurophysiology research groups from some of the leading research institutes in the United States:</description>
+    </item>
+    <item>
+      <title>SpikeInterface Development</title>
+      <link>http://localhost:1313/project/spikeinterface-development/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/spikeinterface-development/</guid>
+      <description>SpikeInterface is a tool that enables the creation of state-of-the-art spike sorting pipelines. As part of the Simons Collaboration on the Global Brain, we have developed features into this platform that allow it to continue to meet the needs of electrophysiology research as the volume of data continues to grow.&#xA;Optimize backend for high-volume data management Dockerize popular spike sorters to enable free, cloud-optimized execution Integrate drift correction techniques for correcting probe movement artifacts Evaluate spike sorters using hybrid test recordings and inject data into real recordings </description>
+    </item>
+    <item>
+      <title>VAME</title>
+      <link>http://localhost:1313/project/vame/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/vame/</guid>
+      <description>We are working with the Palop Lab at UCSF Gladstone to provide software engineering services to VAME. Our goal is to make this software robust with proper packaging, documentation, and testing frameworks, and to build a no-code app so the software can be run by neuroscientists with less programming experience.</description>
+    </item>
+    <item>
+      <title>Visual Coding NWB 2.0 Adoption</title>
+      <link>http://localhost:1313/project/visual-coding-nwb-2-0-adoption/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/visual-coding-nwb-2-0-adoption/</guid>
+      <description>We built an open source conversion pipeline, visual-coding-to-nwb-v2, to convert the Allen Institute Visual Coding two-photon experiment from NWB 1.0 to NWB 2.0. This has resulted in a 62.5 TB dataset on DANDI, DANDI:000728</description>
     </item>
   </channel>
 </rss>

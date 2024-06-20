@@ -42,7 +42,9 @@
     <loc>http://localhost:1313/categories/neuro/</loc>
     <lastmod>2024-04-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/project/im-new-title/</loc>
+    <loc>http://localhost:1313/project/dandi-archive/</loc>
+  </url><url>
+    <loc>http://localhost:1313/project/michael-j-fox-aligning-science-across-parkinsons-asap-nwb-adoption/</loc>
   </url><url>
     <loc>http://localhost:1313/mission/</loc>
   </url><url>
@@ -52,13 +54,21 @@
   </url><url>
     <loc>http://localhost:1313/project/</loc>
   </url><url>
+    <loc>http://localhost:1313/project/ripple-u19-data-core/</loc>
+  </url><url>
     <loc>http://localhost:1313/project/scgb-and-scpab-nwb-adoption/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
   </url><url>
     <loc>http://localhost:1313/software-solution/</loc>
   </url><url>
+    <loc>http://localhost:1313/project/spikeinterface-development/</loc>
+  </url><url>
     <loc>http://localhost:1313/team/</loc>
+  </url><url>
+    <loc>http://localhost:1313/project/vame/</loc>
+  </url><url>
+    <loc>http://localhost:1313/project/visual-coding-nwb-2-0-adoption/</loc>
   </url><url>
     <loc>http://localhost:1313/work-with-us/</loc>
   </url>

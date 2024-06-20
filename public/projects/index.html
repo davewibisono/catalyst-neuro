@@ -34,7 +34,13 @@
 
   <body class="index-page" data-bs-spy="scroll" data-bs-target="#navmenu">
     
-    <header id="header" class="header fixed-top d-flex align-items-center">
+    <style>
+  .navmenu .myDropdown:hover > .myDropdownMenu {
+    display: block !important;
+  } 
+</style>
+
+<header id="header" class="header fixed-top d-flex align-items-center">
   <div
     class="container d-flex align-items-center justify-content-between my-padi"
   >
@@ -52,9 +58,9 @@
         <li><a href="http://localhost:1313//mission">Mission</a></li>
 
         <li class="dropdown-center d-xl-none">
-          <a href="#" class="dropdown-toggle border-0 bg-transparent w-100" data-bs-toggle="dropdown" aria-expanded="false" type="button">
+          <button href="#" class="dropdown-toggle border-0 bg-transparent w-100" data-bs-toggle="dropdown" aria-expanded="false" type="button">
             <span>Portfolio</span>
-          </a>
+          </button>
           <ul class="dropdown-menu w-100">
             <li class="text-center">
               <a class="dropdown-item" href="http://localhost:1313//software-solution">Software</a>
@@ -67,18 +73,18 @@
           </ul>
         </li>
 
-        <li class="dropdown-center d-none d-xl-block">
-          <a href="#" class="dropdown-toggle border-0 bg-transparent w-100" data-bs-toggle="dropdown" type="button">
+        <li class="d-none d-xl-block myDropdown">
+          <button href="#" class="dropdown-toggle border-0 bg-transparent w-100" type="button">
             <span>Portfolio</span>
-          </a>
-          <ul class="dropdown-menu w-100">
-            <li class="text-center">
-              <a class="dropdown-item" href="http://localhost:1313//software-solution">Software</a>
+          </button>
+          <ul class="w-100 list-unstyled position-absolute bg-white ps-3 pt-3 myDropdownMenu d-none" style="width: 200px !important;">
+            <li class="text-center w-100">
+              <a class="" href="http://localhost:1313//software-solution">Software</a>
             </li>
 
-            <li class="text-center"><a class="dropdown-item" href="http://localhost:1313//clients">Client</a></li>
-            <li class="text-center">
-              <a class="dropdown-item" href="http://localhost:1313//projects">Project</a>
+            <li class="text-center w-100"><a class="dropdown-item" href="http://localhost:1313//clients">Client</a></li>
+            <li class="text-center w-100">
+              <a class="" href="http://localhost:1313//projects">Project</a>
             </li>
           </ul>
         </li>
@@ -125,11 +131,11 @@
    
 <div
   class="modal fade"
-  id="dropBoximnew"
+  id="dropBoxDANDI"
   data-bs-backdrop="static"
   data-bs-keyboard="false"
   tabindex="-1"
-  aria-labelledby="dropBoximnew"
+  aria-labelledby="dropBoxDANDI"
   aria-hidden="true"
 >
   <div
@@ -138,18 +144,18 @@
     <div class="modal-content customTop">
       <div class="modal-header align-items-start flex-column flex-md-row row">
         <div class="col-md-5 pe-5">
-          <h1 class="modal-title fs-5 mb-2" id="dropBoximnew">
+          <h1 class="modal-title fs-5 mb-2" id="dropBoxDANDI">
             
           </h1>
           <p class="text-body-secondary fs-6 mb-2 mb-md-0">
             Client:
-            <span class="text-dark">i&#39;m new client</span>
+            <span class="text-dark">Satrajit Ghosh, MIT</span>
           </p>
         </div>
         <div class="col-md-5 pe-5">
           <p class="text-body-secondary fs-6 mb-0">
             Dates:
-            <span class="text-dark">i&#39;m new date</span>
+            <span class="text-dark">2019-2029</span>
           </p>
         </div>
         <button
@@ -160,7 +166,105 @@
         ></button>
       </div>
       <div class="modal-body">
-        <div><p>i&rsquo;m new detail</p>
+        <div><p>CatalystNeuro is part of a team comprising MIT, Dartmouth, and Kitware to build and maintain the DANDI Archive, an archive for neurophysiology data that facilitates open data and reuse of data in neurophysiology&hellip;</p>
+</div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+   
+<div
+  class="modal fade"
+  id="dropBoxMicha"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="dropBoxMicha"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+  >
+    <div class="modal-content customTop">
+      <div class="modal-header align-items-start flex-column flex-md-row row">
+        <div class="col-md-5 pe-5">
+          <h1 class="modal-title fs-5 mb-2" id="dropBoxMicha">
+            
+          </h1>
+          <p class="text-body-secondary fs-6 mb-2 mb-md-0">
+            Client:
+            <span class="text-dark">The Michael J Fox Foundation</span>
+          </p>
+        </div>
+        <div class="col-md-5 pe-5">
+          <p class="text-body-secondary fs-6 mb-0">
+            Dates:
+            <span class="text-dark">2023-2025</span>
+          </p>
+        </div>
+        <button
+          type="button"
+          class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customBtn"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div><p>The goal of the ASAP program is to facilitate collaboration and build resources for labs that study Parkinsons’ disease. CatalystNeuro has been working directly with 7 of the labs funded by this initiative to build custom open source NWB conversion pipelines to facilitate publication of their data on the DANDI Archive.</p>
+<p><em>2023-2024</em>
+Daniel Dombeck, Northwestern
+Michael Higley, Yale
+Tania Lerner, Northwestern
+Robert Turner, University of Pittsburgh
+Alexandra Nelson, UC San Francisco
+Jacob Reimer, Baylor College of Medicine
+Mark Howe, Boston University</p>
+</div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+   
+<div
+  class="modal fade"
+  id="dropBoxRippl"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="dropBoxRippl"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+  >
+    <div class="modal-content customTop">
+      <div class="modal-header align-items-start flex-column flex-md-row row">
+        <div class="col-md-5 pe-5">
+          <h1 class="modal-title fs-5 mb-2" id="dropBoxRippl">
+            
+          </h1>
+          <p class="text-body-secondary fs-6 mb-2 mb-md-0">
+            Client:
+            <span class="text-dark">Ivan Soltes, Stanford University</span>
+          </p>
+        </div>
+        <div class="col-md-5 pe-5">
+          <p class="text-body-secondary fs-6 mb-0">
+            Dates:
+            <span class="text-dark">2017-2022</span>
+          </p>
+        </div>
+        <button
+          type="button"
+          class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customBtn"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div><p>The Ripple U19 was a collaborative effort between Ivan Soltesz (PI), Gyorgy Buzsaki, Attila Losconzy, and Mark Schnitzer, to study the circuit of sharp wave ripples. CatalystNeuro helped develop the NWB standard and associated software infrastructure for sharing data between these labs.</p>
 </div>
         
       </div>
@@ -247,6 +351,147 @@
     </div>
   </div>
 </div>
+   
+<div
+  class="modal fade"
+  id="dropBoxSpike"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="dropBoxSpike"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+  >
+    <div class="modal-content customTop">
+      <div class="modal-header align-items-start flex-column flex-md-row row">
+        <div class="col-md-5 pe-5">
+          <h1 class="modal-title fs-5 mb-2" id="dropBoxSpike">
+            
+          </h1>
+          <p class="text-body-secondary fs-6 mb-2 mb-md-0">
+            Client:
+            <span class="text-dark">Simons Foundation</span>
+          </p>
+        </div>
+        <div class="col-md-5 pe-5">
+          <p class="text-body-secondary fs-6 mb-0">
+            Dates:
+            <span class="text-dark">2021-2024</span>
+          </p>
+        </div>
+        <button
+          type="button"
+          class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customBtn"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div><p>SpikeInterface is a tool that enables the creation of state-of-the-art spike sorting pipelines. As part of the Simons Collaboration on the Global Brain, we have developed features into this platform that allow it to continue to meet the needs of electrophysiology research as the volume of data continues to grow.</p>
+<ul>
+<li>Optimize backend for high-volume data management</li>
+<li>Dockerize popular spike sorters to enable free, cloud-optimized execution</li>
+<li>Integrate drift correction techniques for correcting probe movement artifacts</li>
+<li>Evaluate spike sorters using hybrid test recordings and inject data into real recordings</li>
+</ul>
+</div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+   
+<div
+  class="modal fade"
+  id="dropBoxVAME"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="dropBoxVAME"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+  >
+    <div class="modal-content customTop">
+      <div class="modal-header align-items-start flex-column flex-md-row row">
+        <div class="col-md-5 pe-5">
+          <h1 class="modal-title fs-5 mb-2" id="dropBoxVAME">
+            
+          </h1>
+          <p class="text-body-secondary fs-6 mb-2 mb-md-0">
+            Client:
+            <span class="text-dark">UCSF Gladstone</span>
+          </p>
+        </div>
+        <div class="col-md-5 pe-5">
+          <p class="text-body-secondary fs-6 mb-0">
+            Dates:
+            <span class="text-dark">2024</span>
+          </p>
+        </div>
+        <button
+          type="button"
+          class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customBtn"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div><p>We are working with the Palop Lab at UCSF Gladstone to provide software engineering services to VAME. Our goal is to make this software robust with proper packaging, documentation, and testing frameworks, and to build a no-code app so the software can be run by neuroscientists with less programming experience.</p>
+</div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+   
+<div
+  class="modal fade"
+  id="dropBoxVisua"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  tabindex="-1"
+  aria-labelledby="dropBoxVisua"
+  aria-hidden="true"
+>
+  <div
+    class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl"
+  >
+    <div class="modal-content customTop">
+      <div class="modal-header align-items-start flex-column flex-md-row row">
+        <div class="col-md-5 pe-5">
+          <h1 class="modal-title fs-5 mb-2" id="dropBoxVisua">
+            
+          </h1>
+          <p class="text-body-secondary fs-6 mb-2 mb-md-0">
+            Client:
+            <span class="text-dark">Saskia de Vries, Allen Institute</span>
+          </p>
+        </div>
+        <div class="col-md-5 pe-5">
+          <p class="text-body-secondary fs-6 mb-0">
+            Dates:
+            <span class="text-dark">2023-2024</span>
+          </p>
+        </div>
+        <button
+          type="button"
+          class="btn-close col-2 me-1 mt-2 bg-secondary p-2 rounded-circle border-1 border-white position-relative customBtn"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div><p>We built an open source conversion pipeline, <a href="https://github.com/catalystneuro/visual-coding-to-nwb-v2">visual-coding-to-nwb-v2</a>, to convert the Allen Institute Visual Coding two-photon experiment from NWB 1.0 to NWB 2.0. This has resulted in a 62.5 TB dataset on DANDI, <a href="https://dandiarchive.org/dandiset/000728">DANDI:000728</a></p>
+</div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <section class="inner-page-hero ww-inner">
@@ -277,17 +522,55 @@
               <a
                 href=""
                 data-bs-toggle="modal"
-                data-bs-target="#dropBoximnew"
+                data-bs-target="#dropBoxDANDI"
                 data-bs-backdrop="false"
                 class="text-primary text-decoration-underline link-offset-2"
-                >i&#39;m new title</a
+                >DANDI Archive</a
               >
             </td>
             <td class="p-3 border-start text-secondary">
-              i&#39;m new client
+              Satrajit Ghosh, MIT
             </td>
             <td class="p-3 border-start border-end text-end fw-semibold">
-              i&#39;m new date
+              2019-2029
+            </td>
+          </tr>
+             
+          <tr>
+            <td class="p-3 border-start">
+              <a
+                href=""
+                data-bs-toggle="modal"
+                data-bs-target="#dropBoxMicha"
+                data-bs-backdrop="false"
+                class="text-primary text-decoration-underline link-offset-2"
+                >Michael J Fox Aligning Science Across Parkinsons’ (ASAP) NWB Adoption</a
+              >
+            </td>
+            <td class="p-3 border-start text-secondary">
+              The Michael J Fox Foundation
+            </td>
+            <td class="p-3 border-start border-end text-end fw-semibold">
+              2023-2025
+            </td>
+          </tr>
+             
+          <tr>
+            <td class="p-3 border-start">
+              <a
+                href=""
+                data-bs-toggle="modal"
+                data-bs-target="#dropBoxRippl"
+                data-bs-backdrop="false"
+                class="text-primary text-decoration-underline link-offset-2"
+                >Ripple U19 Data Core</a
+              >
+            </td>
+            <td class="p-3 border-start text-secondary">
+              Ivan Soltes, Stanford University
+            </td>
+            <td class="p-3 border-start border-end text-end fw-semibold">
+              2017-2022
             </td>
           </tr>
              
@@ -307,6 +590,63 @@
             </td>
             <td class="p-3 border-start border-end text-end fw-semibold">
               2019-2024
+            </td>
+          </tr>
+             
+          <tr>
+            <td class="p-3 border-start">
+              <a
+                href=""
+                data-bs-toggle="modal"
+                data-bs-target="#dropBoxSpike"
+                data-bs-backdrop="false"
+                class="text-primary text-decoration-underline link-offset-2"
+                >SpikeInterface Development</a
+              >
+            </td>
+            <td class="p-3 border-start text-secondary">
+              Simons Foundation
+            </td>
+            <td class="p-3 border-start border-end text-end fw-semibold">
+              2021-2024
+            </td>
+          </tr>
+             
+          <tr>
+            <td class="p-3 border-start">
+              <a
+                href=""
+                data-bs-toggle="modal"
+                data-bs-target="#dropBoxVAME"
+                data-bs-backdrop="false"
+                class="text-primary text-decoration-underline link-offset-2"
+                >VAME</a
+              >
+            </td>
+            <td class="p-3 border-start text-secondary">
+              UCSF Gladstone
+            </td>
+            <td class="p-3 border-start border-end text-end fw-semibold">
+              2024
+            </td>
+          </tr>
+             
+          <tr>
+            <td class="p-3 border-start">
+              <a
+                href=""
+                data-bs-toggle="modal"
+                data-bs-target="#dropBoxVisua"
+                data-bs-backdrop="false"
+                class="text-primary text-decoration-underline link-offset-2"
+                >Visual Coding NWB 2.0 Adoption</a
+              >
+            </td>
+            <td class="p-3 border-start text-secondary">
+              Saskia de Vries, Allen Institute
+            </td>
+            <td class="p-3 border-start border-end text-end fw-semibold">
+              2023-2024
             </td>
           </tr>
           
