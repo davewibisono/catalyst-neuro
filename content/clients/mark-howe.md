@@ -6,4 +6,4 @@ Dates: 2023-09-01 to 2024-09-01
 type: featured-entery
 weight: 8
 ---
-details
+ ﻿
