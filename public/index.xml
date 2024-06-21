@@ -62,7 +62,42 @@
       <link>http://localhost:1313/clients/mark-howe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/clients/mark-howe/</guid>
+      <description>details</description>
+    </item>
+    <item>
+      <title>Jacob Reimer</title>
+      <link>http://localhost:1313/clients/jacob-reimer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/clients/jacob-reimer/</guid>
       <description>﻿</description>
+    </item>
+    <item>
+      <title>Alexandra Nelson</title>
+      <link>http://localhost:1313/clients/alexandra-nelson/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/clients/alexandra-nelson/</guid>
+      <description>﻿</description>
+    </item>
+    <item>
+      <title>Andy Leifer</title>
+      <link>http://localhost:1313/clients/andy-leifer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/clients/andy-leifer/</guid>
+      <description>We developed leifer_lab_to_nwb, an open source NWB conversion pipeline that uses NeuroConv. This dataset is calcium imaging from C. elegans from the Nature 2023 article, “Neural signal propagation atlas of Caenorhabditis elegans.”</description>
+    </item>
+    <item>
+      <title>György Buzsáki</title>
+      <link>http://localhost:1313/clients/gy%C3%B6rgy-buzs%C3%A1ki/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/clients/gy%C3%B6rgy-buzs%C3%A1ki/</guid>
+      <description>We built buzsaki-lab-to-nwb, an open source NWB conversion pipeline that uses NeuroConv. This repository contains conversion code for several different conversions that have led to numerous datasets published on DANDI:&#xA;DANDI:000003/0.230629.1955, data from “Physiological Properties and Behavioral Correlates of Hippocampal Granule Cells and Mossy Cells,” Neuron, 2017 DANDI:000041/0.210812.1515, data from “Network Homeostasis and State Dynamics of Neocortical Sleep,” Neuron 2016 DANDI:000044/0.210812.1516, data from “Diversity in neural firing dynamics supports both rigid and learned hippocampal sequences,” Science, 2016 DANDI:000056/0.</description>
+    </item>
+    <item>
+      <title>Test-client</title>
+      <link>http://localhost:1313/clients/test-client/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/clients/test-client/</guid>
+      <description>s﻿ome text here</description>
     </item>
     <item>
       <title>CatalystNeuro at Cosyne 2024</title>

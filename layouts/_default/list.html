@@ -84,7 +84,7 @@
   </div>
 </section>
 
-<section class="mission inner">
+<section class="mission inner pb-4">
   <div class="shadow mb-5 p-4 container rounded-4 bg-white">
     <div class="row g-3">
       {{ range .Paginator.Pages }} {{ with .Params }}
@@ -129,7 +129,7 @@
   </div>
 </section>
 
-<section class="pagination">
+<section class="pagination pt-0">
   {{ $pag := $.Paginator }} {{ if gt $pag.TotalPages 1 }}
   <div class="container">
     <div class="row d-flex justify-content-center align-items-center">

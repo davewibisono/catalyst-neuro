@@ -108,7 +108,7 @@
 <section class="portflio">
   <div class="container">
     <div class="row">
-      <div class="col-lg-3 my-padi text-area pb-5">
+      <div class="col-lg-3 my-padi text-area">
         <div class="text">
           <h2 class="title">Clients</h2>
           <p class="sub-content">
@@ -116,7 +116,7 @@
             analysis, visualization, organization, sharing, and publishing.
           </p>
         </div>
-        <a href="{{ .Site.BaseURL }}/portfolio/" class="btn d-none d-lg-inline"
+        <a href="{{ .Site.BaseURL }}/clients/" class="btn d-none d-lg-inline"
           >Explore More ></a
         >
       </div>
@@ -133,12 +133,12 @@
               <i class="bi bi-chevron-right"></i>
             </div>
           </div>
-          <div class="swiper-wrapper row g-2 flex-nowrap">
+          <div class="swiper-wrapper row g-2 flex-nowrap pb-5">
             {{ $counter := 0 }} {{ range where .Site.RegularPages ".Params.type"
             "featured-entery" }}
-            <div class="swiper-slide col-12 col-sm-6 col-md-4 mt-sm-5">
+            <div class="swiper-slide col-12 col-sm-6 col-xl-4 mt-sm-5" style="height: 240px;">
               <div
-                class="rounded-4 border p-4 h-100 d-flex flex-column justify-content-between bg-white"
+                class="rounded-4 border p-4 h-100 bg-white"
               >
                 <h4 class="text-dark fs-5 customText">{{ .Title }}</h4>
                 <p class="text-body-secondary fs-6 customText">
@@ -158,7 +158,7 @@
           </div>
 
           <a
-            href="{{ .Site.BaseURL }}/portfolio/"
+            href="{{ .Site.BaseURL }}/clients/"
             class="btn d-inline d-md-none"
             >Explore More ></a
           >
