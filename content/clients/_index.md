@@ -1,4 +1,3 @@
 ---
-title: Portfolio
-layout: portfolio
+title: Clients
 ---
