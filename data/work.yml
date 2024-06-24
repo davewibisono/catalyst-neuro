@@ -14,6 +14,7 @@ video: null
 youtube: https://www.youtube.com/embed/uRYOrGt1wMo
 new_job:
   - post: Neuro-Data Scientist
+    draft: false 
     date: April 14 2024
     type: Remote
     job_number: 1
@@ -45,6 +46,7 @@ new_job:
       - Ability to see the big picture and prioritize tasks accordingly.
       - Capacity to multitask and meet deadlines.
   - post: Neuro-Data Scientist2
+    draft: false
     date: April 24 2024
     type: Remote
     job_number: 2

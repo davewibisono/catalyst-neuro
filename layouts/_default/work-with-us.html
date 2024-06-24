@@ -60,7 +60,7 @@
         <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
 
           {{ range .Site.Data.work.new_job }}
-          <div class="accordion-item">
+          <div class="accordion-item {{ with .draft }} d-none {{ end }}">
             <h3 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                 data-bs-target="#faq-content-{{ .job_number }}">
