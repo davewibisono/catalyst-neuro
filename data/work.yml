@@ -14,11 +14,7 @@ video: null
 youtube: https://www.youtube.com/embed/uRYOrGt1wMo
 new_job:
   - post: Neuro-Data Scientist
-    draft: false 
-    date: April 14 2024
-    type: Remote
-    job_number: 1
-    work: Part-Time contractor
+    draft: true
     summary: Develop a data science infrastructure for neuroscience labs that will
       enable collaboration within and across labs. Work closely between
       researchers and software developers, applying practical and
@@ -35,6 +31,8 @@ new_job:
       - Convert lab data to standard formats (e.g. Neurodata Without Borders)
         and develop analysis and visualization tools for those formats
       - Participate in weekly video conference meetings
+    job_number: 1
+    date: April 14 2024
     requirements:
       - Doctorate or post-graduate experience in neurophysiology. Preferred
         experience in multi-unit electrophysiology or calcium imaging.
@@ -45,12 +43,10 @@ new_job:
         requests.
       - Ability to see the big picture and prioritize tasks accordingly.
       - Capacity to multitask and meet deadlines.
+    work: Part-Time contractor
+    type: Remote
   - post: Neuro-Data Scientist2
     draft: false
-    date: April 24 2024
-    type: Remote
-    job_number: 2
-    work: Part-Time contractor
     summary: Develop a data science infrastructure for neuroscience labs that will
       enable collaboration within and across labs. Work closely between
       researchers and software developers, applying practical and
@@ -67,6 +63,8 @@ new_job:
       - Convert lab data to standard formats (e.g. Neurodata Without Borders)
         and develop analysis and visualization tools for those formats
       - Participate in weekly video conference meetings
+    job_number: 2
+    date: April 24 2024
     requirements:
       - Doctorate or post-graduate experience in neurophysiology. Preferred
         experience in multi-unit electrophysiology or calcium imaging.
@@ -77,3 +75,5 @@ new_job:
         requests.
       - Ability to see the big picture and prioritize tasks accordingly.
       - Capacity to multitask and meet deadlines.
+    work: Part-Time contractor
+    type: Remote
